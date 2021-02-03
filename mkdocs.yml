@@ -1,0 +1,4 @@
+site_name: FEDB
+nav:
+- Home: SUMMARY.md
+theme: readthedocs

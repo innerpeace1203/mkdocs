@@ -1,0 +1,828 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>fedb cli · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sql_java_sdk.html" />
+    
+    
+    <link rel="prev" href="sql/dql.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    FEDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    部署安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="install/env.html">
+            
+                <a href="install/env.html">
+            
+                    
+                    配置机器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="install/fedb_quick_deploy.html">
+            
+                <a href="install/fedb_quick_deploy.html">
+            
+                    
+                    一键部署RTIDB集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="install/zk.html">
+            
+                <a href="install/zk.html">
+            
+                    
+                    部署zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="install/fedb_deploy.html">
+            
+                <a href="install/fedb_deploy.html">
+            
+                    
+                    部署RTIDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="install/conf.html">
+            
+                <a href="install/conf.html">
+            
+                    
+                    配置文件详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="install/dir.html">
+            
+                <a href="install/dir.html">
+            
+                    
+                    目录介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="install/checklist.html">
+            
+                <a href="install/checklist.html">
+            
+                    
+                    部署后checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="install/sageone.html">
+            
+                <a href="install/sageone.html">
+            
+                    
+                    一体机部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="sql.html">
+            
+                <a href="sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="sql/ddl.html">
+            
+                <a href="sql/ddl.html">
+            
+                    
+                    DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="sql/dml.html">
+            
+                <a href="sql/dml.html">
+            
+                    
+                    DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="sql/dql.html">
+            
+                <a href="sql/dql.html">
+            
+                    
+                    DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="sql_cli.html">
+            
+                <a href="sql_cli.html">
+            
+                    
+                    fedb cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="sql_java_sdk.html">
+            
+                <a href="sql_java_sdk.html">
+            
+                    
+                    fedb java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="usage.html">
+            
+                <a href="usage.html">
+            
+                    
+                    老的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="usage/cmd.html">
+            
+                <a href="usage/cmd.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="usage/java.html">
+            
+                <a href="usage/java.html">
+            
+                    
+                    java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="usage/python.html">
+            
+                <a href="usage/python.html">
+            
+                    
+                    python sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="usage/code.html">
+            
+                <a href="usage/code.html">
+            
+                    
+                    返回码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="usage/importer.html">
+            
+                <a href="usage/importer.html">
+            
+                    
+                    导入工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    RTIDB运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ops/monitor.html">
+            
+                <a href="ops/monitor.html">
+            
+                    
+                    RTIDB监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="weekly_reports.html">
+            
+                <a href="weekly_reports.html">
+            
+                    
+                    周报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >fedb cli</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="fedb-cli&#x4F7F;&#x7528;&#x8BF4;&#x660E;">fedb cli&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1>
+<p>&#x4E0B;&#x9762;&#x5C06;&#x4ECE;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#x89E3;&#x91CA;fedb cli&#x5DE5;&#x5177;</p>
+<ul>
+<li>sql&#x76F8;&#x5173;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x884C; sql_client</li>
+<li>ns client&#x8FD0;&#x7EF4;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;&#x884C;</li>
+</ul>
+<h2 id="sql-client">sql client</h2>
+<h3 id="&#x8FDB;&#x5165;sql-client">&#x8FDB;&#x5165;sql client</h3>
+<pre><code># &#x53EF;&#x4EE5;&#x5C06;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x8F93;&#x51FA;&#x5230;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#xFF0C;&#x907F;&#x514D;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x8BA9;&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x51FA;&#x5230;&#x547D;&#x4EE4;&#x884C;
+./bin/fedb  --zk_cluster=xxxx --zk_root_path=xxx --role=sql_client 2&gt;/dev/null
+  ______   _____  ___
+ |  ____|  |  __ \|  _ \
+ | |__ ___ | |  | | |_) |
+ |  __/ _  \ |  | |  _ &lt;
+ | | |  __ / |__| | |_) |
+ |_|  \___||_____/|____/
+
+v2.0.0.0
+xxxx/&gt;
+</code></pre><p><strong>&#x6CE8;&#xFF1A; cli&#x9ED8;&#x8BA4;&#x4EE5;&#x5206;&#x53F7;&#x5224;&#x65AD;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#xFF0C;&#x5F53;&#x8BED;&#x53E5;&#x4E2D;&#x6709;&#x5206;&#x53F7;&#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x5206;&#x884C;&#x8F93;&#x5165;</strong></p>
+<h2 id="sql&#x8BED;&#x6CD5;"><a href="sql.html">sql&#x8BED;&#x6CD5;</a></h2>
+<ul>
+<li><a href="#ddl">DDL&#x793A;&#x4F8B;</a></li>
+<li><a href="#dml">DML&#x793A;&#x4F8B;</a></li>
+<li><a href="#dql">DQL&#x793A;&#x4F8B;</a></li>
+</ul>
+<h2 id="ddl">DDL&#x793A;&#x4F8B;</h2>
+<ul>
+<li>database<ul>
+<li><a href="#create-database">create database</a> &#x521B;&#x5EFA;database</li>
+<li><a href="#show-databases">show databases</a> &#x663E;&#x793A;&#x6240;&#x6709;database</li>
+<li><a href="#use-database">use database</a> &#x5207;&#x6362;database</li>
+<li><a href="#drop-database">drop database</a> &#x5220;&#x9664;database</li>
+</ul>
+</li>
+<li>table <ul>
+<li><a href="#create-table">create table</a> &#x521B;&#x5EFA;&#x8868;</li>
+<li><a href="#show-tables">show tables</a> &#x663E;&#x793A;&#x6240;&#x6709;&#x8868;</li>
+<li><a href="#desc-table">desc table</a> &#x663E;&#x793A;&#x67D0;&#x5F20;&#x8868;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</li>
+<li><a href="#drop-table">drop table</a> &#x5220;&#x9664;&#x8868;</li>
+</ul>
+</li>
+<li>procedure<ul>
+<li><a href="#create-procedure">create procedure</a> &#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</li>
+<li><a href="#show-procedure-status">show procedure status</a> &#x663E;&#x793A;&#x6240;&#x6709;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</li>
+<li><a href="#show-create-procedure">show create procedure</a> &#x663E;&#x793A;&#x67D0;&#x4E2A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</li>
+<li><a href="#drop-procedure">drop procedure</a> &#x5220;&#x9664;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</li>
+</ul>
+</li>
+</ul>
+<h3 id="create-database">create database </h3>
+<pre><code>&gt; create database mydb;
+Create database success
+</code></pre><h3 id="show-databases">show databases </h3>
+<pre><code>&gt; show databases;
+ ------------
+  Databases
+ ------------
+  mydb
+ ------------
+1 rows in set
+</code></pre><h3 id="use-database">use database </h3>
+<pre><code>&gt; use mydb;
+Database changed
+</code></pre><h3 id="drop-database">drop database </h3>
+<pre><code>&gt; drop database mydb;
+drop ok
+</code></pre><h3 id="create-table">create table</h3>
+<h4 id="&#x793A;&#x4F8B;1&#xFF1A;create-table-&#x6307;&#x5B9A;replica-num">&#x793A;&#x4F8B;1&#xFF1A;create table &#x6307;&#x5B9A;replica num</h4>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; create table t1(
+&gt; col1 string,
+&gt; col2 timestamp,
+&gt; col3 double,
+&gt; index(key=col1, ts=col2)) replicanum=2;
+</code></pre><ul>
+<li>note: &#x526F;&#x672C;&#x6570;&#x4E0D;&#x80FD;&#x5927;&#x4E8E;&#x673A;&#x5668;&#x8282;&#x70B9;&#x6570;&#x3002;  </li>
+</ul>
+<h4 id="&#x793A;&#x4F8B;2&#xFF1A;create-table-&#x6307;&#x5B9A;replica-num-&#x5E76;&#x4E14;&#x6307;&#x5B9A;&#x4E3B;&#x4ECE;&#x8282;&#x70B9;&#x5206;&#x5E03;">&#x793A;&#x4F8B;2&#xFF1A;create table &#x6307;&#x5B9A;replica num, &#x5E76;&#x4E14;&#x6307;&#x5B9A;&#x4E3B;&#x4ECE;&#x8282;&#x70B9;&#x5206;&#x5E03;</h4>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; create table t1(
+&gt; col1 string,
+&gt; col2 timestamp,
+&gt; col3 double,
+&gt; index(key=col1, ts=col2)) replicanum=2, distribution(leader=&apos;172.27.128.37:9542&apos;, follower=&apos;172.27.128.37:9543&apos;);
+</code></pre><ul>
+<li>note: &#x8282;&#x70B9;&#x7684;endpoint&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5F15;&#x53F7;&#xFF1B;&#x5206;&#x5E03;&#x8282;&#x70B9;&#x7684;endpoint &#x4E0D;&#x80FD;&#x91CD;&#x590D;&#xFF1B;replica_num&#x548C;&#x5206;&#x5E03;&#x8282;&#x70B9;&#x6570;&#x987B;&#x76F8;&#x7B49;&#x3002; </li>
+</ul>
+<h3 id="show-tables">show tables </h3>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; show tables;
+ --------
+  Tables
+ --------
+  t1
+ --------
+</code></pre><h3 id="desc-table">desc table </h3>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; desc t1;
+ --- ------- ------------ ------
+  #   Field   Type         Null
+ --- ------- ------------ ------
+  1   col1    kVarchar     YES
+  2   col2    kTimestamp   YES
+  3   col3    kDouble      YES
+ --- ------- ------------ ------
+ --- -------------------- ------ ------ ----- -----------
+  #   name                 keys   ts     ttl   ttl_type
+ --- -------------------- ------ ------ ----- -----------
+  1   INDEX_0_1611828127   col1   col2   0     kAbsolute
+ --- -------------------- ------ ------ ----- -----------
+</code></pre><h3 id="drop-table">drop table </h3>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; drop table trans;
+Drop table trans? yes/no
+yes
+drop ok
+</code></pre><h3 id="create-procedure">create procedure</h3>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; create table trans(c1 string,
+&gt; c3 int,
+&gt; c4 bigint,
+&gt; c5 float,
+&gt; c6 double,
+&gt; c7 timestamp,
+&gt; c8 date,
+&gt; index(key=c1, ts=c7));
+
+&gt; CREATE PROCEDURE sp (CONST c1 string, CONST c3 int, c4 bigint, c5 float, c6 double, c7 timestamp, c8 date)
+&gt; BEGIN
+&gt; SELECT c1, c3, sum(c4) OVER w1 AS w1_c4_sum FROM trans WINDOW w1 AS (PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW); END;
+</code></pre><p><strong>&#x6CE8;&#xFF1A; &#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x65F6;&#xFF0C;&#x591A;&#x4E2A;&#x5206;&#x53F7;&#x5FC5;&#x987B;&#x5728;&#x540C;&#x4E00;&#x884C;</strong></p>
+<h3 id="show-procedure-status">show procedure status </h3>
+<pre><code>&gt; show procedure status;
+ ------------ -------
+  DB           SP
+ ------------ -------
+  mydb         sp
+ ------------ -------
+1 rows in set
+</code></pre><h3 id="show-create-procedure">show create procedure </h3>
+<h4 id="&#x793A;&#x4F8B;1-&#x9700;&#x8981;&#x5148;use-database">&#x793A;&#x4F8B;1: &#x9700;&#x8981;&#x5148;use database</h4>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; show create procedure sp;
+ ------- ----
+  DB      SP
+ ------- ----
+  mydb1   sp
+ ------- ----
+1 row in set
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  SQL
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CREATE PROCEDURE sp (CONST c1 string, CONST c3 int, c4 bigint, c5 float, c6 double, c7 timestamp, c8 date)
+BEGIN
+    SELECT c1, c3, sum(c4) OVER w1 AS w1_c4_sum FROM trans WINDOW w1 AS (PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW); END;
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1 row in set
+ --- ------- ------------ ------------
+  #   Field   Type         IsConstant
+ --- ------- ------------ ------------
+  1   c1      kVarchar     YES
+  2   c3      kInt32       YES
+  3   c4      kInt64       NO
+  4   c5      kFloat       NO
+  5   c6      kDouble      NO
+  6   c7      kTimestamp   NO
+  7   c8      kDate        NO
+ --- ------- ------------ ------------
+
+ --- ----------- ---------- ------------
+  #   Field       Type       IsConstant
+ --- ----------- ---------- ------------
+  1   c1          kVarchar   NO
+  2   c3          kInt32     NO
+  3   w1_c4_sum   kInt64     NO
+ --- ----------- ---------- ------------
+</code></pre><p><strong>&#x7ED3;&#x679C;&#x4E2D;4&#x9879;&#x5206;&#x522B;&#x8868;&#x793A;&#x5982;&#x4E0B;&#x542B;&#x4E49;&#xFF1A;</strong></p>
+<ul>
+<li>db_name&#x548C;sp_name&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</li>
+<li>&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;select sql</li>
+<li>&#x4E3B;&#x8868;schema(&#x5373;&#x8F93;&#x5165;schema)</li>
+<li>&#x8F93;&#x51FA;schema</li>
+</ul>
+<h4 id="&#x793A;&#x4F8B;2-&#x4E0D;&#x9700;&#x8981;&#x5148;use-database">&#x793A;&#x4F8B;2: &#x4E0D;&#x9700;&#x8981;&#x5148;use database</h4>
+<pre><code>&gt; show create procedure mydb.sp;
+ ------- ----
+  DB      SP
+ ------- ----
+  mydb1   sp
+ ------- ----
+1 row in set
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  SQL
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  CREATE PROCEDURE sp (CONST c1 string, CONST c3 int, c4 bigint, c5 float, c6 double, c7 timestamp, c8 date)
+BEGIN
+    SELECT c1, c3, sum(c4) OVER w1 AS w1_c4_sum FROM trans WINDOW w1 AS (PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW); END;
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1 row in set
+ --- ------- ------------ ------------
+  #   Field   Type         IsConstant
+ --- ------- ------------ ------------
+  1   c1      kVarchar     YES
+  2   c3      kInt32       YES
+  3   c4      kInt64       NO
+  4   c5      kFloat       NO
+  5   c6      kDouble      NO
+  6   c7      kTimestamp   NO
+  7   c8      kDate        NO
+ --- ------- ------------ ------------
+
+ --- ----------- ---------- ------------
+  #   Field       Type       IsConstant
+ --- ----------- ---------- ------------
+  1   c1          kVarchar   NO
+  2   c3          kInt32     NO
+  3   w1_c4_sum   kInt64     NO
+ --- ----------- ---------- ------------
+</code></pre><h3 id="drop-procedure">drop procedure </h3>
+<pre><code>&gt; use mydb;
+Database changed
+&gt; drop procedure sp;
+Drop store procedure sp? yes/no
+yes
+drop ok
+</code></pre><h2 id="dml">DML&#x793A;&#x4F8B;</h2>
+<h3 id="insert">insert</h3>
+<pre><code>&gt;insert into trans (c1, c3) values(&apos;sss&apos;, 22);
+
+&gt;insert into trans values(&quot;aa&quot;,23,33,1.4,2.4,1590738993000, &quot;2020-05-04&quot;);
+</code></pre><h2 id="dql">DQL&#x793A;&#x4F8B;</h2>
+<h3 id="select">select</h3>
+<pre><code>&gt; select * from trans;
+ ----- ---- ---- ---------- ---------- --------------- ----------
+  c1    c3   c4   c5         c6         c7              c8
+ ----- ---- ---- ---------- ---------- --------------- ----------
+  aa    23   33   1.400000   2.400000   1590738993000   2020-5-4
+  aa    23   33   1.400000   2.400000   1590738993000   2020-5-4
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="sql/dql.html" class="navigation navigation-prev " aria-label="Previous page: DQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sql_java_sdk.html" class="navigation navigation-next " aria-label="Next page: fedb java sdk">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"fedb cli","level":"1.4","depth":1,"next":{"title":"fedb java sdk","level":"1.5","depth":1,"path":"sql_java_sdk.md","ref":"sql_java_sdk.md","articles":[]},"previous":{"title":"DQL","level":"1.3.3","depth":2,"path":"sql/dql.md","ref":"sql/dql.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sql_cli.md","mtime":"2021-02-01T09:05:44.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-29T06:52:15.019Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

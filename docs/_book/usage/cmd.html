@@ -1,0 +1,2446 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>命令行 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="java.html" />
+    
+    
+    <link rel="prev" href="../usage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    FEDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../install.html">
+            
+                <a href="../install.html">
+            
+                    
+                    部署安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../install/env.html">
+            
+                <a href="../install/env.html">
+            
+                    
+                    配置机器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../install/fedb_quick_deploy.html">
+            
+                <a href="../install/fedb_quick_deploy.html">
+            
+                    
+                    一键部署RTIDB集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../install/zk.html">
+            
+                <a href="../install/zk.html">
+            
+                    
+                    部署zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../install/fedb_deploy.html">
+            
+                <a href="../install/fedb_deploy.html">
+            
+                    
+                    部署RTIDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../install/conf.html">
+            
+                <a href="../install/conf.html">
+            
+                    
+                    配置文件详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../install/dir.html">
+            
+                <a href="../install/dir.html">
+            
+                    
+                    目录介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../install/checklist.html">
+            
+                <a href="../install/checklist.html">
+            
+                    
+                    部署后checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../install/sageone.html">
+            
+                <a href="../install/sageone.html">
+            
+                    
+                    一体机部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../sql.html">
+            
+                <a href="../sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../sql/ddl.html">
+            
+                <a href="../sql/ddl.html">
+            
+                    
+                    DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../sql/dml.html">
+            
+                <a href="../sql/dml.html">
+            
+                    
+                    DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sql/dql.html">
+            
+                <a href="../sql/dql.html">
+            
+                    
+                    DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../sql_cli.html">
+            
+                <a href="../sql_cli.html">
+            
+                    
+                    fedb cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../sql_java_sdk.html">
+            
+                <a href="../sql_java_sdk.html">
+            
+                    
+                    fedb java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../usage.html">
+            
+                <a href="../usage.html">
+            
+                    
+                    老的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="cmd.html">
+            
+                <a href="cmd.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="java.html">
+            
+                <a href="java.html">
+            
+                    
+                    java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    python sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    返回码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="importer.html">
+            
+                <a href="importer.html">
+            
+                    
+                    导入工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    RTIDB运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ops/monitor.html">
+            
+                <a href="../ops/monitor.html">
+            
+                    
+                    RTIDB监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../weekly_reports.html">
+            
+                <a href="../weekly_reports.html">
+            
+                    
+                    周报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >命令行</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>RTIDB&#x547D;&#x4EE4;&#x884C;&#x6709;3&#x79CD;client: tablet client&#xFF0C;ns client&#x548C;bs client, &#x5206;&#x522B;&#x8FDE;&#x5230;&#x4E0D;&#x540C;&#x7684;server. &#x7531;&#x542F;&#x52A8;&#x65F6;&#x7684;--role&#x6765;&#x6307;&#x5B9A;</p>
+<ul>
+<li><a href="#ns-client">ns client</a></li>
+<li><a href="#tablet-client">tablet client</a></li>
+<li><a href="#bs-client">bs client</a></li>
+</ul>
+<h1 id="ns-client">NS Client </h1>
+<p>&#x8FDE;&#x63A5;&#x5230;ns client &#x9700;&#x8981;&#x6307;&#x5B9A;zk_cluster&#x3001;zk_root_path&#x548C;role&#x3002;&#x5176;&#x4E2D;zk_cluster&#x662F;zk&#x5730;&#x5740;&#xFF0C;zk_root_path&#x662F;&#x96C6;&#x7FA4;&#x5728;zk&#x7684;&#x6839;&#x8DEF;&#x5F84;</p>
+<pre><code class="lang-bash">$ ./bin/rtidb --zk_cluster=172.27.2.52:12200 --zk_root_path=/onebox --role=ns_client
+</code></pre>
+<ul>
+<li><a href="#addindex">addindex</a> &#x589E;&#x52A0;&#x7D22;&#x5F15;</li>
+<li><a href="#addrepcluster">addrepcluster</a>  &#x6DFB;&#x52A0;&#x4ECE;&#x96C6;&#x7FA4;</li>
+<li><a href="#addreplica">addreplica</a> &#x6DFB;&#x52A0;&#x526F;&#x672C;</li>
+<li><a href="#addtablefield">addtablefield</a> &#x52A8;&#x6001;&#x589E;&#x52A0;schema&#x5217;</li>
+<li><a href="#cancelop">cancelop</a> &#x53D6;&#x6D88;&#x64CD;&#x4F5C;</li>
+<li><a href="#changeleader">changeleader</a> &#x5206;&#x7247;&#x4E3B;&#x4ECE;&#x5207;&#x6362;</li>
+<li><a href="#confset">confset</a> &#x4FEE;&#x6539;&#x914D;&#x7F6E;</li>
+<li><a href="#confget">confget</a> &#x83B7;&#x53D6;&#x914D;&#x7F6E;</li>
+<li><a href="#count">count</a> &#x7EDF;&#x8BA1;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</li>
+<li><a href="#create">create</a> &#x521B;&#x5EFA;&#x8868;</li>
+<li><a href="#showtable">showtable</a> &#x67E5;&#x770B;&#x8868;&#x4FE1;&#x606F;</li>
+<li><a href="#showschema">showschema</a> &#x67E5;&#x770B;&#x8868;schema</li>
+<li><a href="#delete">delete</a> &#x5220;&#x9664;pk</li>
+<li><a href="#deleteindex">deleteindex</a> &#x5220;&#x9664;&#x7D22;&#x5F15;</li>
+<li><a href="#delreplica">delreplica</a> &#x5220;&#x9664;&#x526F;&#x672C;</li>
+<li><a href="#drop">drop</a> &#x5220;&#x9664;&#x8868;</li>
+<li><a href="#exit">exit</a> &#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</li>
+<li><a href="#get">get</a> &#x67E5;&#x8BE2;&#x5355;&#x6761;&#x6570;&#x636E;</li>
+<li><a href="#gettablepartition">gettablepartition</a> &#x5BFC;&#x51FA;&#x5206;&#x7247;&#x6570;&#x636E;&#x4FE1;&#x606F;</li>
+<li><a href="#help">help</a> &#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</li>
+<li><a href="#info">info</a> &#x67E5;&#x770B;&#x8868;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</li>
+<li><a href="#makesnapshot">makesnapshot</a> &#x4EA7;&#x751F;snapshot</li>
+<li><a href="#man">man</a> &#x83B7;&#x53D6;&#x5E2E;&#x7EC4;&#x4FE1;&#x606F;</li>
+<li><a href="#migrate">migrate</a> &#x526F;&#x672C;&#x8FC1;&#x79FB;</li>
+<li><a href="#offlineendpoint">offlineendpoint</a> &#x4E0B;&#x7EBF;&#x8282;&#x70B9;</li>
+<li><a href="#put">put</a> &#x63D2;&#x5165;&#x6570;&#x636E;</li>
+<li><a href="#preview">preview</a> &#x6570;&#x636E;&#x9884;&#x89C8;</li>
+<li><a href="#quit">quit</a> &#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</li>
+<li><a href="#scan">scan</a> &#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x6570;&#x636E;</li>
+<li><a href="#settablepartition">settablepartition</a> &#x4FEE;&#x6539;&#x5206;&#x7247;&#x6570;&#x636E;&#x4FE1;&#x606F;</li>
+<li><a href="#setttl">setttl</a> &#x4FEE;&#x6539;ttl</li>
+<li><a href="#showns">showns</a> &#x663E;&#x793A;nameserver&#x8282;&#x70B9;&#x548C;&#x89D2;&#x8272;</li>
+<li><a href="#showopstatus">showopstatus</a> &#x663E;&#x793A;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x4FE1;&#x606F;</li>
+<li><a href="#switchmode">switchmode</a> &#x5207;&#x6362;&#x96C6;&#x7FA4;&#x72B6;&#x6001;</li>
+<li><a href="#showrepcluster">showrepcluster</a> &#x67E5;&#x770B;&#x4ECE;&#x96C6;&#x7FA4;&#x4FE1;&#x606F;</li>
+<li><a href="#showtablet">showtablet</a> &#x67E5;&#x770B;tablet&#x4FE1;&#x606F;</li>
+<li><a href="#synctable">synctable</a> &#x624B;&#x52A8;&#x540C;&#x6B65;&#x4E3B;&#x4ECE;&#x96C6;&#x7FA4;&#x8868;</li>
+<li><a href="#recoverendpoint">recoverendpoint</a> &#x6062;&#x590D;&#x8282;&#x70B9;&#x6570;&#x636E;</li>
+<li><a href="#removerepcluster">removerepcluster</a> &#x5220;&#x9664;&#x4ECE;&#x96C6;&#x7FA4;</li>
+<li><a href="#recovertable">recovertable</a> &#x6062;&#x590D;&#x5206;&#x7247;&#x6570;&#x636E;</li>
+<li><a href="#updatetablealive">updatetablealive</a> &#x4FEE;&#x6539;&#x5206;&#x7247;alive&#x72B6;&#x6001;</li>
+<li><a href="#update">update</a> &#x66F4;&#x65B0;relation&#x8868;&#x6570;&#x636E;</li>
+<li><a href="#query">query</a> &#x67E5;&#x8BE2;relation&#x8868;&#x6570;&#x636E; </li>
+<li><a href="#showblobserver">showblobserver</a> &#x67E5;&#x770B;blobserver&#x4FE1;&#x606F; </li>
+<li><a href="#setsdkendpoint">setsdkendpoint</a> &#x8BBE;&#x7F6E;server&#x7684;sdkendpoint </li>
+<li><a href="#showsdkendpoint">showsdkendpoint</a> &#x663E;&#x793A;server&#x7684;sdkendpoint </li>
+</ul>
+<h3 id="create">create </h3>
+<p>&#x521B;&#x5EFA;&#x8868;&#x6709;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#x548C;&#x8868;&#x5143;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</p>
+<h5 id="1-&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;">1 &#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: create table_name ttl partition_num replica_num [colum_name1:type:index colum_name2:type ...]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>ttl &#x8BBE;&#x7F6E;ttl&#x3002;&#x5982;&#x679C;absolute&#x8868;&#xFF0C;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;ttl&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;&#x662F;&#x5206;&#x949F;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;0&#x8868;&#x793A;&#x4E0D;&#x8FC7;&#x671F;&#x3002;&#x5982;&#x679C;&#x521B;&#x5EFA;latest&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;latest:num&#xFF0C;&#x5176;&#x4E2D;&#x5192;&#x53F7;&#x540E;&#x9762;&#x7684;&#x6570;&#x5B57;&#x4E3A;&#x4E00;&#x4E2A;key&#x4E0B;&#x4FDD;&#x7559;&#x7684;&#x6700;&#x5927;&#x8BB0;&#x5F55;&#x6761;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x521B;&#x5EFA;absandlat&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;absandlat:abs_ttl:lat_ttl&#xFF0C;abs_ttl&#x540C;absolute&#x8868;&#x7684;ttl&#xFF0C;lat_ttl&#x540C;latest&#x8868;&#x7684;num&#xFF0C;&#x53EA;&#x6709;&#x65E2;&#x8D85;&#x8FC7;&#x65F6;&#x95F4;&#x9650;&#x5236;&#x53C8;&#x8D85;&#x8FC7;&#x6761;&#x6570;&#x9650;&#x5236;&#x7684;&#x6570;&#x636E;&#x624D;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;&#x5982;&#x679C;&#x521B;&#x5EFA;absorlat&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;absorlat:abs_ttl:lat_ttl&#xFF0C;abs_ttl&#x548C;lat_ttl&#x7684;&#x89E3;&#x91CA;&#x540C;absandlat&#x8868;&#xFF0C;&#x8D85;&#x8FC7;&#x65F6;&#x95F4;&#x9650;&#x5236;&#x6216;&#x662F;&#x6761;&#x6570;&#x9650;&#x5236;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;absandlat&#x4EE5;&#x53CA;absorlat&#x8FD9;&#x4E24;&#x79CD;ttl&#x7C7B;&#x578B;&#x5F53;&#x524D;&#x7248;&#x672C;&#x53EA;&#x652F;&#x6301;&#x5185;&#x5B58;&#x8868;</li>
+<li>partition_num &#x5206;&#x7247;&#x6570;&#x76EE;</li>
+<li>replica_num &#x526F;&#x672C;&#x6570;</li>
+<li>schema(&#x53EF;&#x9009;)  &#x683C;&#x5F0F;&#x4E3A; colum_name:type[:index]&#xFF0C;&#x591A;&#x5217;&#x4E4B;&#x95F4;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x5272;&#x3002;&#x652F;&#x6301;&#x7684;type&#x6709;int16, uint16, int32, uint32, int64, uint64, float, double, string, bool, date, timestamp&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E00;&#x5217;&#x662F;index&#xFF0C;&#x5219;&#x6CE8;&#x660E;&#x4E3A;index<ul>
+<li>card:string:index    &#x5217;&#x540D;&#x4E3A;card&#xFF0C;&#x7C7B;&#x578B;&#x662F;string&#xFF0C;&#x8FD9;&#x4E00;&#x5217;&#x662F;index. float&#x548C;double&#x5217;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;&#x4E3A;index</li>
+<li>money:float    &#x5217;&#x540D;&#x662F;money, &#x7C7B;&#x578B;&#x662F;float</li>
+</ul>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;1: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test1&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x662F;absolute, ttl&#x5927;&#x5C0F;&#x662F;144000&#x5206;&#x949F;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;8&#xFF0C;&#x4E09;&#x526F;&#x672C;</p>
+<pre><code>&gt; create test1 144000 8 3
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;2: &#x521B;&#x5EFA;test2&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;latest, ttl&#x5927;&#x5C0F;&#x4E3A;1&#x4FDD;&#x7559;&#x6700;&#x8FD1;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;&#x526F;&#x672C;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;2</p>
+<pre><code>&gt; create test2 latest:1 1 2
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;3: &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test3&#x7684;&#x6709;schema&#x7684;&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;absolute, ttl&#x5927;&#x5C0F;&#x662F;100&#x5206;&#x949F;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;8&#xFF0C;&#x526F;&#x672C;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;&#x6709;&#x4E09;&#x5217;&#x5206;&#x522B;&#x4E3A;card&#x3001;mcc&#x548C;money&#xFF0C;card&#x548C;mcc&#x662F;index&#x7C7B;&#x578B;&#x662F;string&#xFF0C;money&#x7684;&#x7C7B;&#x578B;&#x4E3A;float</p>
+<pre><code class="lang-bash">&gt; create <span class="hljs-built_in">test</span>3 100 8 1 card:string:index mcc:string:index money:<span class="hljs-built_in">float</span>
+</code></pre>
+<p>&#x793A;&#x4F8B;4&#xFF1A;&#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test4&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;absandlat&#xFF0C;abs_ttl&#x8BBE;&#x7F6E;&#x4E3A;60&#x5206;&#x949F;&#xFF0C;lat_ttl&#x8BBE;&#x7F6E;&#x4E3A;10&#x6761;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;8&#xFF0C;&#x526F;&#x672C;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;</p>
+<pre><code>&gt; create test4 absandlat:60:10 8 1
+</code></pre><p>&#x793A;&#x4F8B;5&#xFF1A;&#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test5&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;absorlat&#xFF0C;abs_ttl&#x8BBE;&#x7F6E;&#x4E3A;1440&#x5206;&#x949F;&#xFF0C;lat_ttl&#x8BBE;&#x7F6E;&#x4E3A;100&#x6761;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;4&#xFF0C;&#x526F;&#x672C;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;3</p>
+<pre><code>&gt; create test5 absorlat:1440:100 8 1
+</code></pre><p>&#x521B;&#x5EFA;&#x8868;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7EAF;&#x7CB9;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#x548C;&#x8868;&#x5143;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x65B9;&#x5F0F;</p>
+<h5 id="2-&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x65B9;&#x5F0F;">2 &#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x65B9;&#x5F0F;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: create table_meta_file_path</p>
+<ul>
+<li>table_meta_file_path &#x6307;&#x5B9A;&#x8868;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+</ul>
+<p>&#x8868;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5982;&#x4E0B;:</p>
+<pre><code>name : &quot;test&quot;               #&#x8868;&#x540D; &#x6CE8;&#x610F;&#x52A0;&#x53CC;&#x5F15;&#x53F7;
+ttl_type : &quot;kAbsoluteTime&quot;  #&#x6307;&#x5B9A;ttl&#x7C7B;&#x578B;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x9ED8;&#x8BA4;&#x4E3A;absolute&#x3002;&#x5982;&#x679C;&#x8981;&#x521B;&#x5EFA;latest&#x8868;&#x9700;&#x6307;&#x5B9A;&#x4E3A;latest&#x6216;&#x8005;kLatestTime
+ttl: 144000                 #ttl&#x5927;&#x5C0F;, &#x53EA;&#x5BF9;absolute&#x548C;latest&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x751F;&#x6548;, &#x5982;&#x679C;ttl_type&#x662F;absolute&#x8868;&#x793A;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x5355;&#x4F4D;&#x662F;&#x5206;&#x949F;, &#x5982;&#x679C;ttl_type&#x662F;latest&#x8868;&#x793A;&#x4FDD;&#x7559;&#x7684;&#x6700;&#x5927;&#x8BB0;&#x5F55;&#x6761;&#x6570;, &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;ttl_desc&#x5B57;&#x6BB5;&#x5219;&#x5FFD;&#x7565;&#x6B64;&#x5B57;&#x6BB5;
+ttl_desc {                  #ttl&#x5927;&#x5C0F;, &#x5BF9;absolute&#x3001;latest&#x3001;absandlat&#x3001;absorlat&#x56DB;&#x79CD;ttl&#x7C7B;&#x578B;&#x90FD;&#x6709;&#x6548;&#xFF0C;&#x5F53;ttl_desc&#x548C;ttl&#x540C;&#x65F6;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;ttl_desc&#x4F1A;&#x8986;&#x76D6;ttl
+  abs_ttl: 30               #&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x949F;&#xFF0C;&#x5982;&#x679C;ttl_type&#x4E3A;latest&#x4F1A;&#x5FFD;&#x7565;&#x8BE5;&#x5B57;&#x6BB5;
+  lat_ttl: 0               #&#x8FC7;&#x671F;&#x6761;&#x6570;&#xFF0C;&#x5982;&#x679C;ttl_type&#x4E3A;absolute&#x4F1A;&#x5FFD;&#x7565;&#x8BE5;&#x5B57;&#x6BB5;
+}
+partition_num: 8            #&#x6307;&#x5B9A;&#x5206;&#x7247;&#x6570;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x9ED8;&#x8BA4;&#x5206;&#x7247;&#x6570;&#x662F;8
+replica_num: 3              #&#x6307;&#x5B9A;&#x526F;&#x672C;&#x6570;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x9ED8;&#x8BA4;&#x526F;&#x672C;&#x6570;&#x662F;3&#x3002;&#x526F;&#x672C;&#x6570;&#x8868;&#x793A;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x591A;&#x5C11;&#x4EFD;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;3&#x8868;&#x793A;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x4E09;&#x4EFD;, &#x4E00;&#x4E3B;&#x4E24;&#x4ECE;&#x6A21;&#x5F0F;
+compress_type: &quot;snappy&quot;     #&#x6307;&#x5B9A;&#x538B;&#x7F29;&#x7C7B;&#x578B;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x9ED8;&#x8BA4;&#x4E0D;&#x538B;&#x7F29;&#x6570;&#x636E;&#x3002;&#x53D6;&#x503C;&#x4E3A;[nocompress, snappy]
+storage_mode: &quot;kMemory&quot;     #&#x8868;&#x7684;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x662F;kMemory. &#x53D6;&#x503C;&#x4E3A;[kMemory, kSSD, kHDD]. &#x5F53;&#x524D;&#x7248;&#x672C;&#x53EA;&#x6709;KMemory&#x652F;&#x6301;absandlat&#x548C;absorlat&#x4E24;&#x79CD;ttl&#x7C7B;&#x578B;
+key_entry_max_height: 8     #&#x6307;&#x5B9A;&#x7B2C;&#x4E8C;&#x5C42;skiplist&#x7684;&#x6700;&#x5927;&#x9AD8;&#x5EA6;, &#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;. absolute&#x8868;&#x9ED8;&#x8BA4;&#x662F;4, latest&#x8868;&#x9ED8;&#x8BA4;&#x4E3A;1
+#partition_key: &quot;mcc&quot;        #&#x6307;&#x5B9A;partition key, &#x5982;&#x679C;&#x6709;&#x591A;&#x5217;&#x4E00;&#x8D77;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;partition key&#x5C31;&#x518D;&#x6DFB;&#x52A0;&#x8FD9;&#x4E48;&#x4E00;&#x884C;
+column_desc {               #column_desc&#x6307;&#x5B9A;schema&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x662F;kv&#x8868;&#x4E0D;&#x7528;&#x8BBE;&#x7F6E;column_desc
+  name : &quot;card&quot;             #&#x6307;&#x5B9A;&#x5217;&#x540D;&#x4E3A;card
+  type : &quot;string&quot;           #&#x6307;&#x5B9A;&#x8FD9;&#x4E00;&#x5217;&#x7684;&#x7C7B;&#x578B;&#x4E3A;string&#x3002;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x7C7B;&#x578B;&#x6709;int32, uint32, int64, uint64, float, double, string, bool, date, timestamp
+  add_ts_idx : true         #&#x8BBE;&#x5B9A;&#x662F;&#x5426;&#x4E3A;&#x7D22;&#x5F15;&#x5217;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E3A;&#x7D22;&#x5F15;&#x5217;&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x8FD9;&#x4E00;&#x5217;&#x6765;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x3002;float&#x548C;double&#x5217;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;&#x4E3A;index
+}
+column_desc {               #&#x6709;&#x591A;&#x5C11;&#x5217;&#x5C31;&#x8BBE;&#x7F6E;&#x591A;&#x5C11;&#x4E2A;column_desc&#x7ED3;&#x6784;
+  name : &quot;mcc&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;amt&quot;
+  type : &quot;float&quot;
+  add_ts_idx : false
+}
+column_desc {
+  name : &quot;ts&quot;
+  type : &quot;int64&quot;
+  is_ts_col : true          #&#x8BBE;&#x5B9A;&#x662F;&#x5426;&#x4E3A;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E3A;&#x65F6;&#x95F4;&#x6233;&#x5217;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x8BE5;&#x65F6;&#x95F4;&#x6233;&#x7684;abs_ttl&#x4EE5;&#x53CA;lat_ttl&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;abs_ttl&#x4EE5;&#x53CA;lat_ttl&#x5219;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;ttl_desc&#x6216;&#x662F;ttl&#x6307;&#x5B9A;&#x7684;&#x503C;&#x3002;
+  abs_ttl : 10              #abs_ttl&#xFF0C;&#x6307;&#x5B9A;&#x8BE5;&#x65F6;&#x95F4;&#x6233;&#x4E0A;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x949F;&#xFF0C;&#x5BF9;&#x6240;&#x6709;ttl_type&#x90FD;&#x6709;&#x6548;
+  lat_ttl : 5               #lat_ttl&#xFF0C;&#x6307;&#x5B9A;&#x8BE5;&#x65F6;&#x95F4;&#x6233;&#x4E0A;&#x6700;&#x5C11;&#x4FDD;&#x7559;&#x6570;&#x636E;&#x7684;&#x6761;&#x6570;&#xFF0C;&#x5BF9;&#x6240;&#x6709;ttl_type&#x90FD;&#x6709;&#x6548;
+  ttl : 3                   #ttl&#x5927;&#x5C0F;&#xFF0C;&#x6307;&#x5B9A;&#x8BE5;&#x65F6;&#x95F4;&#x6233;&#x7684;ttl&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;ttl_type&#x4E3A;absolute&#x6216;latest&#x4E14;&#x8BE5;&#x65F6;&#x95F4;&#x6233;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;abs_ttl&#x6216;&#x662F;lat_ttl&#x65F6;&#x751F;&#x6548;
+}
+</code></pre><p>&#x8BBE;&#x7F6E;&#x597D;&#x8868;&#x6587;&#x4EF6;&#x540E;&#x8FD0;&#x884C;&#x521B;&#x5EFA;&#x547D;&#x4EE4;&#x5373;&#x53EF;&#x521B;&#x5EFA;&#x8868;</p>
+<pre><code>&gt; create table_file_path.txt
+</code></pre><p>&#x793A;&#x4F8B;1:  &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test1&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x662F;absolute, &#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4E3A;144000&#x5206;&#x949F;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;16&#xFF0C;&#x4E09;&#x526F;&#x672C;&#x3002;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x540D;&#x4E3A;test1.txt</p>
+<pre><code>name : &quot;test1&quot;
+ttl: 144000
+</code></pre><pre><code>&gt; create test1.txt
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;2: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test2&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x662F;latest, &#x4FDD;&#x7559;&#x6700;&#x8FD1;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;8&#xFF0C;&#x4E09;&#x526F;&#x672C;&#x3002;&#x540E;&#x9762;&#x793A;&#x4F8B;&#x7701;&#x7565;&#x4E86;&#x521B;&#x5EFA;&#x6B65;&#x9AA4;&#xFF0C;&#x53EA;&#x7ED9;&#x51FA;&#x8868;&#x6587;&#x4EF6;</p>
+<pre><code>name : &quot;test2&quot;
+ttl_type: &quot;latest&quot;
+ttl: 1
+partition_num: 8
+</code></pre><p>&#x793A;&#x4F8B;3: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test3&#x7684;kv&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x662F;absolute, &#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;, &#x6570;&#x636E;&#x7528;snappy&#x538B;&#x7F29;&#xFF0C;&#x5206;&#x7247;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;8&#xFF0C;&#x4E24;&#x526F;&#x672C;</p>
+<pre><code>name : &quot;test3&quot;
+ttl: 0
+partition_num: 8
+replica_num: 2
+compress_type: &quot;snappy&quot;
+</code></pre><p>&#x793A;&#x4F8B;4: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test4&#x7684;&#x6709;schema&#x7684;&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x662F;absolute, &#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4E3A;120&#x5206;&#x949F;, &#x5206;&#x7247;&#x6570;&#x4E3A;16&#xFF0C;&#x4E09;&#x526F;&#x672C;&#xFF0C;&#x603B;&#x5171;&#x4E09;&#x5217;&#x5206;&#x522B;&#x4E3A;card&#x3001;mcc&#x3001;money&#xFF0C;&#x5176;&#x4E2D;card&#x548C;mcc&#x662F;&#x7D22;&#x5F15;&#x7EF4;&#x5EA6;&#x5217;&#x7C7B;&#x578B;&#x662F;string, money&#x5217;&#x7C7B;&#x578B;&#x662F;float</p>
+<pre><code>name : &quot;test4&quot;
+ttl: 120
+column_desc {
+  name : &quot;card&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;mcc&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;amt&quot;
+  type : &quot;float&quot;
+  add_ts_idx : false
+}
+</code></pre><p>&#x793A;&#x4F8B;5: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test5&#x7684;&#x6709;schema&#x7684;&#x8868;, &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x4E3A;ts1(&#x53EA;&#x6709;type&#x4E3A;int64,uint64&#x548C;timestamp&#x7684;&#x5217;&#x624D;&#x80FD;&#x6307;&#x5B9A;&#x4E3A;&#x65F6;&#x95F4;&#x6233;&#x5217;)</p>
+<pre><code>name : &quot;test5&quot;
+ttl: 120
+column_desc {
+  name : &quot;card&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;mcc&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;amt&quot;
+  type : &quot;float&quot;
+  add_ts_idx : false
+}
+column_desc {
+  name : &quot;ts1&quot;
+  type : &quot;int64&quot;
+  is_ts_col : true
+}
+</code></pre><p>&#x793A;&#x4F8B;6: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test6&#x8868;, &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x4E3A;ts1&#x548C;ts2, &#x5176;&#x4E2D;ts2&#x7684;ttl&#x4E3A;100. card&#x548C;mcc&#x4E3A;&#x7EC4;&#x5408;key&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x4E3A;ts1, card&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x4E3A;ts1&#x548C;ts2</p>
+<pre><code>name : &quot;test5&quot;
+ttl: 120
+column_desc {
+  name : &quot;card&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;mcc&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;amt&quot;
+  type : &quot;float&quot;
+}
+column_desc {
+  name : &quot;ts1&quot;
+  type : &quot;int64&quot;
+  is_ts_col : true
+}
+column_desc {
+  name : &quot;ts2&quot;
+  type : &quot;timestamp&quot;
+  is_ts_col : true
+  ttl : 100
+}
+column_key {
+  index_name : &quot;card_mcc&quot;
+  col_name : &quot;card&quot;
+  col_name : &quot;mcc&quot;
+  ts_name : &quot;ts1&quot;
+}
+column_key {
+  index_name : &quot;card&quot;
+  ts_name : &quot;ts1&quot;
+  ts_name : &quot;ts2&quot;
+}
+</code></pre><p>&#x793A;&#x4F8B;7: &#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;test7&#x8868;, &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x4E3A;ts1&#x548C;ts2, &#x5176;&#x4E2D;ts2&#x7684;abs_ttl&#x4E3A;30, lat_ttl&#x4E3A;6. card&#x548C;mcc&#x4E3A;&#x7EC4;&#x5408;key&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x4E3A;ts1, card&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x5217;&#x4E3A;ts1&#x548C;ts2</p>
+<pre><code>name : &quot;test5&quot;
+ttl_type : &quot;kAbsOrLat&quot;
+ttl_desc : {
+  abs_ttl : 10
+  lat_ttl : 10
+}
+column_desc {
+  name : &quot;card&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;mcc&quot;
+  type : &quot;string&quot;
+  add_ts_idx : true
+}
+column_desc {
+  name : &quot;amt&quot;
+  type : &quot;float&quot;
+}
+column_desc {
+  name : &quot;ts1&quot;
+  type : &quot;int64&quot;
+  is_ts_col : true
+}
+column_desc {
+  name : &quot;ts2&quot;
+  type : &quot;timestamp&quot;
+  is_ts_col : true
+  abs_ttl : 30
+  lat_ttl : 6
+}
+column_key {
+  index_name : &quot;card_mcc&quot;
+  col_name : &quot;card&quot;
+  col_name : &quot;mcc&quot;
+  ts_name : &quot;ts1&quot;
+}
+column_key {
+  index_name : &quot;card&quot;
+  ts_name : &quot;ts1&quot;
+  ts_name : &quot;ts2&quot;
+}
+</code></pre><p><strong>&#x6CE8;: latest&#x8868;&#x7684;ttl&#x4EE5;&#x53CA;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x8868;&#x7684;lat_ttl&#x6700;&#x5927;&#x4E3A;1000, absolute&#x8868;&#x7684;ttl&#x4EE5;&#x53CA;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x8868;&#x7684;abs_ttl&#x6700;&#x5927;&#x503C;&#x4E3A;30&#x5E74;(15768000)</strong></p>
+<p>&#x793A;&#x4F8B;8: &#x521B;&#x5EFA;relation&#x8868;</p>
+<pre><code>name : &quot;test1&quot;
+table_type : &quot;Relational&quot;
+column_desc {
+  name : &quot;id&quot;
+  type : &quot;bigint&quot;
+  not_null : true
+}
+column_desc {
+  name : &quot;attribute&quot;
+  type : &quot;varchar&quot;
+  not_null : true
+}
+column_desc {
+  name : &quot;image&quot;
+  type : &quot;varchar&quot;
+  not_null : false
+}
+index {
+  index_name : &quot;id&quot;
+  col_name : &quot;id&quot;
+  index_type : &quot;PrimaryKey&quot;
+}
+</code></pre><h3 id="showtable">showtable </h3>
+<p>showtable&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x8868;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x770B;&#x67D0;&#x4E00;&#x4E2A;&#x8868;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;showtable [table_name]</p>
+<pre><code>72.27.128.37:30857&gt; showtable
+  name      tid  pid  endpoint             role      ttl        is_alive  compress_type  offset   record_cnt  memused   diskused 
+-----------------------------------------------------------------------------------------------------------------------------------
+  test-s-1  29   0    172.27.128.37:30858  leader    30min&amp;&amp;10  yes       kNoCompress    1442994  343266      76.319 M  237.694 M
+  test-s-1  29   0    172.27.128.37:30859  follower  30min&amp;&amp;10  yes       kNoCompress    1442895  343352      76.338 M  237.694 M
+  test-s-1  29   0    172.27.128.37:30860  follower  30min&amp;&amp;10  yes       kNoCompress    1442877  343418      76.352 M  237.694 M
+  test-s-1  29   1    172.27.128.37:30858  follower  30min&amp;&amp;10  yes       kNoCompress    1440001  343284      76.308 M  237.182 M
+  test-s-1  29   1    172.27.128.37:30859  leader    30min&amp;&amp;10  yes       kNoCompress    1440001  342908      76.228 M  237.182 M
+  test-s-1  29   1    172.27.128.37:30860  follower  30min&amp;&amp;10  yes       kNoCompress    1440001  343301      76.311 M  237.182 M
+  test-s-1  29   2    172.27.128.37:30858  follower  30min&amp;&amp;10  yes       kNoCompress    1460078  347186      77.178 M  240.487 M
+  test-s-1  29   2    172.27.128.37:30859  follower  30min&amp;&amp;10  yes       kNoCompress    1460035  347026      77.144 M  240.488 M
+  test-s-1  29   2    172.27.128.37:30860  leader    30min&amp;&amp;10  yes       kNoCompress    1460158  347068      77.152 M  240.488 M
+  test-s-1  29   3    172.27.128.37:30858  leader    30min&amp;&amp;10  yes       kNoCompress    1449782  343961      76.477 M  238.842 M
+  test-s-1  29   3    172.27.128.37:30859  follower  30min&amp;&amp;10  yes       kNoCompress    1449631  343846      76.453 M  238.842 M
+  test-s-1  29   3    172.27.128.37:30860  follower  30min&amp;&amp;10  yes       kNoCompress    1449631  344032      76.492 M  238.841 M
+  test-s-2  30   0    172.27.128.37:30858  follower  30min||10  yes       kNoCompress    1444553  141663      31.969 M  237.939 M
+  test-s-2  30   0    172.27.128.37:30859  follower  30min||10  yes       kNoCompress    1444553  141333      31.901 M  237.939 M
+  test-s-2  30   0    172.27.128.37:30860  leader    30min||10  yes       kNoCompress    1444553  141331      31.901 M  237.941 M
+  test-s-2  30   1    172.27.128.37:30858  leader    30min||10  yes       kNoCompress    1440543  141203      31.868 M  237.238 M
+  test-s-2  30   1    172.27.128.37:30859  follower  30min||10  yes       kNoCompress    1440424  141084      31.844 M  237.237 M
+  test-s-2  30   1    172.27.128.37:30860  follower  30min||10  yes       kNoCompress    1440543  141620      31.954 M  237.238 M
+  test-s-2  30   2    172.27.128.37:30858  follower  30min||10  yes       kNoCompress    1460379  142778      32.227 M  240.617 M
+  test-s-2  30   2    172.27.128.37:30859  leader    30min||10  yes       kNoCompress    1460504  142472      32.164 M  240.617 M
+  test-s-2  30   2    172.27.128.37:30860  follower  30min||10  yes       kNoCompress    1460504  142965      32.266 M  240.617 M
+  test-s-2  30   3    172.27.128.37:30858  follower  30min||10  yes       kNoCompress    1447794  142055      32.060 M  238.426 M
+  test-s-2  30   3    172.27.128.37:30859  follower  30min||10  yes       kNoCompress    1447860  141881      32.024 M  238.427 M
+  test-s-2  30   3    172.27.128.37:30860  leader    30min||10  yes       kNoCompress    1447865  141892      32.026 M  238.427 M
+  test-s-3  31   0    172.27.128.37:30858  follower  30min      yes       kNoCompress    1445594  343640      76.399 M  238.098 M
+  test-s-3  31   0    172.27.128.37:30859  leader    30min      yes       kNoCompress    1445635  343013      76.265 M  238.098 M
+  test-s-3  31   0    172.27.128.37:30860  follower  30min      yes       kNoCompress    1445581  343710      76.414 M  238.097 M
+  test-s-3  31   1    172.27.128.37:30858  follower  30min      yes       kNoCompress    1441900  341722      75.980 M  237.566 M
+  test-s-3  31   1    172.27.128.37:30859  follower  30min      yes       kNoCompress    1441900  341297      75.890 M  237.566 M
+  test-s-3  31   1    172.27.128.37:30860  leader    30min      yes       kNoCompress    1442035  341790      75.995 M  237.566 M
+  test-s-3  31   2    172.27.128.37:30858  leader    30min      yes       kNoCompress    1459556  346687      77.076 M  240.404 M
+  test-s-3  31   2    172.27.128.37:30859  follower  30min      yes       kNoCompress    1459556  346409      77.017 M  240.403 M
+  test-s-3  31   2    172.27.128.37:30860  follower  30min      yes       kNoCompress    1459556  346953      77.132 M  240.404 M
+  test-s-3  31   3    172.27.128.37:30858  follower  30min      yes       kNoCompress    1447200  342764      76.230 M  238.391 M
+  test-s-3  31   3    172.27.128.37:30859  leader    30min      yes       kNoCompress    1447325  342233      76.117 M  238.392 M
+  test-s-3  31   3    172.27.128.37:30860  follower  30min      yes       kNoCompress    1447200  342877      76.254 M  238.391 M
+  test-s-4  32   0    172.27.128.37:30858  leader    10         yes       kNoCompress    1442523  140715      31.774 M  237.615 M
+  test-s-4  32   0    172.27.128.37:30859  follower  10         yes       kNoCompress    1442395  140354      31.699 M  237.615 M
+  test-s-4  32   0    172.27.128.37:30860  follower  10         yes       kNoCompress    1442471  141130      31.859 M  237.615 M
+  test-s-4  32   1    172.27.128.37:30858  follower  10         yes       kNoCompress    1440743  140737      31.772 M  237.341 M
+  test-s-4  32   1    172.27.128.37:30859  leader    10         yes       kNoCompress    1440896  139885      31.597 M  237.342 M
+  test-s-4  32   1    172.27.128.37:30860  follower  10         yes       kNoCompress    1440813  140779      31.781 M  237.342 M
+  test-s-4  32   2    172.27.128.37:30858  follower  10         yes       kNoCompress    1460389  142334      32.136 M  240.603 M
+  test-s-4  32   2    172.27.128.37:30859  follower  10         yes       kNoCompress    1460389  141706      32.006 M  240.604 M
+  test-s-4  32   2    172.27.128.37:30860  leader    10         yes       kNoCompress    1460549  142081      32.084 M  240.604 M
+  test-s-4  32   3    172.27.128.37:30858  leader    10         yes       kNoCompress    1449127  141192      31.882 M  238.692 M
+  test-s-4  32   3    172.27.128.37:30859  follower  10         yes       kNoCompress    1449127  140952      31.833 M  238.688 M
+  test-s-4  32   3    172.27.128.37:30860  follower  10         yes       kNoCompress    1449127  141576      31.961 M  238.688 M
+172.27.128.37:30857&gt; showtable test-s-3
+  name      tid  pid  endpoint             role      ttl    is_alive  compress_type  offset   record_cnt  memused   diskused 
+-------------------------------------------------------------------------------------------------------------------------------
+  test-s-3  31   0    172.27.128.37:30858  follower  30min  yes       kNoCompress    1460960  359006      79.631 M  238.098 M
+  test-s-3  31   0    172.27.128.37:30859  leader    30min  yes       kNoCompress    1461000  358378      79.497 M  238.098 M
+  test-s-3  31   0    172.27.128.37:30860  follower  30min  yes       kNoCompress    1460958  359087      79.648 M  238.097 M
+  test-s-3  31   1    172.27.128.37:30858  follower  30min  yes       kNoCompress    1457180  357002      79.193 M  237.566 M
+  test-s-3  31   1    172.27.128.37:30859  follower  30min  yes       kNoCompress    1457180  356577      79.102 M  237.566 M
+  test-s-3  31   1    172.27.128.37:30860  leader    30min  yes       kNoCompress    1457327  357082      79.209 M  237.566 M
+  test-s-3  31   2    172.27.128.37:30858  leader    30min  yes       kNoCompress    1475040  362171      80.329 M  240.404 M
+  test-s-3  31   2    172.27.128.37:30859  follower  30min  yes       kNoCompress    1474884  361737      80.237 M  240.403 M
+  test-s-3  31   2    172.27.128.37:30860  follower  30min  yes       kNoCompress    1474887  362284      80.354 M  240.404 M
+  test-s-3  31   3    172.27.128.37:30858  follower  30min  yes       kNoCompress    1462940  358504      79.539 M  238.391 M
+  test-s-3  31   3    172.27.128.37:30859  leader    30min  yes       kNoCompress    1462955  357863      79.403 M  238.392 M
+  test-s-3  31   3    172.27.128.37:30860  follower  30min  yes       kNoCompress    1462942  358619      79.564 M  238.391 M
+</code></pre><ul>
+<li><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> ssd/hdd&#x8868;&#x4E2D;&#x7684;recored_cnt&#x662F;&#x4E0D;&#x7CBE;&#x786E;&#x7EDF;&#x8BA1;&#xFF0C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;</li>
+</ul>
+<h3 id="addindex">addindex </h3>
+<p>&#x6DFB;&#x52A0;&#x7D22;&#x5F15;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: addindex table_name index_name [col_name] [ts_name]</p>
+<p>&#x591A;&#x4E2A;col &#x4F7F;&#x7528;&#x82F1;&#x6587;, &#x9694;&#x5F00;
+&#x5982;&#x679C;&#x7D22;&#x5F15;&#x5217;&#x5728;schema&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5728;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x6307;&#x5B9A;&#x7684;&#x5217;&#xFF0C;&#x4F46;&#x662F;&#x547D;&#x4EE4;&#x884C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x5217;&#x7C7B;&#x578B;&#xFF0C;&#x7D22;&#x5F15;&#x5217;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x4E3A;float &#x6216;&#x8005; double, &#x5217;&#x540D;&#x548C;&#x7C7B;&#x578B;&#x4F7F;&#x7528;&#x82F1;&#x6587;&#x5192;&#x53F7;:&#x9694;&#x5F00;</p>
+<p>&#x7C7B;&#x578B;: <code>int32 int64 uint32 uint64 float double string timestamp int16 uint16 bool date</code></p>
+<pre><code>&gt; addindex test1 mcc
+addindex ok
+&gt; addindex test1 id_ck id ts1
+addindex ok
+&gt; addindex test1 id2_ck id1,id2,id3 ts1
+addindex ok
+&gt; addindex test1 new_ck col5:string,col6:int32 ts1
+addindex ok
+</code></pre><h3 id="deleteindex">deleteindex </h3>
+<p>&#x5220;&#x9664;&#x7D22;&#x5F15;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: deleteindex table_name index_name</p>
+<pre><code>&gt; deleteindex test1 mcc
+delete index ok
+</code></pre><h3 id="showschema">showschema </h3>
+<p>&#x67E5;&#x770B;&#x8868;&#x7684;schema&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: showschema table_name</p>
+<pre><code>&gt; showschema flow
+table flow has not schema
+&gt; showschema test
+  #  name  type    index
+--------------------------
+  0  card  string  yes
+  1  mcc   string  yes
+  2  amt   float   no
+&gt; showschema test5
+  #  name  type
+----------------------
+  0  card  string
+  1  mcc   string
+  2  amt   float
+  3  ts1   int64
+  4  ts2   timestamp
+
+#ColumnKey
+  #  index_name  col_name  ts_col  ttl
+-------------------------------------------
+  0  card_mcc    card|mcc  ts1     120min
+  1  card        card      ts1     120min
+  2  card        card      ts2     100min
+</code></pre><h3 id="info">info </h3>
+<p>&#x67E5;&#x770B;&#x8868;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: info table_name</p>
+<pre><code>172.27.128.37:30857&gt; info test-s-1
+  attribute      value      
+------------------------------
+  name           test-s-1   
+  replica_num    3          
+  partition_num  8          
+  ttl            30min&amp;&amp;10  
+  ttl_type       kAbsAndLat 
+  compress_type  kNoCompress
+  storage_mode   kMemory    
+  record_cnt     3120914    
+  memused        689.273 M  
+  diskused       1.861 G
+</code></pre><ul>
+<li><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> info&#x5C55;&#x793A;&#x7684;memused&#x662F;&#x6240;&#x6709;alive&#x72B6;&#x6001;&#x7684;leader&#x8282;&#x70B9;&#x7684;memused&#x4E4B;&#x548C;&#xFF0C;diskused&#x540C;&#x7406;</li>
+</ul>
+<h3 id="drop">drop </h3>
+<p>&#x5220;&#x9664;&#x8868;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: drop table_name</p>
+<pre><code>&gt; drop test
+Drop table test? yes/no
+yes
+drop ok
+</code></pre><h3 id="put">put </h3>
+<p>&#x63D2;&#x5165;&#x6570;&#x636E;</p>
+<h5 id="1-kv&#x8868;&#x63D2;&#x5165;">1 kv&#x8868;&#x63D2;&#x5165;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: put table_name pk ts value</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pk  &#x4E3B;&#x952E;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;&#xFF0C;<strong>&#x7CBE;&#x786E;&#x5230;&#x6BEB;&#x79D2;&#xFF0C;ts&#x4E0D;&#x80FD;&#x4E3A;0</strong></li>
+<li>value &#x4E3B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;</li>
+</ul>
+<pre><code>&gt; put flow key1 1535371622000 value1
+Put ok
+</code></pre><h5 id="2-schema&#x8868;&#x63D2;&#x5165;">2 schema&#x8868;&#x63D2;&#x5165;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: put table_name ts value1 value2 value3 ...</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;&#xFF0C;<strong>&#x7CBE;&#x786E;&#x5230;&#x6BEB;&#x79D2;&#xFF0C;ts&#x4E0D;&#x80FD;&#x4E3A;0</strong></li>
+<li>schema&#x5404;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x7684;value, &#x5B57;&#x6BB5;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x53EF;&#x4EE5;&#x6267;&#x884C;showschema&#x67E5;&#x770B;</li>
+</ul>
+<pre><code>&gt; showschema test
+  #  name  type    index
+--------------------------
+  0  card  string  yes
+  1  mcc   string  yes
+  2  amt   float   no
+&gt; put test 1535371622000 card0 mcc0 1.5
+Put ok
+</code></pre><h5 id="3-&#x6709;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x63D2;&#x5165;">3 &#x6709;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x63D2;&#x5165;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: put table_name value1 value2 value3 ...</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>schema&#x5404;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x7684;value, &#x5B57;&#x6BB5;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x53EF;&#x4EE5;&#x6267;&#x884C;showschema&#x67E5;&#x770B;</li>
+</ul>
+<pre><code>172.27.128.37:6627&gt; showschema test5
+  #  name  type
+----------------------
+  0  card  string
+  1  mcc   string
+  2  amt   float
+  3  ts1   int64
+  4  ts2   timestamp
+
+#ColumnKey
+  #  index_name  col_name  ts_col  ttl
+-------------------------------------------
+  0  card_mcc    card|mcc  ts1     120min
+  1  card        card      ts1     120min
+  2  card        card      ts2     100min
+&gt; put test card0 mcc0 1.5 1560859166000 1560859166001
+Put ok
+</code></pre><h5 id="3-relation&#x8868;&#x63D2;&#x5165;">3 relation&#x8868;&#x63D2;&#x5165;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;put table_name=xxx col1=xxx col2=xxx col3=xxx</p>
+<ul>
+<li>table_name &#x6307;&#x5B9A;&#x8868;&#x540D;</li>
+<li>col &#x6307;&#x5B9A;&#x5404;&#x5217;&#x7684;&#x503C;</li>
+</ul>
+<pre><code>172.27.128.37:9529 &gt; showschema test1
+  #  name       type
+-------------------------
+  0  id         bigInt
+  1  attribute  varchar
+  2  image      varchar
+
+#ColumnKey
+  #  index_name  col_name  ts_col  ttl
+-----------------------------------------
+  0  id          id        -       0min
+172.27.128.37:9529 &gt; put table_name=test1 id=11 attribute=a1 image=i1
+put ok
+</code></pre><h3 id="scan">scan </h3>
+<p>&#x67E5;&#x8BE2;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</p>
+<h5 id="1-&#x67E5;&#x8BE2;kv&#x8868;&#x6570;&#x636E;">1 &#x67E5;&#x8BE2;kv&#x8868;&#x6570;&#x636E;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: scan table_name pk start_time end_time [limit]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pk &#x4E3B;&#x952E;</li>
+<li>start_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>end_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;end_time&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>&gt; scan flow key1 1535372567000 153537100000
+#    Time    Data
+1    1535372567000    value3
+2    1535372566000    value2
+&gt; scan flow key1 1535372567000 0
+#    Time    Data
+1    1535372567000    value3
+2    1535372566000    value2
+3    9527    value1
+&gt; scan flow key1 1535372567000 0 2
+#    Time    Data
+1    1535372567000    value3
+2    1535372566000    value2
+</code></pre><h5 id="2-&#x67E5;&#x8BE2;schema&#x8868;&#x6570;&#x636E;">2 &#x67E5;&#x8BE2;schema&#x8868;&#x6570;&#x636E;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: scan table_name key col_name start_time end_time [limit]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x540D;</li>
+<li>col_name &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x4E3B;&#x952E;&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;&#xFF0C;<strong>&#x53EA;&#x6709;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x8BBE;&#x7F6E;&#x4E3A;index&#x5217;&#x624D;&#x80FD;&#x67E5;&#x8BE2;</strong></li>
+<li>start_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>end_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;end_time&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>&gt; scan test card0 card 1535373299010 1535373271000
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+  2  1535373272000  card0  mcc1  10.3999996
+&gt; scan test card0 card 1535373299010 0
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+  2  1535373272000  card0  mcc1  10.3999996
+  3  1535371622000  card0  mcc0  1.5
+&gt;scan test card0 card 1535373299010 0 1
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+</code></pre><h4 id="3-&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x6570;&#x636E;">3 &#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x6570;&#x636E;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;scan table_name=xxx key=xxx index_name=xxx st=xxx et=xxx ts_name=xxx [limit=xxx] [atleast=xxx] </p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x540D;</li>
+<li>index_name &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x4E3B;&#x952E;&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;&#xFF0C;<strong>&#x53EA;&#x6709;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x8BBE;&#x7F6E;&#x4E3A;index&#x5217;&#x624D;&#x80FD;&#x67E5;&#x8BE2;</strong></li>
+<li>st &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>et &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;et&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>ts_name &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>atleast &#x9650;&#x5236;&#x6700;&#x5C11;&#x8FD4;&#x56DE;&#x6761;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x5982;&#x679C;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;&#x5C11;&#x4E8E;&#x8BE5;&#x503C;&#x4F1A;&#x5FFD;&#x7565;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x76F4;&#x5230;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6570;&#x636E;&#x6570;&#x91CF;&#x8FBE;&#x5230;atleast&#x6216;&#x6709;&#x6548;&#x6570;&#x636E;&#x4E0D;&#x8DB3;&#x4E3A;&#x6B62;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;atleast&#x548C;limit&#x5219;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3; atleast &lt;= limit</li>
+<li><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x5982;&#x679C;&#x4EE5;scan table_name key col_name start_time end_time [limit]&#x7684;&#x683C;&#x5F0F;&#x67E5;&#x8BE2;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x6307;&#x5B9A;&#x7B2C;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x5217;  </li>
+</ul>
+<pre><code>&gt; scan table_name=test key=card0 index_name=card st=1535373299010 et=1535373271000 ts_name=ts
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+  2  1535373272000  card0  mcc1  10.3999996
+&gt; scan table_name=test key=card0 index_name=card st=1535373299010 et=0 ts_name=ts
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+  2  1535373272000  card0  mcc1  10.3999996
+  3  1535371622000  card0  mcc0  1.5
+&gt;scan table_name=test key=card0 index_name=card st=1535373299010 et=0 ts_name=ts limit=1
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+&gt;scan table_name=test key=card0 index_name=card st=1535373299010 et=1535373299001 ts_name=ts limit=4 atleast=3
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+  2  1535373299005  card0  mcc2  5.80000000
+  3  1535373299000  card0  mcc2  5.70000000
+</code></pre><h3 id="delete">delete </h3>
+<p>1&#x3001;&#x5220;&#x9664;pk</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: delete table_name key [col_name]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x503C;</li>
+<li>col_name &#x5217;&#x540D;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5728;&#x591A;&#x7EF4;&#x5EA6;&#x4E0B;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x5217;&#x540D;&#x9ED8;&#x8BA4;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;&#x5217;</li>
+</ul>
+<pre><code>&gt; delete test key1
+Delete ok
+&gt; delete test1 card0 card
+Delete ok
+</code></pre><p>2&#x3001;&#x5220;&#x9664;relation&#x8868;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A; delete table_name=xxx where col1=xxx</p>
+<ul>
+<li>table_name&#x8868;&#x540D;</li>
+<li>col &#x5220;&#x9664;&#x7684;&#x6761;&#x4EF6;</li>
+</ul>
+<pre><code>&gt; delete table_name=test1 where id=11 
+delete ok
+</code></pre><h3 id="count">count </h3>
+<h4 id="1-&#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;">1 &#x7EDF;&#x8BA1;&#x4E00;&#x4E2A;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: count table_name key [col_name] [filter_expired_data]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x503C;</li>
+<li>col_name &#x5217;&#x540D;. &#x8BE5;&#x5B57;&#x6BB5;&#x65F6;&#x53EF;&#x9009;&#x7684;</li>
+<li>filter_expired_data &#x662F;&#x5426;&#x8FC7;&#x6EE4;&#x8FC7;&#x671F;&#x6570;&#x636E;[true/false]. &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false. &#x5982;&#x679C;&#x7F6E;&#x4E3A;true, &#x4F1A;&#x904D;&#x5386;pk&#x4E0B;&#x7684;&#x94FE;&#x8868;&#x6027;&#x80FD;&#x8F83;&#x5DEE;</li>
+</ul>
+<pre><code>&gt; count test card1077 card
+count: 1041
+</code></pre><h4 id="2-&#x7EDF;&#x8BA1;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;">2 &#x7EDF;&#x8BA1;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;count table_name=xxx key=xxx index_name=card ts_name=xxx [filter_expired_data=true|false]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x503C;</li>
+<li>index_name &#x5217;&#x540D;</li>
+<li>ts_name &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;</li>
+<li>filter_expired_data &#x662F;&#x5426;&#x8FC7;&#x6EE4;&#x8FC7;&#x671F;&#x6570;&#x636E;[true/false]. &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false. &#x5982;&#x679C;&#x7F6E;&#x4E3A;true, &#x4F1A;&#x904D;&#x5386;pk&#x4E0B;&#x7684;&#x94FE;&#x8868;&#x6027;&#x80FD;&#x8F83;&#x5DEE;  </li>
+</ul>
+<pre><code>&gt; count table_name=test key=card1077 index_name=card ts_name=ts
+count: 1041
+</code></pre><h3 id="preview">preview </h3>
+<p>&#x6570;&#x636E;&#x9884;&#x89C8;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: preview table_name [limit]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>limit &#x9650;&#x5236;&#x6761;&#x6570;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x4E3A;100&#x6761;</li>
+</ul>
+<pre><code>&gt; preview test 10
+  #   ts             card      mcc      amt
+------------------------------------------------------------
+  1   1551167860977  card1077  mcc1342  9.6655599454491412
+  2   1551167860879  card1077  mcc72    9.4099887366740891
+  3   1551167860815  card1077  mcc1208  9.870822430478027
+  4   1551167860715  card1077  mcc277   9.2822292386566794
+  5   1551167860629  card1077  mcc958   9.263361336226696
+  6   1551167860615  card1077  mcc547   9.2201535836470647
+  7   1551167860254  card1077  mcc769   9.9815119658220137
+  8   1551167860162  card1077  mcc592   9.5524055792939109
+  9   1551167860069  card1077  mcc87    9.2436255334913984
+  10  1551167860020  card1077  mcc637   9.0073365887995038
+</code></pre><h3 id="get">get </h3>
+<p>&#x67E5;&#x8BE2;&#x5355;&#x6761;&#x6570;&#x636E;</p>
+<h5 id="1-&#x67E5;&#x8BE2;kv&#x8868;&#x6570;&#x636E;">1 &#x67E5;&#x8BE2;kv&#x8868;&#x6570;&#x636E;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: get table_name key ts</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x4E3B;&#x952E;&#x503C;</li>
+<li>ts &#x67E5;&#x8BE2;&#x7684;ts&#xFF0C;&#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+</ul>
+<pre><code>&gt; get flow key1 1535372567000
+value :value3
+&gt; get flow key1 1535372566000
+value :value2
+&gt; get flow key1 0
+value :value3
+</code></pre><h5 id="2-&#x67E5;&#x8BE2;schema&#x8868;&#x6570;&#x636E;">2 &#x67E5;&#x8BE2;schema&#x8868;&#x6570;&#x636E;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: get table_name key col_name ts</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x8981;get&#x7684;&#x952E;&#x503C;</li>
+<li>col_name &#x8981;&#x67E5;&#x8BE2;&#x7684;key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;</li>
+<li>ts &#x67E5;&#x8BE2;&#x7684;ts&#xFF0C;&#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+</ul>
+<pre><code>&gt; get test card0 card 1535373272000
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373272000  card0  mcc1  10.3999996
+&gt; get test card0 card 1535371622000
+  #  ts             card   mcc   amt
+--------------------------------------
+  1  1535371622000  card0  mcc0  1.5
+&gt; get test card0 card 0
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+</code></pre><h5 id="3-&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x6570;&#x636E;">3 &#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8868;&#x6570;&#x636E;</h5>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: get table_name=xxx key=xxx index_name=xxx ts=xxx ts_name=xxx </p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>key &#x8981;get&#x7684;&#x952E;&#x503C;</li>
+<li>index_name &#x8981;&#x67E5;&#x8BE2;&#x7684;key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;</li>
+<li>ts &#x67E5;&#x8BE2;&#x7684;ts&#xFF0C;&#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+<li>ts_name &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;  </li>
+<li><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x82E5;&#x4EE5;get table_name key col_name ts &#x7684;&#x683C;&#x5F0F;&#x67E5;&#x8BE2;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5B9A;&#x7B2C;&#x4E00;&#x5217;</li>
+</ul>
+<pre><code>&gt; get table_name=test key=card0 index_name=card ts=1535373272000 ts_name=ts
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373272000  card0  mcc1  10.3999996
+&gt; get table_name=test key=card0 index_name=card ts=1535371622000 ts_name=ts
+  #  ts             card   mcc   amt
+--------------------------------------
+  1  1535371622000  card0  mcc0  1.5
+&gt; get table_name=test key=card0 index_name=card ts=0 ts_name=ts
+  #  ts             card   mcc   amt
+---------------------------------------------
+  1  1535373299010  card0  mcc2  5.80000019
+</code></pre><h3 id="showtablet">showtablet </h3>
+<p>&#x67E5;&#x770B;tablet&#x4FE1;&#x606F;(&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;serverName&#x548C;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x672C;&#x5730;ip&#x529F;&#x80FD;&#xFF0C;&#x5219;endpoint&#x4E3A;serverName, real_endpoint&#x4E3A;&#x201C;-&#x201D;)</p>
+<pre><code>&gt; showtablet
+  endpoint             real_endpoint     state           age
+--------------------------------------------------------------
+  6534708411798331392  172.17.0.12:9531  kTabletHealthy  1d
+  6534708415948603392  172.17.0.13:9532  kTabletHealthy  1d
+  6534708420092481536  172.17.0.14:9533  kTabletHealthy  14h
+</code></pre><h3 id="showblobserver">showblobserver</h3>
+<p>&#x67E5;&#x770B;blobserver&#x4FE1;&#x606F;(&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;serverName&#x548C;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x672C;&#x5730;ip&#x529F;&#x80FD;&#xFF0C;endpoint&#x4E3A;serverName, &#x5219;real_endpoint&#x4E3A;&#x201C;-&#x201D;)</p>
+<pre><code>&gt; showblobserver
+  endpoint             real_endpoint     state           age
+--------------------------------------------------------------
+  6536558764777627648  172.17.0.15:9534  kTabletHealthy  1d
+</code></pre><h3 id="setsdkendpoint">setsdkendpoint</h3>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A; setsdkendpoint server sdkendpoint    </p>
+<ul>
+<li>server &#x5982;&#x679C;&#x914D;&#x7F6E;endpoint, &#x5219;&#x662F;endpoint; &#x5982;&#x679C;&#x914D;&#x7F6E;port&#x548C;use_name&#xFF0C;&#x5219;&#x662F;server_name    </li>
+<li>sdkendpoint sdk&#x8BBF;&#x95EE;&#x7684;endpoint, &#x5982;&#x679C;&#x662F;null, &#x5219;&#x6E05;&#x9664;&#x5BF9;&#x5E94;sdkendpoint&#x4FE1;&#x606F;</li>
+</ul>
+<p>&#x67E5;&#x770B;sdkendpoint&#x4FE1;&#x606F;</p>
+<pre><code>&gt; setsdkendpoint 6534708403616096256 172.27.128.37:9529
+setsdkendpoint ok
+</code></pre><pre><code>&gt; setsdkendpoint 6534708403616096256 null 
+setsdkendpoint ok
+</code></pre><h3 id="showsdkendpoint">showsdkendpoint</h3>
+<p>&#x67E5;&#x770B;sdkendpoint&#x4FE1;&#x606F;(&#x4F1A;&#x663E;&#x793A;&#x5386;&#x53F2;&#x914D;&#x7F6E;&#x8FC7;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x4E0B;&#x7EBF;&#x7684;server&#x5BF9;&#x5E94;&#x7684;sdkendpoint&#xFF0C;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x6267;&#x884C;setsdkednpoint server null&#x6765;&#x5220;&#x9664;&#x8FC7;&#x671F;&#x7684;&#x914D;&#x7F6E;)</p>
+<pre><code>&gt; showsdkendpoint
+  endpoint             sdk_endpoint
+-------------------------------------------
+  6534708403616096256  172.27.128.37:9529
+  6534708407651229696  172.27.128.37:9530
+  6534708411798331392  172.27.128.37:9531
+</code></pre><h3 id="addreplica">addreplica </h3>
+<p>&#x6DFB;&#x52A0;&#x526F;&#x672C;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: addreplica table_name pid_group endpoint</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid_group &#x5206;&#x7247;id&#x96C6;&#x5408;. &#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;<ul>
+<li>&#x5355;&#x4E2A;&#x5206;&#x7247;</li>
+<li>&#x591A;&#x4E2A;&#x5206;&#x7247;, &#x5206;&#x7247;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;. &#x5982;1,3,5</li>
+<li>&#x5206;&#x7247;&#x533A;&#x95F4;, &#x533A;&#x95F4;&#x4E3A;&#x95ED;&#x533A;&#x95F4;. &#x5982;1-5&#x8868;&#x793A;&#x5206;&#x7247;1,2,3,4,5</li>
+</ul>
+</li>
+<li>endpoint &#x8981;&#x6DFB;&#x52A0;&#x4E3A;&#x526F;&#x672C;&#x7684;&#x8282;&#x70B9;endpoint</li>
+</ul>
+<pre><code>&gt; showtable test1
+  name  tid  pid  endpoint            role      ttl   is_alive  compress_type  offset  record_cnt  memused
+------------------------------------------------------------------------------------------------------------
+  test1  13   0    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+&gt; addreplica test1 0 172.27.128.33:8541
+AddReplica ok
+&gt; showtable test1
+  name  tid  pid  endpoint            role      ttl   is_alive  compress_type  offset  record_cnt  memused
+------------------------------------------------------------------------------------------------------------
+  test1  13   0    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   0    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+&gt; addreplica test1 1,2,3 172.27.128.33:8541
+AddReplica ok
+&gt; addreplica test1 1-3 172.27.128.33:8541
+AddReplica ok
+</code></pre><h3 id="delreplica">delreplica </h3>
+<p>&#x5220;&#x9664;&#x526F;&#x672C;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: delreplica table_name pid_group endpoint</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid_group &#x5206;&#x7247;id&#x96C6;&#x5408;. &#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;<ul>
+<li>&#x5355;&#x4E2A;&#x5206;&#x7247;</li>
+<li>&#x591A;&#x4E2A;&#x5206;&#x7247;, &#x5206;&#x7247;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;. &#x5982;1,3,5</li>
+<li>&#x5206;&#x7247;&#x533A;&#x95F4;, &#x533A;&#x95F4;&#x4E3A;&#x95ED;&#x533A;&#x95F4;. &#x5982;1-5&#x8868;&#x793A;&#x5206;&#x7247;1,2,3,4,5</li>
+</ul>
+</li>
+<li>endpoint &#x8981;&#x5220;&#x9664;&#x526F;&#x672C;&#x7684;endpoint</li>
+</ul>
+<pre><code>&gt; showtable test1
+  name  tid  pid  endpoint            role      ttl   is_alive  compress_type  offset  record_cnt  memused
+------------------------------------------------------------------------------------------------------------
+  test1  13   0    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   0    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+&gt; delreplica test1 0 172.27.128.33:8541
+DelReplica ok  
+&gt; showtable test1
+  name  tid  pid  endpoint            role      ttl   is_alive  compress_type  offset  record_cnt  memused
+------------------------------------------------------------------------------------------------------------
+  test1  13   0    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   1    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   2    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.31:8541  leader    0min  yes       kNoCompress    0       0           0.000
+  test1  13   3    172.27.128.33:8541  follower  0min  yes       kNoCompress    0       0           0.000
+&gt; delreplica test1 1,2,3 172.27.128.33:8541
+DelReplica ok  
+&gt; delreplica test1 1-3 172.27.128.33:8541
+DelReplica ok
+</code></pre><h3 id="makesnapshot">makesnapshot </h3>
+<p>&#x4EA7;&#x751F;snapshot</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: makesnapshot table_name pid</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid &#x5206;&#x7247;id</li>
+</ul>
+<pre><code class="lang-bash">&gt; makesnapshot flow 0
+MakeSnapshot ok
+</code></pre>
+<h3 id="migrate">migrate </h3>
+<p>&#x526F;&#x672C;&#x8FC1;&#x79FB;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: migrate src_endpoint table_name pid_group des_endpoint</p>
+<ul>
+<li>src_endpoint &#x9700;&#x8981;&#x8FC1;&#x51FA;&#x7684;&#x8282;&#x70B9;</li>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid_group &#x5206;&#x7247;id&#x96C6;&#x5408;. &#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;<ul>
+<li>&#x5355;&#x4E2A;&#x5206;&#x7247;</li>
+<li>&#x591A;&#x4E2A;&#x5206;&#x7247;, &#x5206;&#x7247;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;. &#x5982;1,3,5</li>
+<li>&#x5206;&#x7247;&#x533A;&#x95F4;, &#x533A;&#x95F4;&#x4E3A;&#x95ED;&#x533A;&#x95F4;. &#x5982;1-5&#x8868;&#x793A;&#x5206;&#x7247;1,2,3,4,5</li>
+</ul>
+</li>
+<li>des_endpoint &#x8FC1;&#x79FB;&#x7684;&#x76EE;&#x7684;&#x8282;&#x70B9;</li>
+</ul>
+<pre><code>&gt; migrate 172.27.2.52:9991 table1 1 172.27.2.52:9992
+partition migrate ok
+&gt; migrate 172.27.2.52:9991 table1 1-5 172.27.2.52:9992
+partition migrate ok
+&gt; migrate 172.27.2.52:9991 table1 1,2,3 172.27.2.52:9992
+partition migrate ok
+</code></pre><h3 id="confget">confget </h3>
+<p>&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;auto_failover</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: confget [conf_name]</p>
+<ul>
+<li>conf_name &#x914D;&#x7F6E;&#x9879;&#x540D;&#x5B57;&#xFF0C;&#x53EF;&#x9009;&#x7684;</li>
+</ul>
+<pre><code>&gt; confget
+  key                 value
+-----------------------------
+  auto_failover       false
+&gt; confget auto_failover
+  key            value
+------------------------
+  auto_failover  false
+</code></pre><h3 id="confset">confset </h3>
+<p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;auto_failover</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: confset conf_name value</p>
+<ul>
+<li>conf_name &#x914D;&#x7F6E;&#x9879;&#x540D;&#x5B57;</li>
+<li>value &#x914D;&#x7F6E;&#x9879;&#x8BBE;&#x7F6E;&#x7684;&#x503C;</li>
+</ul>
+<pre><code>&gt; confset auto_failover true
+set auto_failover ok
+</code></pre><h3 id="offlineendpoint">offlineendpoint </h3>
+<p>&#x4E0B;&#x7EBF;&#x8282;&#x70B9;&#x3002;&#x6B64;&#x547D;&#x4EE4;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x53EF;&#x901A;&#x8FC7;showopstatus&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: offlineendpoint endpoint [concurrency]</p>
+<ul>
+<li>endpoint&#x662F;&#x53D1;&#x751F;&#x6545;&#x969C;&#x8282;&#x70B9;&#x7684;endpoint&#x3002;&#x8BE5;&#x547D;&#x4EE4;&#x4F1A;&#x5BF9;&#x8BE5;&#x8282;&#x70B9;&#x4E0B;&#x6240;&#x6709;&#x5206;&#x7247;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;:<ul>
+<li>&#x5982;&#x679C;&#x662F;&#x4E3B;, &#x6267;&#x884C;&#x91CD;&#x65B0;&#x9009;&#x4E3B;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x4ECE;, &#x627E;&#x5230;&#x4E3B;&#x8282;&#x70B9;&#x7136;&#x540E;&#x4ECE;&#x4E3B;&#x8282;&#x70B9;&#x4E2D;&#x5220;&#x9664;&#x5F53;&#x524D;endpoint&#x526F;&#x672C;</li>
+<li>&#x4FEE;&#x6539;is_alive&#x72B6;&#x6001;&#x4E3A;no</li>
+</ul>
+</li>
+<li>concurrency &#x63A7;&#x5236;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x5E76;&#x53D1;&#x6570;. &#x6B64;&#x914D;&#x7F6E;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x4E3A;2(name_server_task_concurrency&#x914D;&#x7F6E;&#x53EF;&#x914D;), &#x6700;&#x5927;&#x503C;&#x4E3A;name_server_task_max_concurrency&#x914D;&#x7F6E;&#x7684;&#x503C;</li>
+</ul>
+<pre><code class="lang-bash">&gt; offlineendpoint 172.27.128.32:8541
+offline endpoint ok
+&gt;showtable
+  name    tid  pid  endpoint            role      ttl       is_alive  compress_<span class="hljs-built_in">type</span>  offset   record_cnt  memused
+----------------------------------------------------------------------------------------------------------------------
+  flow    4   0    172.27.128.32:8541  leader    0min       no        kNoCompress    0        0           0.000
+  flow    4   0    172.27.128.33:8541  follower  0min       yes       kNoCompress    0        0           0.000
+  flow    4   0    172.27.128.31:8541  follower  0min       yes       kNoCompress    0        0           0.000
+  flow    4   1    172.27.128.33:8541  leader    0min       yes       kNoCompress    0        0           0.000
+  flow    4   1    172.27.128.31:8541  follower  0min       yes       kNoCompress    0        0           0.000
+  flow    4   1    172.27.128.32:8541  follower  0min       no        kNoCompress    0        0           0.000
+</code></pre>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x540E;&#x6240;&#x6709;&#x5206;&#x7247;&#x90FD;&#x4F1A;&#x6709;yes&#x72B6;&#x6001;&#x7684;leader</p>
+<h3 id="recoverendpoint">recoverendpoint </h3>
+<p>&#x6062;&#x590D;&#x8282;&#x70B9;&#x6570;&#x636E;&#x3002;&#x6B64;&#x547D;&#x4EE4;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x53EF;&#x901A;&#x8FC7;showopstatus&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: recoverendpoint endpoint [need_restore] [concurrency]</p>
+<ul>
+<li>endpoint&#x662F;&#x8981;&#x6062;&#x590D;&#x8282;&#x70B9;&#x7684;endpoint</li>
+<li>need_restore &#x8868;&#x62D3;&#x6251;&#x662F;&#x5426;&#x8981;&#x6062;&#x590D;&#x5230;&#x6700;&#x521D;&#x7684;&#x72B6;&#x6001;, &#x6B64;&#x914D;&#x7F6E;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x4E3A;false. &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;true, &#x4E00;&#x4E2A;&#x5206;&#x7247;&#x5728;&#x8BE5;&#x8282;&#x70B9;&#x4E0B;&#x4E3A;leader, &#x6267;&#x884C;&#x5B8C;recoverendpoint&#x6062;&#x590D;&#x6570;&#x636E;&#x540E;&#x4F9D;&#x7136;&#x662F;leader</li>
+<li>concurrency &#x63A7;&#x5236;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x5E76;&#x53D1;&#x6570;. &#x6B64;&#x914D;&#x7F6E;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x4E3A;2(name_server_task_concurrency&#x914D;&#x7F6E;&#x53EF;&#x914D;), &#x6700;&#x5927;&#x503C;&#x4E3A;name_server_task_max_concurrency&#x914D;&#x7F6E;&#x7684;&#x503C;</li>
+</ul>
+<pre><code>&gt; recoverendpoint 172.27.128.32:8541
+recover endpoint ok
+&gt; recoverendpoint 172.27.128.32:8541 true
+recover endpoint ok
+&gt; recoverendpoint 172.27.128.32:8541 true 3
+recover endpoint ok
+</code></pre><p><strong>&#x6CE8;:</strong></p>
+<ol>
+<li><strong>&#x6267;&#x884C;&#x6B64;&#x547D;&#x4EE4;&#x524D;&#x786E;&#x4FDD;&#x8282;&#x70B9;&#x5DF2;&#x7ECF;&#x4E0A;&#x7EBF;(showtablet&#x547D;&#x4EE4;&#x67E5;&#x770B;)</strong></li>
+</ol>
+<h3 id="changeleader">changeleader </h3>
+<p>&#x5BF9;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x7247;&#x6267;&#x884C;&#x4E3B;&#x4ECE;&#x5207;&#x6362;&#x3002;&#x6B64;&#x547D;&#x4EE4;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x53EF;&#x901A;&#x8FC7;showopstatus&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: changeleader table_name pid [candidate_leader]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid &#x5206;&#x7247;id</li>
+<li>candidate_leader &#x5019;&#x9009;leader. &#x8BE5;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x6210;auto&#x5373;&#x4F7F;&#x5176;&#x4ED6;&#x8282;&#x70B9;alive&#x72B6;&#x6001;&#x662F;yes&#x4E5F;&#x80FD;&#x5207;&#x6362;</li>
+</ul>
+<pre><code>&gt; changeleader flow 0
+change leader ok
+&gt; changeleader flow 0 172.27.128.33:8541
+change leader ok
+&gt; changeleader flow 0 auto
+change leader ok
+</code></pre><h3 id="recovertable">recovertable </h3>
+<p>&#x6062;&#x590D;&#x67D0;&#x4E2A;&#x5206;&#x7247;&#x6570;&#x636E;&#x3002;&#x6B64;&#x547D;&#x4EE4;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x53EF;&#x901A;&#x8FC7;showopstatus&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: recovertable table_name pid endpoint</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid &#x5206;&#x7247;id</li>
+<li>endpoint &#x8981;&#x6062;&#x590D;&#x5206;&#x7247;&#x6240;&#x5728;&#x7684;&#x8282;&#x70B9;endpoint</li>
+</ul>
+<pre><code>&gt; recovertable flow 1 172.27.128.31:8541
+recover table ok
+</code></pre><h3 id="cancelop">cancelop </h3>
+<p>&#x53D6;&#x6D88;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x6267;&#x884C;&#x6216;&#x8005;&#x5F85;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;. &#x53D6;&#x6D88;&#x540E;&#x4EFB;&#x52A1;&#x5C31;&#x72B6;&#x6001;&#x53D8;&#x6210;kCanceled</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: cancelop op_id</p>
+<ul>
+<li>op_id &#x9700;&#x8981;&#x53D6;&#x6D88;&#x7684;&#x64CD;&#x4F5C;id</li>
+</ul>
+<pre><code>&gt; cancelop 5
+Cancel op ok!
+</code></pre><h3 id="showopstatus">showopstatus </h3>
+<p>&#x663E;&#x793A;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: showopstatus [table_name pid]</p>
+<ul>
+<li>table_name &#x8868;&#x540D; </li>
+<li>pid &#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; showopstatus
+  op_id  op_type                name   pid  status  start_time      execute_time  end_time        cur_task
+------------------------------------------------------------------------------------------------------------
+  51     kMigrateOP             flow   0    kDone   20180824163316  12s           20180824163328  -
+  52     kRecoverTableOP        flow   0    kDone   20180824195252  1s            20180824195253  -
+  53     kRecoverTableOP        flow   1    kDone   20180824195252  1s            20180824195253  -
+  54     kUpdateTableAliveOP    flow   0    kDone   20180824195838  2s            20180824195840  -
+  55     kChangeLeaderOP        flow   0    kDone   20180824200135  0s            20180824200135  -
+  56     kOfflineReplicaOP      flow   1    kDone   20180824200135  1s            20180824200136  -
+  57     kReAddReplicaOP        flow   0    kDone   20180827114331  12s           20180827114343  -
+  58     kAddReplicaOP          test1  0    kDone   20180827205907  8s            20180827205915  -
+  59     kDelReplicaOP          test1  0    kDone   20180827210248  4s            20180827210252  -
+&gt; showopstatus flow
+  op_id  op_type                name  pid  status  start_time      execute_time  end_time        cur_task
+-----------------------------------------------------------------------------------------------------------
+  51     kMigrateOP             flow  0    kDone   20180824163316  12s           20180824163328  -
+  52     kRecoverTableOP        flow  0    kDone   20180824195252  1s            20180824195253  -
+  53     kRecoverTableOP        flow  1    kDone   20180824195252  1s            20180824195253  -
+  54     kUpdateTableAliveOP    flow  0    kDone   20180824195838  2s            20180824195840  -
+  55     kChangeLeaderOP        flow  0    kDone   20180824200135  0s            20180824200135  -
+  56     kOfflineReplicaOP      flow  1    kDone   20180824200135  1s            20180824200136  -
+  57     kUpdateTableAliveOP    flow  0    kDone   20180824200212  0s            20180824200212  -
+&gt;showopstatus flow 1
+  op_id  op_type                name  pid  status  start_time      execute_time  end_time        cur_task
+-----------------------------------------------------------------------------------------------------------
+  53     kRecoverTableOP        flow  1    kDone   20180824195252  1s            20180824195253  -
+  56     kOfflineReplicaOP      flow  1    kDone   20180824200135  1s            20180824200136  -
+</code></pre><h3 id="gettablepartition">gettablepartition </h3>
+<p>&#x5BFC;&#x51FA;&#x5206;&#x7247;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x5230;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x4E3A;table_name_pid.txt</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: gettablepartition table_name pid</p>
+<ul>
+<li>table_name &#x8868;&#x540D; </li>
+<li>pid &#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; gettablepartition flow 0
+get table partition ok
+&gt; quit
+bye
+$ cat flow_0.txt 
+pid: 0
+partition_meta {
+  endpoint: &quot;172.27.128.32:8541&quot;
+  is_leader: true
+  is_alive: false
+}
+partition_meta {
+  endpoint: &quot;172.27.128.33:8541&quot;
+  is_leader: true
+  is_alive: false
+}
+partition_meta {
+  endpoint: &quot;172.27.128.31:8541&quot;
+  is_leader: true
+  is_alive: true
+}
+term_offset {
+  term: 15
+  offset: 0
+}
+term_offset {
+  term: 17
+  offset: 1
+}
+term_offset {
+  term: 19
+  offset: 7154917
+}
+term_offset {
+  term: 21
+  offset: 7154917
+}
+term_offset {
+  term: 23
+  offset: 7154917
+}
+</code></pre><h3 id="settablepartition">settablepartition </h3>
+<p>&#x4FEE;&#x6539;&#x5206;&#x7247;&#x6570;&#x636E;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: settablepartition table_name partition_file_path</p>
+<ul>
+<li>table_name &#x8868;&#x540D; </li>
+<li>partition_file_path &#x5206;&#x7247;&#x6570;&#x636E;&#x6587;&#x4EF6;</li>
+</ul>
+<p>&#x7528;gettablepartiton&#x5BFC;&#x51FA;&#x76F8;&#x5E94;&#x6587;&#x4EF6;&#x540E;&#x76F8;&#x5E94;&#x7684;&#x4FEE;&#x6539;</p>
+<pre><code>&gt; settablepartition flow flow_0.txt
+set table partition ok
+</code></pre><p><strong>&#x6CE8;: &#x6B64;&#x547D;&#x4EE4;&#x4F1A;&#x6539;&#x7F16;nameserver&#x4E2D;&#x5206;&#x7247;&#x7684;&#x62D3;&#x6251;&#x4FE1;&#x606F;&#xFF0C;&#x8C28;&#x614E;&#x4F7F;&#x7528;</strong></p>
+<h3 id="updatetablealive">updatetablealive </h3>
+<p>&#x4FEE;&#x6539;&#x5206;&#x7247;alive&#x72B6;&#x6001;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: updatetablealive table_name pid endpoint is_alive</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>pid &#x5206;&#x7247;id, &#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x67D0;&#x4E2A;&#x8868;&#x7684;&#x6240;&#x6709;&#x5206;&#x7247;&#x5C06;pid&#x6307;&#x5B9A;&#x4E3A;*</li>
+<li>endpoint &#x8282;&#x70B9;endpoint</li>
+<li>is_alive &#x8282;&#x70B9;&#x72B6;&#x6001;, &#x53EA;&#x80FD;&#x586B;yes&#x6216;&#x8005;no</li>
+</ul>
+<pre><code>&gt; updatetablealive test * 172.27.128.31:8541 no
+update ok
+&gt; updatetablealive test 1 172.27.128.31:8542 no
+update ok
+</code></pre><p><strong>&#x6CE8;: &#x6B64;&#x547D;&#x4EE4;&#x4E0D;&#x53EF;&#x5F53;&#x505A;&#x6545;&#x969C;&#x6062;&#x590D;&#x4F7F;&#x7528;. &#x4E00;&#x822C;&#x7528;&#x4E8E;&#x5207;&#x6D41;&#x91CF;&#xFF0C;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x4E3A;&#x5C06;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x8868;&#x7684;alive&#x72B6;&#x6001;&#x6539;&#x4E3A;no&#x8BFB;&#x8BF7;&#x6C42;&#x5C31;&#x4E0D;&#x4F1A;&#x843D;&#x5728;&#x8BE5;&#x8282;&#x70B9;&#x4E0A;</strong></p>
+<h3 id="update">update </h3>
+<p>&#x66F4;&#x65B0;relation&#x8868;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: update table_name=xxx col1=xxx col2=xxx where col=xxx</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>where&#x524D;&#x4E3A;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5217;&#x548C;&#x503C;</li>
+<li>where&#x4E4B;&#x540E;&#x4E3A;&#x6761;&#x4EF6;</li>
+</ul>
+<pre><code>&gt; update table_name=test1 attribute=a2 where id=11
+update ok
+</code></pre><h3 id="query">query </h3>
+<p>&#x67E5;&#x8BE2;relation&#x8868;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;query table_name=xxx col1 col2 where col3=xxx</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>col1col2 &#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5217;&#x540D;&#xFF0C;*&#x8868;&#x793A;&#x8981;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5217; </li>
+<li>where&#x540E;&#x9762;&#x8868;&#x793A;&#x67E5;&#x8BE2;&#x7684;&#x6761;&#x4EF6;</li>
+</ul>
+<pre><code>172.27.128.37:9529 &gt; query table_name=test1 * where id=11
+  #  id  attribute  image
+---------------------------
+  1  11  a1         i1
+172.27.128.37:9529 &gt; query table_name=test1 id image where id=11
+  #  id  image
+----------------
+  1  11  i1
+</code></pre><h3 id="showns">showns </h3>
+<p>&#x663E;&#x793A;nameserver&#x8282;&#x70B9;&#x53CA;&#x5176;&#x89D2;&#x8272;(&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;serverName&#x548C;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x672C;&#x5730;ip&#x529F;&#x80FD;&#xFF0C;&#x5219;endpoint&#x4E3A;serverName, real_endpoint&#x4E3A;&#x201C;-&#x201D;)</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: showns</p>
+<pre><code>&gt;showns
+  endpoint             real_endpoint     role
+--------------------------------------------------
+  6534708403616096256  172.17.0.10:9529  leader
+  6534708407651229696  172.17.0.11:9530  standby
+</code></pre><h3 id="setttl">setttl </h3>
+<p>&#x4FEE;&#x6539;ttl</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: setttl table_name ttl_type ttl [ts_name]</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>ttl_type &#x8FC7;&#x671F;&#x7C7B;&#x578B;[absolute/latest]</li>
+<li>ttl ttl&#x7684;&#x503C;</li>
+<li>ts_name &#x6307;&#x5B9A;ts&#x5217;&#x7684;name</li>
+</ul>
+<pre><code>&gt; setttl test absolute 10000
+Set ttl ok !
+&gt; setttl test_latest latest 5
+Set ttl ok !
+&gt; setttl ck absolute 100 ts1
+Set ttl ok !
+</code></pre><p><strong>&#x6CE8;: &#x4FEE;&#x6539;&#x540E;&#x5728;&#x4E0B;&#x4E00;&#x8F6E;gc&#x6267;&#x884C;&#x540E;&#x624D;&#x4F1A;&#x751F;&#x6548;</strong></p>
+<h3 id="addtablefield">addtablefield </h3>
+<p><strong>&#x6CE8;:<br>1.&#x53EA;&#x80FD;&#x589E;&#x52A0;&#x975E;&#x7D22;&#x5F15;&#x5217;&#x548C;&#x975E;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x666E;&#x901A;&#x5217;&#x3002;<br>2.&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;63&#x5217;</strong>  </p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;addtablefield table_name column_name column_type</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>column_name &#x65B0;&#x589E;&#x5217;&#x540D;</li>
+<li>column_type &#x65B0;&#x589E;&#x5217;&#x7C7B;&#x578B;</li>
+</ul>
+<pre><code>&gt; showschema test
+  #  name   type    index
+---------------------------
+  0  card   string  yes
+  1  mcc    string  yes
+  2  money  float   noi
+&gt; put test 111 1 2 3
+Put ok
+&gt; preview test
+  #  ts   card  mcc  money
+----------------------------
+  1  111  1     2    3
+&gt; addtablefield test aa string
+add table field ok
+&gt; showschema test
+  #  name   type    index
+---------------------------
+  0  card   string  yes
+  1  mcc    string  yes
+  2  money  float   no
+  3  aa     string  no
+&gt; put test 111 2 3 4
+Put ok
+&gt; put test 111 1 2 3 4
+Put ok
+&gt; preivew test
+  #  ts   card  mcc  money  aa
+--------------------------------
+  1  111  1     2    3      4
+  2  111  1     2    3      -
+  3  111  2     3    4      -
+</code></pre><h3 id="switchmode">switchmode </h3>
+<p>&#x5207;&#x6362;&#x96C6;&#x7FA4;&#x72B6;&#x6001; </p>
+<p>tipls: &#x96C6;&#x7FA4;&#x72B6;&#x6001;&#x5206;&#x4E09;&#x79CD; <code>normal</code> <code>leader</code> <code>follower</code></p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: switchmode leader|normal</p>
+<pre><code class="lang-bash">&gt;switchmode leader // <span class="hljs-comment">#&#x5207;&#x6362;&#x5230;leader&#x6A21;&#x5F0F;, &#x53EA;&#x6709;leader&#x6A21;&#x5F0F;&#x7684;&#x96C6;&#x7FA4;&#x624D;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E3B;&#x96C6;&#x7FA4;</span>
+&gt;switchmode normal // <span class="hljs-comment">#&#x5207;&#x6362;&#x5230;normal&#x6A21;&#x5F0F;&#xFF0C;&#x4E3B;&#x96C6;&#x7FA4;&#x4E3B;&#x52A8;&#x5207;&#x6362;&#x5230;normal,&#x9700;&#x8981;&#x786E;&#x4FDD;&#x6CA1;&#x6709;&#x4ECE;&#x96C6;&#x7FA4;&#x548C;&#x4ED6;&#x5173;&#x8054;&#xFF0C;&#x4ECE;&#x96C6;&#x7FA4;&#x5207;&#x6362;&#x5230;normal&#x6A21;&#x5F0F;&#xFF0C;&#x4F1A;&#x4E3B;&#x52A8;&#x8131;&#x79BB;&#x96C6;&#x7FA4;</span>
+</code></pre>
+<h3 id="addrepcluster">addrepcluster </h3>
+<p>&#x6DFB;&#x52A0;&#x4ECE;&#x96C6;&#x7FA4;</p>
+<p>tips: &#x6761;&#x4EF6;&#x9650;&#x5236;: &#x6DFB;&#x52A0;&#x4ECE;&#x96C6;&#x7FA4;&#x7684;&#x8868;&#x4E0D;&#x80FD;&#x6709;&#x8868;&#xFF0C;&#x6216;&#x8005;&#x4ECE;&#x96C6;&#x7FA4;&#x6709;&#x8868;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8868;&#x7684;schema &#x8981;&#x548C;&#x4E3B;&#x96C6;&#x7FA4;&#x7684;&#x76F8;&#x540C;( &#x8868;&#x6570;&#x636E;&#x7684;offset &#x4E0D;&#x5C0F;&#x4E8E;&#x4E3B;&#x96C6;&#x7FA4;&#x5206;&#x7247;leader snapshot&#x7684;offset)</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;addrepcluster zk_cluster zk_path alias</p>
+<ul>
+<li>zk_cluster: zk&#x96C6;&#x7FA4;&#x5730;&#x5740;</li>
+<li>zk_path: zk &#x8DEF;&#x5F84;</li>
+<li>alias: &#x96C6;&#x7FA4;&#x522B;&#x540D;</li>
+</ul>
+<pre><code class="lang-bash">&gt; addrepcluster 172.27.128.37:6181 /rtidb-cluster1 rtidb-cluster1
+adrepcluster ok
+&gt; addrepcluster 172.27.128.31:6181,172.27.128.32:6181 /rtidb-cluster2 rtidb-cluster2
+adrepcluster ok
+</code></pre>
+<h3 id="showrepcluster">showrepcluster </h3>
+<p>&#x67E5;&#x770B;&#x4ECE;&#x96C6;&#x7FA4;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-bash">172.27.128.37:6529&gt; showrepcluster
+  zk_endpoints        zk_path   <span class="hljs-built_in">alias</span>  state            age
+-------------------------------------------------------------
+  172.27.128.37:6181  /issue-1  is1    kClusterHealthy  55s
+</code></pre>
+<h3 id="removerepcluster">removerepcluster </h3>
+<p>&#x79FB;&#x9664;&#x4ECE;&#x96C6;&#x7FA4;</p>
+<p>tips: &#x79FB;&#x9664;&#x4ECE;&#x96C6;&#x7FA4;&#x4E0D;&#x4F1A;&#x5220;&#x9664;&#x4ECE;&#x96C6;&#x7FA4;&#x7684;&#x8868;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;removerepcluster alias</p>
+<ul>
+<li>alias: &#x96C6;&#x7FA4;&#x522B;&#x540D;</li>
+</ul>
+<pre><code class="lang-bash">&gt;removerepcluster is1
+</code></pre>
+<h3 id="synctable">synctable </h3>
+<p>&#x624B;&#x52A8;&#x540C;&#x6B65;&#x4E3B;&#x4ECE;&#x96C6;&#x7FA4;&#x8868;  </p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong><br>1&#x3001;&#x82E5;&#x4ECE;&#x96C6;&#x7FA4;&#x6CA1;&#x6709;&#x6709;&#x4E0E;&#x4E3B;&#x96C6;&#x7FA4;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#xFF0C;&#x5219;&#x4E0D;&#x8981;&#x6307;&#x5B9A;pid, &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x3002;<br>2&#x3001;&#x82E5;&#x4ECE;&#x96C6;&#x7FA4;&#x6709;&#x4E0E;&#x4E3B;&#x96C6;&#x7FA4;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#xFF1A;&#x5982;&#x679C;&#x6240;&#x6709;&#x5206;&#x7247;&#x90FD;&#x6CA1;&#x6709;&#x540C;&#x6B65;&#xFF0C;&#x5219;&#x4E0D;&#x6307;&#x5B9A;pid&#xFF1B;&#x5982;&#x679C;&#x53EA;&#x662F;&#x90E8;&#x5206;&#x5206;&#x7247;&#x6CA1;&#x6709;&#x540C;&#x6B65;&#xFF0C;&#x5219;&#x6307;&#x5B9A;pid&#x3002;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF1A;synctable table_name cluster_alias [pid]  </p>
+<ul>
+<li>table_name: &#x8868;&#x540D;  </li>
+<li>cluster_alias: &#x96C6;&#x7FA4;&#x522B;&#x540D;  </li>
+<li>pid: &#x8868;&#x5206;&#x7247;id&#xFF0C;&#x53EF;&#x9009;  </li>
+</ul>
+<pre><code>&gt; synctable test remote 
+synctable  ok
+
+&gt; synctable test remote 1 
+synctable  ok
+</code></pre><h3 id="exit">exit </h3>
+<p>&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code>&gt; exit
+bye
+</code></pre><h3 id="quit">quit </h3>
+<p>&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code>&gt; quit
+bye
+</code></pre><h3 id="help">help </h3>
+<p>&#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: help [cmd]</p>
+<ul>
+<li>cmd &#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5199;&#x5C31;&#x5217;&#x51FA;&#x6240;&#x6709;&#x547D;&#x4EE4;</li>
+</ul>
+<pre><code>&gt; help
+addreplica - add replica to leader
+cancelop - cancel the op
+create - create table
+confset - update conf
+confget - get conf
+count - count the num of data in specified key
+changeleader - select leader again when the endpoint of leader offline
+delete - delete pk
+delreplica - delete replica from leader
+drop - drop table
+exit - exit client
+get - get only one record
+gettablepartition - get partition info
+help - get cmd info
+makesnapshot - make snapshot
+migrate - migrate partition form one endpoint to another
+man - get cmd info
+offlineendpoint - select leader and delete replica when endpoint offline
+preview - preview data
+put -  insert data into table
+quit - exit client
+recovertable - recover only one table partition
+recoverendpoint - recover all tables in endpoint when online
+scan - get records for a period of time
+showtable - show table info
+showtablet - show tablet info
+showns - show nameserver info
+showschema - show schema info
+showopstatus - show op info
+settablepartition - update partition info
+setttl - set table ttl
+updatetablealive - update table alive status
+addtablefield - add field to the schema table 
+info - show information of the table
+&gt; help create
+desc: create table
+usage: create table_meta_file_path
+usage: create table_name ttl partition_num replica_num [colum_name1:type:index colum_name2:type ...]
+ex: create ./table_meta.txt
+ex: create table1 144000 8 3
+ex: create table2 latest:10 8 3
+ex: create table3 latest:10 8 3 card:string:index mcc:string:index value:float
+</code></pre><h3 id="man">man </h3>
+<p>&#x83B7;&#x53D6;&#x5E2E;&#x7EC4;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: man [cmd]</p>
+<ul>
+<li>cmd &#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5199;&#x5C31;&#x5217;&#x51FA;&#x6240;&#x6709;&#x547D;&#x4EE4;</li>
+</ul>
+<pre><code>&gt; man
+addreplica - add replica to leader
+cancelop - cancel the op
+create - create table
+confset - update conf
+confget - get conf
+count - count the num of data in specified key
+changeleader - select leader again when the endpoint of leader offline
+delete - delete pk
+delreplica - delete replica from leader
+drop - drop table
+exit - exit client
+get - get only one record
+gettablepartition - get partition info
+help - get cmd info
+makesnapshot - make snapshot
+migrate - migrate partition form one endpoint to another
+man - get cmd info
+offlineendpoint - select leader and delete replica when endpoint offline
+preview - preview data
+put -  insert data into table
+quit - exit client
+recovertable - recover only one table partition
+recoverendpoint - recover all tables in endpoint when online
+scan - get records for a period of time
+showtable - show table info
+showtablet - show tablet info
+showns - show nameserver info
+showschema - show schema info
+showopstatus - show op info
+settablepartition - update partition info
+setttl - set table ttl
+updatetablealive - update table alive status
+addtablefield - add field to the schema table 
+info - show information of the table
+&gt; man drop
+desc: drop table
+usage: drop table_name
+ex: drop table1
+</code></pre><h1 id="tablet-client">Tablet Client </h1>
+<p>&#x8FDE;&#x63A5;&#x5230;tablet client&#x9700;&#x8981;&#x6307;&#x5B9A;endpoint&#x548C;role</p>
+<pre><code class="lang-bash">$ ./rtidb --endpoint=172.27.2.52:9520 --role=client
+</code></pre>
+<ul>
+<li><a href="#xcreate">create</a> &#x521B;&#x5EFA;&#x8868;</li>
+<li><a href="#xscreate">screate</a> &#x521B;&#x5EFA;&#x591A;&#x7EF4;&#x8868;</li>
+<li><a href="#xdrop">drop</a> &#x5220;&#x9664;&#x8868;</li>
+<li><a href="#xput">put </a>&#x63D2;&#x5165;&#x6570;&#x636E;</li>
+<li><a href="#xsput">sput</a> &#x7ED9;&#x6709;schema&#x7684;&#x8868;&#x63D2;&#x5165;&#x6570;&#x636E;</li>
+<li><a href="#xscan">scan</a> &#x67E5;&#x8BE2;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</li>
+<li><a href="#xsscan">sscan</a> &#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</li>
+<li><a href="#xget">get</a> &#x67E5;&#x8BE2;&#x5355;&#x6761;&#x6570;&#x636E;</li>
+<li><a href="#xsget">sget</a> &#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x7684;&#x5355;&#x6761;&#x6570;&#x636E;</li>
+<li><a href="#xdelete">delete</a> &#x5220;&#x9664;pk</li>
+<li><a href="#xcount">count</a> &#x7EDF;&#x8BA1;&#x67D0;&#x4E2A;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</li>
+<li><a href="#xpreview">preview</a> &#x9884;&#x89C8;&#x6570;&#x636E;</li>
+<li><a href="#xaddreplica">addreplica</a> &#x6DFB;&#x52A0;&#x526F;&#x672C;</li>
+<li><a href="#xdelreplica">delreplica</a> &#x5220;&#x9664;&#x526F;&#x672C;</li>
+<li><a href="#xmakesnapshot">makesnapshot</a>  &#x4EA7;&#x751F;snapshot</li>
+<li><a href="#xpausesnapshot">pausesnapshot</a>  &#x6682;&#x505C;snapshot</li>
+<li><a href="#xrecoversnapshot">recoversnapshot </a>&#x6062;&#x590D;snapshot</li>
+<li><a href="#xsendsnapshot">sendsnapshot</a> &#x53D1;&#x9001;snapshot</li>
+<li><a href="#xloadtable">loadtable </a>&#x521B;&#x5EFA;&#x8868;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;</li>
+<li><a href="#xchangerole">changerole</a> &#x6539;&#x53D8;&#x8868;&#x7684;leader&#x89D2;&#x8272;</li>
+<li><a href="#xsetexpire">setexpire</a> &#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x8FC7;&#x671F;</li>
+<li><a href="#xshowschema">showschema</a> &#x67E5;&#x770B;&#x8868;&#x7684;schema</li>
+<li><a href="#xgettablestatus">gettablestatus </a>&#x83B7;&#x53D6;&#x8868;&#x4FE1;&#x606F;</li>
+<li><a href="#xgetfollower">getfollower</a> &#x67E5;&#x770B;&#x4ECE;&#x8282;&#x70B9;&#x4FE1;&#x606F;</li>
+<li><a href="#xsetttl">setttl</a> &#x8BBE;&#x7F6E;ttl</li>
+<li><a href="#xsetlimit">setlimit</a> &#x8BBE;&#x7F6E;&#x5E76;&#x53D1;&#x9650;&#x5236;</li>
+<li><a href="#exit">exit</a> &#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</li>
+<li><a href="#xquit">quit </a>&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</li>
+<li><a href="#xhelp">help</a> &#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</li>
+<li><a href="#xman">man </a>&#x83B7;&#x53D6;&#x5E2E;&#x7EC4;&#x4FE1;&#x606F;</li>
+</ul>
+<h3 id="xcreate">create </h3>
+<p>&#x521B;&#x5EFA;&#x8868;</p>
+<p>&#x547D;&#x540D;&#x683C;&#x5F0F;: create table_name tid pid ttl segment_cnt [is_leader compress_type]</p>
+<ul>
+<li>table_name &#x4E3A;&#x8981;&#x521B;&#x5EFA;&#x8868;&#x540D;&#x79F0;</li>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>ttl &#x6307;&#x5B9A;&#x8FC7;&#x671F;&#x65F6;&#x95F4;,&#x9ED8;&#x8BA4;&#x8FC7;&#x671F;&#x7C7B;&#x578B;&#x4E3A;absolute. absolute&#x8868;ttl&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x949F;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;0&#x8868;&#x793A;&#x4E0D;&#x8FC7;&#x671F;&#x3002;&#x5982;&#x679C;&#x8FC7;&#x671F;&#x7C7B;&#x578B;&#x8BBE;&#x7F6E;latest&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;latest:&#x4FDD;&#x7559;&#x6761;&#x6570;(ex: latest:10, &#x4FDD;&#x7559;&#x6700;&#x8FD1;10&#x6761;)</li>
+<li>segment_cnt &#x4E3A;&#x8868;&#x7684;segement &#x4E2A;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E;&#x4E3A;8</li>
+<li>is_leader &#x6307;&#x5B9A;&#x662F;&#x5426;&#x4E3A;leader. &#x9ED8;&#x8BA4;&#x4E3A;leader</li>
+<li>compress_type &#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x538B;&#x7F29;&#x7C7B;&#x578B;. &#x53D6;&#x503C;&#x4E3A;[nocompress, snappy]&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x538B;&#x7F29;</li>
+</ul>
+<p>&#x793A;&#x4F8B;1 &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test1&#x7684;leader&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;absolute&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4E3A;144000&#x5206;&#x949F;&#x3002;tid&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;pid&#x4E3A;0</p>
+<pre><code>&gt; create test1 1 0 144000 8
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;2 &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test2&#x7684;follower&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;latest&#x4FDD;&#x7559;&#x6700;&#x8FD1;&#x4E24;&#x6761;&#x8BB0;&#x5F55;&#x3002;tid&#x8BBE;&#x7F6E;&#x4E3A;2&#xFF0C;pid&#x4E3A;0</p>
+<pre><code>&gt; create test2 2 0 latest:2 8 false
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;3 &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test3&#x7684;leader&#x8868;&#xFF0C;ttl&#x7C7B;&#x578B;&#x4E3A;absolute&#x8BBE;&#x7F6E;&#x4E0D;&#x8FC7;&#x671F;&#xFF0C;&#x6570;&#x636E;&#x7528;snappy&#x538B;&#x7F29;&#x3002;tid&#x8BBE;&#x7F6E;&#x4E3A;3&#xFF0C;pid&#x4E3A;0</p>
+<pre><code>&gt; create test3 3 0 0 8 true snappy
+Create table ok
+</code></pre><p><strong>&#x6CE8;: tid&#x548C;pid&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x4E00;&#x5F20;&#x8868;&#xFF0C;&#x521B;&#x5EFA;&#x65F6;&#x4E0D;&#x80FD;&#x548C;&#x5DF2;&#x6709;&#x8868;&#x91CD;&#x590D;</strong></p>
+<h3 id="xscreate">screate </h3>
+<p>&#x521B;&#x5EFA;&#x591A;&#x7EF4;&#x8868;</p>
+<p>&#x547D;&#x540D;&#x683C;&#x5F0F;: screate table_name tid pid ttl segment_cnt is_leader schema</p>
+<ul>
+<li>table_name &#x4E3A;&#x8981;&#x521B;&#x5EFA;&#x8868;&#x540D;&#x79F0;</li>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>ttl &#x6307;&#x5B9A;&#x8FC7;&#x671F;&#x65F6;&#x95F4;,&#x9ED8;&#x8BA4;&#x8FC7;&#x671F;&#x7C7B;&#x578B;&#x4E3A;absolute. absolute&#x8868;ttl&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x949F;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;0&#x8868;&#x793A;&#x4E0D;&#x8FC7;&#x671F;&#x3002;&#x5982;&#x679C;&#x8FC7;&#x671F;&#x7C7B;&#x578B;&#x8BBE;&#x7F6E;latest&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;latest:&#x4FDD;&#x7559;&#x6761;&#x6570;(ex: latest:10, &#x4FDD;&#x7559;&#x6700;&#x8FD1;10&#x6761;)</li>
+<li>segment_cnt &#x4E3A;&#x8868;&#x7684;segement &#x4E2A;&#x6570;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x7F6E;&#x4E3A;8</li>
+<li>is_leader &#x6307;&#x5B9A;&#x662F;&#x5426;&#x4E3A;leader. &#x9ED8;&#x8BA4;&#x4E3A;leader</li>
+<li>schema  &#x683C;&#x5F0F;&#x4E3A; colum_name:type[:index]&#xFF0C;&#x591A;&#x5217;&#x4E4B;&#x95F4;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x5272;&#x3002;&#x652F;&#x6301;&#x7684;type&#x6709;int32, uint32, int64, uint64, float, double, string&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E00;&#x5217;&#x662F;index&#xFF0C;&#x5219;&#x6CE8;&#x660E;&#x4E3A;index<ul>
+<li>card:string:index    &#x5217;&#x540D;&#x4E3A;card&#xFF0C;&#x7C7B;&#x578B;&#x662F;string&#xFF0C;&#x8FD9;&#x4E00;&#x5217;&#x662F;index</li>
+<li>money:float    &#x5217;&#x540D;&#x662F;money, &#x7C7B;&#x578B;&#x662F;float</li>
+</ul>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;1 &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test1&#x7684;leader&#x8868;, ttl&#x7C7B;&#x578B;&#x4E3A;absolute&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4E3A;144000&#x5206;&#x949F;&#x3002;&#x6709;card, mcc&#x548C;money&#x4E09;&#x5217;, &#x5176;&#x4E2D;card&#x548C;mcc&#x4E3A;index&#x5217;&#x7C7B;&#x578B;&#x4E3A;string, money&#x5217;&#x7684;&#x7C7B;&#x578B;&#x4E3A;float&#x3002;tid&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;pid&#x4E3A;0</p>
+<pre><code>&gt; screate test1 1 0 144000 8 true card:string:index mcc:string:index money:float
+Create table ok
+</code></pre><p>&#x793A;&#x4F8B;2 &#x521B;&#x5EFA;&#x8868;&#x540D;&#x4E3A;test2&#x7684;follower&#x8868;, ttl&#x7C7B;&#x578B;&#x4E3A;latest&#x6700;&#x591A;&#x4FDD;&#x7559;&#x6700;&#x8FD1;&#x4E24;&#x6761;&#x8BB0;&#x5F55;&#x3002;&#x6709;card, mcc&#x548C;money&#x4E09;&#x5217;, &#x5176;&#x4E2D;card&#x662F;index&#x5217;&#x7C7B;&#x578B;&#x4E3A;uint64, mcc&#x5217;&#x7C7B;&#x578B;&#x4E3A;string, money&#x5217;&#x7684;&#x7C7B;&#x578B;&#x4E3A;float&#x3002;tid&#x8BBE;&#x7F6E;&#x4E3A;2, pid&#x4E3A;0</p>
+<pre><code>&gt; screate test2 2 0 latest:2 8 false card:uint64:index mcc:string money:float
+Create table ok
+</code></pre><h3 id="xdrop">drop </h3>
+<p>&#x5220;&#x9664;&#x8868;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: drop tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; drop 1 0
+Drop table ok
+</code></pre><h3 id="xput">put </h3>
+<p>&#x63D2;&#x5165;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: put tid pid pk ts value</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>pk &#x4E3B;&#x952E;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;, <strong>&#x7CBE;&#x786E;&#x5230;&#x6BEB;&#x79D2;, ts&#x4E0D;&#x80FD;&#x4E3A;0</strong> </li>
+<li>value &#x4E3B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;</li>
+</ul>
+<pre><code>&gt; put 2 0 key1 1535371622000 value1
+Put ok
+</code></pre><h3 id="xsput">sput </h3>
+<p>&#x7ED9;&#x6709;schema&#x7684;&#x8868;&#x63D2;&#x5165;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sput tid pid ts value1 value2 value3 ...</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;, <strong>&#x7CBE;&#x786E;&#x5230;&#x6BEB;&#x79D2;, ts&#x4E0D;&#x80FD;&#x4E3A;0</strong> </li>
+<li>schema &#x5404;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x7684;value, &#x5B57;&#x6BB5;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x53EF;&#x4EE5;&#x6267;&#x884C;showschema&#x67E5;&#x770B;</li>
+</ul>
+<pre><code>&gt; sput 1 0 1535371622000 card0 mcc0 1.5
+Put ok
+</code></pre><h3 id="xscan">scan </h3>
+<p>&#x67E5;&#x8BE2;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: scan tid pid pk start_time end_time [limit]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>pk &#x4E3B;&#x952E;</li>
+<li>start_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>end_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4; &#x5982;&#x679C;end_time&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;, &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>&gt; scan 2 0 test1 1535446708000 1535446686000
+#    Time    Data
+1    1535446708000    value3
+2    1535446688000    value2
+&gt; scan 2 0 test1 1535446708000 0
+#    Time    Data
+1    1535446708000    value3
+2    1535446688000    value2
+3    1528858466000    value0
+&gt; scan 2 0 test1 1535446708000 0 1
+#    Time    Data
+1    1535446708000    value3
+</code></pre><h3 id="xsscan">sscan </h3>
+<h4 id="1-&#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;">1 &#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sscan tid pid key col_name start_time end_time [limit]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>col_name &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x4E3B;&#x952E;&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;, &#x53EA;&#x6709;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x8BBE;&#x7F6E;&#x4E3A;index&#x5217;&#x624D;&#x80FD;&#x67E5;&#x8BE2;</li>
+<li>start_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>end_time &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4; &#x5982;&#x679C;end_time&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;, &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>&gt; sscan 1 0 card0 card 1535446708000 1535446687000
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+  2  1535446688000  card0  mcc1  1.5
+&gt;sscan 1 0 card0 card 1535446708000 0
+  #  ts             card   mcc   money
+----------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+  2  1535446688000  card0  mcc1  1.5
+  3  1528858466000  card0  mcc3  0.400000006
+&gt;sscan 1 0 card0 card 1535446708000 0 1
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+</code></pre><h4 id="2-&#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;">2 &#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x4E00;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sscan tid=xxx pid=xxx key=xxx index_name=xxx st=xxx et=xxx ts_name=xxx [limit=xxx]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>index_name &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x4E3B;&#x952E;&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;, &#x53EA;&#x6709;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x8BBE;&#x7F6E;&#x4E3A;index&#x5217;&#x624D;&#x80FD;&#x67E5;&#x8BE2;</li>
+<li>st &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x8D77;&#x59CB;&#x65F6;&#x95F4;</li>
+<li>et &#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4; &#x5982;&#x679C;end_time&#x8BBE;&#x7F6E;&#x4E3A;0&#x67E5;&#x8BE2;&#x4ECE;&#x8D77;&#x59CB;&#x65F6;&#x523B;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+<li>ts_name &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;</li>
+<li>limit &#x9650;&#x5236;&#x6700;&#x591A;&#x8FD4;&#x56DE;&#x6761;&#x6570;, &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x8303;&#x56F4;&#x5185;&#x6240;&#x6709;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>&gt; sscan tid=1 pid=0 key=card0 index_name=card st=1535446708000 et=1535446687000 ts_name=ts
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+  2  1535446688000  card0  mcc1  1.5
+&gt;sscan tid=1 pid=0 key=card0 index_name=card st=1535446708000 et=0 ts_name=ts
+  #  ts             card   mcc   money
+----------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+  2  1535446688000  card0  mcc1  1.5
+  3  1528858466000  card0  mcc3  0.400000006
+&gt;sscan tid=1 pid=0 key=card0 index_name=card st=1535446708000 et=0 ts_name=ts limit=1
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+</code></pre><h3 id="xget">get </h3>
+<p>&#x67E5;&#x8BE2;&#x5355;&#x6761;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: get tid pid key ts</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;, &#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+</ul>
+<pre><code>&gt; get 2 0 test1 1535446688000
+value :value2
+&gt; get 2 0 test1 0
+value :value3
+</code></pre><h3 id="xsget">sget </h3>
+<h4 id="1-&#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x7684;&#x5355;&#x6761;&#x6570;&#x636E;">1 &#x67E5;&#x8BE2;&#x6709;schema&#x8868;&#x7684;&#x5355;&#x6761;&#x6570;&#x636E;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sget tid pid key col_name ts</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>col_name &#x8981;&#x67E5;&#x8BE2;&#x7684;key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;, &#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+</ul>
+<pre><code>&gt; sget 1 0 card0 card 1535446688000
+  #  ts             card   mcc   money
+----------------------------------------
+  1  1535446688000  card0  mcc1  1.5
+&gt; sget 1 0 card0 card 0
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+</code></pre><h4 id="2-&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x5355;&#x6761;&#x6570;&#x636E;">2 &#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x5355;&#x6761;&#x6570;&#x636E;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sget tid=xxx pid=xxx key=xxx index_name=xxx ts=xxx ts_name=xxx</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>index_name &#x8981;&#x67E5;&#x8BE2;&#x7684;key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;</li>
+<li>ts &#x65F6;&#x95F4;&#x6233;, &#x5982;&#x679C;&#x662F;0&#x5219;&#x8FD4;&#x56DE;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6761;</li>
+<li>ts_name, &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;</li>
+</ul>
+<pre><code>&gt; sget tid=1 pid=0 key=card0 index_name=card ts=1535446688000 ts_name=ts
+  #  ts             card   mcc   money
+----------------------------------------
+  1  1535446688000  card0  mcc1  1.5
+&gt; sget tid=1 pid=0 key=card0 idex_name=card ts=0 ts_name=ts
+  #  ts             card   mcc   money
+---------------------------------------------
+  1  1535446708000  card0  mcc0  1.29999995
+</code></pre><h3 id="xdelete">delete </h3>
+<p>&#x5220;&#x9664;pk</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: delete tid pid key [col_name]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>col_name &#x8981;&#x5220;&#x9664;key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;</li>
+</ul>
+<pre><code>&gt; delete 1 0 key1
+Delete ok
+</code></pre><h3 id="xpreview">preview </h3>
+<p>&#x9884;&#x89C8;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: preview tid pid [limit]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>limit &#x9650;&#x5B9A;&#x8F93;&#x51FA;&#x7684;&#x6761;&#x6570;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;. &#x9ED8;&#x8BA4;&#x4E3A;100&#x6761;</li>
+</ul>
+<pre><code>&gt;preview 9 0 10
+  #   ts             card      mcc     amt
+-----------------------------------------------------------
+  1   1551168689441  card1077  mcc889  9.2206023558557888
+  2   1551168689431  card1077  mcc632  9.3409316056017353
+  3   1551168689285  card1077  mcc723  9.001503218597831
+  4   1551168689276  card1077  mcc951  9.4250239440250034
+  5   1551168689074  card1077  mcc101  9.6827419040776679
+  6   1551168688788  card1077  mcc993  9.0653753412878455
+  7   1551168688632  card1077  mcc659  9.8579586148719489
+  8   1551168688617  card1077  mcc249  9.3870601038906241
+  9   1551168688439  card1077  mcc448  9.1521059211468661
+  10  1551168688216  card1077  mcc112  9.7253728651383557
+</code></pre><h3 id="xcount">count </h3>
+<h4 id="1-&#x7EDF;&#x8BA1;&#x67D0;&#x4E00;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;">1 &#x7EDF;&#x8BA1;&#x67D0;&#x4E00;pk&#x4E0B;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: count tid pid key [col_name] [filter_expired_data]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>col_name key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;</li>
+<li>filter_expired_data &#x662F;&#x5426;&#x8FC7;&#x6EE4;&#x8FC7;&#x671F;&#x6570;&#x636E;[true/false]. &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false. &#x5982;&#x679C;&#x7F6E;&#x4E3A;true, &#x4F1A;&#x904D;&#x5386;pk&#x4E0B;&#x7684;&#x94FE;&#x8868;&#x6027;&#x80FD;&#x8F83;&#x5DEE;</li>
+</ul>
+<pre><code>&gt; count 9 0 card1077 card true
+count: 7612
+</code></pre><h4 id="2-&#x7EDF;&#x8BA1;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;">2 &#x7EDF;&#x8BA1;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x7684;&#x8BB0;&#x5F55;&#x6761;&#x6570;</h4>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: count tid=xxx pid=xxx key=xxx index_name=xxx ts_name=xxx [filter_expired_data=xxx]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>key &#x4E3B;&#x952E;</li>
+<li>index_name key&#x6240;&#x5728;&#x7684;&#x5217;&#x540D;. &#x8BE5;&#x5B57;&#x6BB5;&#x662F;&#x53EF;&#x9009;&#x7684;</li>
+<li>ts_name=xxx &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5217;&#x540D;</li>
+<li>filter_expired_data &#x662F;&#x5426;&#x8FC7;&#x6EE4;&#x8FC7;&#x671F;&#x6570;&#x636E;[true/false]. &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false. &#x5982;&#x679C;&#x7F6E;&#x4E3A;true, &#x4F1A;&#x904D;&#x5386;pk&#x4E0B;&#x7684;&#x94FE;&#x8868;&#x6027;&#x80FD;&#x8F83;&#x5DEE;</li>
+</ul>
+<pre><code>&gt; count tid=9 pid=0 key=card1077 index_name=card filter_expired_data=true
+count: 7612
+</code></pre><h3 id="xaddreplica">addreplica </h3>
+<p>&#x6DFB;&#x52A0;&#x526F;&#x672C;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: addreplica tid pid endpoint</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>endpoint &#x8981;&#x6DFB;&#x52A0;&#x4E3A;&#x526F;&#x672C;&#x7684;&#x8282;&#x70B9;endpoint, <strong>&#x6B64;endpoint&#x4E0A;&#x5F97;&#x6709;&#x5BF9;&#x5E94;tid&#x548C;pid&#x7684;follower&#x8868;</strong></li>
+</ul>
+<pre><code>&gt; addreplica 2 0 172.27.128.32:8541
+AddReplica ok
+</code></pre><h3 id="xdelreplica">delreplica </h3>
+<p>&#x5220;&#x9664;&#x526F;&#x672C;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: delreplica tid pid endpoint</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>endpoint &#x8981;&#x5220;&#x9664;&#x526F;&#x672C;&#x7684;&#x8282;&#x70B9;endpoint</li>
+</ul>
+<pre><code>&gt; delreplica 2 0 172.27.128.32:8541
+DelReplica ok
+</code></pre><p><strong>&#x6CE8;: &#x5220;&#x9664;&#x526F;&#x672C;&#x64CD;&#x4F5C;&#x5E76;&#x4E0D;&#x4F1A;&#x5B9E;&#x9645;&#x5220;&#x9664;&#x526F;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x8868;, &#x53EA;&#x662F;&#x65AD;&#x5F00;&#x4E86;&#x4E3B;&#x4ECE;&#x5173;&#x7CFB;</strong></p>
+<h3 id="xmakesnapshot">makesnapshot </h3>
+<p>&#x4EA7;&#x751F;snapshot, &#x4F1A;&#x5728;db/tid_pid/snapshot&#x76EE;&#x5F55;&#x4E0B;&#x4EA7;&#x751F;snapshot&#x6587;&#x4EF6;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: makesnapshot tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; makesnapshot 1 0
+MakeSnapshot ok
+</code></pre><h3 id="xpausesnapshot">pausesnapshot </h3>
+<p>&#x6682;&#x505C;snapshot, &#x6267;&#x884C;&#x5B8C;&#x4E4B;&#x540E;&#x8FD0;&#x884C;gettablestatus&#x72B6;&#x6001;&#x53D8;&#x4E3A;kSnapshotPaused</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: pausesnapshot tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; pausesnapshot 1 0
+PauseSnapshot ok
+&gt; gettablestatus 1 0
+  tid  pid  offset  mode          state            enable_expire  ttl        ttl_offset  memused  compress_type
+-----------------------------------------------------------------------------------------------------------------
+  1    0    4       kTableLeader  kSnapshotPaused  true           144000min  0s          1.313 K  kNoCompress
+</code></pre><h3 id="xrecoversnapshot">recoversnapshot </h3>
+<p>&#x6062;&#x590D;snapshot</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: recoversnapshot tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; recoversnapshot 1 0
+RecoverSnapshot ok
+</code></pre><h3 id="xsendsnapshot">sendsnapshot </h3>
+<p>&#x53D1;&#x9001;snapshot</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: sensnapshot tid pid endpoint</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>endpoint &#x5C06;sendsnapshot&#x53D1;&#x9001;&#x5230;endpoint&#x6307;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x4E0A;</li>
+</ul>
+<pre><code>&gt; sendsnapshot 1 0 172.27.128.32:8541
+SendSnapshot ok
+</code></pre><p><strong>&#x6CE8;: &#x8FD0;&#x884C;sendsnapshot&#x524D;&#x5FC5;&#x987B;&#x6267;&#x884C;&#x4E0B;pausesnapshot, &#x53D1;&#x9001;&#x5B8C;&#x518D;&#x6267;&#x884C;recoversnapshot</strong></p>
+<h3 id="xloadtable">loadtable </h3>
+<p>1&#x3001;&#x521B;&#x5EFA;&#x8868;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: loadtable table_name tid pid ttl segment_cnt</p>
+<ul>
+<li>table_name &#x8868;&#x540D;</li>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>ttl &#x6307;&#x5B9A;ttl</li>
+<li>segment_cnt &#x6307;&#x5B9A;segment_cnt, &#x4E00;&#x822C;&#x8BBE;&#x7F6E;&#x4E3A;8</li>
+</ul>
+<pre><code>&gt; loadtable table1 1 0 144000 8
+</code></pre><p>2&#x3001;&#x521B;&#x5EFA;relation&#x8868;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: loadtable tid pid storage_mode</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>storage_mode &#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;</li>
+</ul>
+<pre><code>&gt; loadtable 1 0 ssd
+&gt; loadTable ok
+</code></pre><p><strong>&#x6CE8;: loadtable&#x521B;&#x5EFA;&#x7684;&#x8868;&#x662F;follower&#x8868;</strong></p>
+<h3 id="xchangerole">changerole </h3>
+<p>&#x6539;&#x53D8;&#x8868;&#x7684;leader&#x89D2;&#x8272;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: changerole tid pid role [term]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>role &#x8981;&#x4FEE;&#x6539;&#x7684;&#x89D2;&#x8272;, &#x53D6;&#x503C;&#x4E3A;[leader, follower]</li>
+<li>term &#x8BBE;&#x5B9A;term, &#x8BE5;&#x9879;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x9ED8;&#x8BA4;&#x4E3A;0</li>
+</ul>
+<pre><code>&gt; changerole 1 0 follower
+ChangeRole ok
+&gt; changerole 1 0 leader
+ChangeRole ok
+&gt; changerole 1 0 leader 1002
+ChangeRole ok
+</code></pre><h3 id="xsetexpire">setexpire </h3>
+<p>&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x8FC7;&#x671F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: setexpire tid pid is_expire</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>is_expire &#x662F;&#x5426;&#x8FC7;&#x671F;, &#x53D6;&#x503C;&#x4E3A;[true, false]</li>
+</ul>
+<pre><code>&gt;setexpire 1 0 false
+setexpire ok
+&gt;setexpire 1 0 true
+setexpire ok
+</code></pre><h3 id="xshowschema">showschema </h3>
+<p>&#x67E5;&#x770B;&#x8868;&#x7684;schema</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: showschema tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; showschema 1 0
+  #  name   type    index
+---------------------------
+  0  card   string  yes
+  1  mcc    string  yes
+  2  money  float   no
+&gt; showschema 2 0
+No schema for table
+</code></pre><h3 id="xgettablestatus">gettablestatus </h3>
+<p>&#x83B7;&#x53D6;&#x8868;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: gettablestatus [tid pid]</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; gettablestatus
+  tid   pid  offset   mode            state            enable_expire  ttl               ttl_offset  memused  compress_type
+----------------------------------------------------------------------------------------------------------------------------
+  1     0    4        kTableLeader    kSnapshotPaused  true           144000min         0s          1.313 K  kNoCompress
+  2     0    4        kTableLeader    kTableNormal     false          0min              0s          689.000  kNoCompress
+&gt; gettablestatus 2 0
+  tid  pid  offset  mode          state         enable_expire  ttl   ttl_offset  memused  compress_type
+---------------------------------------------------------------------------------------------------------
+  2    0    4       kTableLeader  kTableNormal  false          0min  0s          689.000  kNoCompress
+</code></pre><h3 id="xgetfollower">getfollower </h3>
+<p>&#x67E5;&#x770B;&#x4ECE;&#x8282;&#x70B9;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: getfollower tid pid</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; getfollower 4 1
+  #  tid  pid  leader_offset  follower            offset
+-----------------------------------------------------------
+  0  4    1    5923724        172.27.128.31:8541  5920714
+  1  4    1    5923724        172.27.128.32:8541  5921707
+</code></pre><h3 id="xsetttl">setttl </h3>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: setttl tid pid ttl_type ttl</p>
+<ul>
+<li>tid &#x6307;&#x5B9A;table&#x7684;id</li>
+<li>pid &#x6307;&#x5B9A;table&#x7684;&#x5206;&#x7247;id</li>
+<li>ttl_type ttl&#x7C7B;&#x578B;</li>
+<li>ttl &#x8BBE;&#x7F6E;ttl&#x7684;&#x503C;</li>
+</ul>
+<pre><code>&gt; setttl 1 0 absolute 1000
+Set ttl ok !
+&gt; setttl 2 0 latest 5
+Set ttl ok !
+</code></pre><p><strong>&#x6CE8;: &#x4FEE;&#x6539;&#x540E;&#x5728;&#x4E0B;&#x4E00;&#x8F6E;gc&#x6267;&#x884C;&#x540E;&#x624D;&#x4F1A;&#x751F;&#x6548;</strong></p>
+<h3 id="xsetlimit">setlimit </h3>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: setlimit method limit</p>
+<ul>
+<li>method &#x65B9;&#x6CD5;&#x540D;(&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;). &#x5982;&#x679C;&#x662F;Server&#x8868;&#x793A;&#x6574;&#x4F53;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;</li>
+<li>limit &#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;. &#x5982;&#x679C;limit&#x4E3A;0&#x8868;&#x793A;&#x4E0D;&#x9650;&#x5236;</li>
+</ul>
+<pre><code>&gt; setlimit Server 5
+Set Limit ok
+&gt; setlimit Server 0
+Set Limit ok
+&gt; setlimit Put 10
+Set Limit ok
+</code></pre><h3 id="xexit">exit </h3>
+<p>&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code>&gt; exit
+bye
+</code></pre><h3 id="xquit">quit </h3>
+<p>&#x9000;&#x51FA;&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code>&gt; quit
+bye
+</code></pre><h3 id="xhelp">help </h3>
+<p>&#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: help [cmd]</p>
+<pre><code>&gt; help
+create - create table
+screate - create multi dimension table
+drop - drop table
+put - insert data into table
+sput - insert data into table of multi dimension
+scan - get records for a period of time
+sscan - get records for a period of time from multi dimension table
+get - get only one record
+sget - get only one record from multi dimension table
+addreplica - add replica to leader
+delreplica - delete replica from leader
+makesnapshot - make snapshot
+pausesnapshot - pause snapshot
+recoversnapshot - recover snapshot
+sendsnapshot - send snapshot to another endpoint
+loadtable - create table and load data
+changerole - change role
+setexpire - enable or disable ttl
+showschema - show schema
+gettablestatus - get table status
+getfollower - get follower
+setttl - set ttl for partition
+setlimit - set tablet max concurrency limit
+exit - exit client
+quit - exit client
+help - get cmd info
+man - get cmd info
+&gt; help create 
+desc: create table
+usage: create name tid pid ttl segment_cnt [is_leader compress_type]
+ex: create table1 1 0 144000 8
+ex: create table1 1 0 144000 8 true snappy
+ex: create table1 1 0 144000 8 false
+</code></pre><h3 id="xman">man </h3>
+<p>&#x83B7;&#x53D6;&#x5E2E;&#x7EC4;&#x4FE1;&#x606F;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: man [cmd]</p>
+<pre><code>&gt; man
+create - create table
+screate - create multi dimension table
+drop - drop table
+put - insert data into table
+sput - insert data into table of multi dimension
+scan - get records for a period of time
+sscan - get records for a period of time from multi dimension table
+get - get only one record
+sget - get only one record from multi dimension table
+addreplica - add replica to leader
+delreplica - delete replica from leader
+makesnapshot - make snapshot
+pausesnapshot - pause snapshot
+recoversnapshot - recover snapshot
+sendsnapshot - send snapshot to another endpoint
+loadtable - create table and load data
+changerole - change role
+setexpire - enable or disable ttl
+showschema - show schema
+gettablestatus - get table status
+getfollower - get follower
+setttl - set ttl for partition
+setlimit - set tablet max concurrency limit
+exit - exit client
+quit - exit client
+help - get cmd info
+man - get cmd info
+&gt; man create 
+desc: create table
+usage: create name tid pid ttl segment_cnt [is_leader compress_type]
+ex: create table1 1 0 144000 8
+ex: create table1 1 0 144000 8 true snappy
+ex: create table1 1 0 144000 8 false
+</code></pre><h1 id="bs-client">Bs Client </h1>
+<p>&#x8FDE;&#x63A5;&#x5230;bs client&#x9700;&#x8981;&#x6307;&#x5B9A;endpoint&#x548C;role</p>
+<pre><code class="lang-bash">$ ./rtidb --endpoint=172.27.2.52:9531 --role=bs_client
+</code></pre>
+<ul>
+<li><a href="#bloadtable">loadtable</a> &#x5728;blobserver&#x4E2D;&#x521B;&#x5EFA;&#x8868;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;</li>
+</ul>
+<h3 id="bloadtable">loadtable </h3>
+<p>&#x521B;&#x5EFA;&#x8868;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;</p>
+<p>&#x547D;&#x4EE4;&#x683C;&#x5F0F;: loadtable tid pid</p>
+<ul>
+<li>tid relation table&#x7684;id</li>
+<li>pid relation table&#x7684;&#x5206;&#x7247;id</li>
+</ul>
+<pre><code>&gt; loadtable 1 0 
+&gt; loadTable ok
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../usage.html" class="navigation navigation-prev " aria-label="Previous page: 老的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="java.html" class="navigation navigation-next " aria-label="Next page: java sdk">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"命令行","level":"1.6.1","depth":2,"next":{"title":"java sdk","level":"1.6.2","depth":2,"path":"usage/java.md","ref":"usage/java.md","articles":[]},"previous":{"title":"老的使用","level":"1.6","depth":1,"path":"usage.md","ref":"usage.md","articles":[{"title":"命令行","level":"1.6.1","depth":2,"path":"usage/cmd.md","ref":"usage/cmd.md","articles":[]},{"title":"java sdk","level":"1.6.2","depth":2,"path":"usage/java.md","ref":"usage/java.md","articles":[]},{"title":"python sdk","level":"1.6.3","depth":2,"path":"usage/python.md","ref":"usage/python.md","articles":[]},{"title":"返回码","level":"1.6.4","depth":2,"path":"usage/code.md","ref":"usage/code.md","articles":[]},{"title":"导入工具","level":"1.6.5","depth":2,"path":"usage/importer.md","ref":"usage/importer.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"usage/cmd.md","mtime":"2021-01-28T06:48:02.391Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-29T06:52:15.019Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,771 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python sdk · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="code.html" />
+    
+    
+    <link rel="prev" href="java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    FEDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../install.html">
+            
+                <a href="../install.html">
+            
+                    
+                    部署安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../install/env.html">
+            
+                <a href="../install/env.html">
+            
+                    
+                    配置机器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../install/fedb_quick_deploy.html">
+            
+                <a href="../install/fedb_quick_deploy.html">
+            
+                    
+                    一键部署RTIDB集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../install/zk.html">
+            
+                <a href="../install/zk.html">
+            
+                    
+                    部署zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../install/fedb_deploy.html">
+            
+                <a href="../install/fedb_deploy.html">
+            
+                    
+                    部署RTIDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../install/conf.html">
+            
+                <a href="../install/conf.html">
+            
+                    
+                    配置文件详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../install/dir.html">
+            
+                <a href="../install/dir.html">
+            
+                    
+                    目录介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../install/checklist.html">
+            
+                <a href="../install/checklist.html">
+            
+                    
+                    部署后checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../install/sageone.html">
+            
+                <a href="../install/sageone.html">
+            
+                    
+                    一体机部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../sql.html">
+            
+                <a href="../sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../sql/ddl.html">
+            
+                <a href="../sql/ddl.html">
+            
+                    
+                    DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../sql/dml.html">
+            
+                <a href="../sql/dml.html">
+            
+                    
+                    DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sql/dql.html">
+            
+                <a href="../sql/dql.html">
+            
+                    
+                    DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../sql_cli.html">
+            
+                <a href="../sql_cli.html">
+            
+                    
+                    fedb cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../sql_java_sdk.html">
+            
+                <a href="../sql_java_sdk.html">
+            
+                    
+                    fedb java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../usage.html">
+            
+                <a href="../usage.html">
+            
+                    
+                    老的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="cmd.html">
+            
+                <a href="cmd.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="java.html">
+            
+                <a href="java.html">
+            
+                    
+                    java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    python sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="code.html">
+            
+                <a href="code.html">
+            
+                    
+                    返回码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="importer.html">
+            
+                <a href="importer.html">
+            
+                    
+                    导入工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    RTIDB运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ops/monitor.html">
+            
+                <a href="../ops/monitor.html">
+            
+                    
+                    RTIDB监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../weekly_reports.html">
+            
+                <a href="../weekly_reports.html">
+            
+                    
+                    周报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >python sdk</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>python sdk &#x6587;&#x6863;</p>
+<ul>
+<li><a href="#pip">pip&#x5B89;&#x88C5;</a></li>
+<li><a href="#demo">&#x4F7F;&#x7528;demo</a></li>
+</ul>
+<h1 id="pip">pip &#x5B89;&#x88C5; </h1>
+<pre><code>pip3 install -U -i http://pypi.4paradigm.com/4paradigm/dev --trusted-host=pypi.4paradigm.com rtidb==1.6.3.0
+</code></pre><h1 id="demo">&#x4F7F;&#x7528;demo </h1>
+<p>python client &#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;</p>
+<p>&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x5FC5;&#x987B;&#x8981;&#x6709;zk,tablet,nameserver &#x8FD9;&#x4E09;&#x4E2A;&#x89D2;&#x8272;</p>
+<p> &#x5982;&#x679C;&#x6709;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;(&#x56FE;&#x7247; mp3&#x7B49;)&#x8FD8;&#x9700;&#x8981;blob &#x548C; blob_proxy &#x8FD9;&#x4E24;&#x4E2A;&#x89D2;&#x8272;</p>
+<p>schema &#x5982;&#x4E0B;</p>
+<pre><code class="lang-bash">name : <span class="hljs-string">&quot;test2&quot;</span>
+table_<span class="hljs-built_in">type</span> : <span class="hljs-string">&quot;Relational&quot;</span>
+column_desc {
+      name : <span class="hljs-string">&quot;id&quot;</span>
+        <span class="hljs-built_in">type</span> : <span class="hljs-string">&quot;bigint&quot;</span>
+        not_null : <span class="hljs-literal">true</span>
+}
+column_desc {
+      name : <span class="hljs-string">&quot;filename&quot;</span>
+        <span class="hljs-built_in">type</span> : <span class="hljs-string">&quot;varchar&quot;</span>
+        not_null : <span class="hljs-literal">true</span>
+}
+column_desc {
+      name : <span class="hljs-string">&quot;content&quot;</span>
+        <span class="hljs-built_in">type</span> : <span class="hljs-string">&quot;blob&quot;</span>
+        not_null : <span class="hljs-literal">false</span>
+}
+index {
+       index_name : <span class="hljs-string">&quot;idx1&quot;</span>
+       col_name : <span class="hljs-string">&quot;id&quot;</span>
+       index_<span class="hljs-built_in">type</span> : <span class="hljs-string">&quot;PrimaryKey&quot;</span>
+}
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> rtidb
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">try</span>:
+  nsc = rtidb.RTIDBClient(<span class="hljs-string">&quot;172.27.128.81:3181&quot;</span>, <span class="hljs-string">&quot;/rtidb_cluster&quot;</span>) <span class="hljs-comment">#&#x521D;&#x59CB;&#x5316;&#x96C6;&#x7FA4;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x5206;&#x522B;&#x662F;zk server &#x5730;&#x5740;(&#x591A;&#x4E2A;zk server &#x4F7F;&#x7528;&#x82F1;&#x6587;,&#x9694;&#x5F00; ) zk &#x8DEF;&#x5F84;, &#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#x540E;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;rtidb client</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(e)
+  exit(<span class="hljs-number">1</span>)
+
+table=<span class="hljs-string">&quot;test2&quot;</span> <span class="hljs-comment"># python client &#x4E0D;&#x652F;&#x6301;&#x5EFA;&#x8868;&#x548C;&#x67E5;&#x8868;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x6216;&#x8005;java client &#x5EFA;&#x8868;</span>
+
+<span class="hljs-comment"># put</span>
+id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">for</span> fileName <span class="hljs-keyword">in</span> os.listdir(<span class="hljs-string">&quot;images&quot;</span>):
+  <span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;images/{}&quot;</span>.format(fileName), <span class="hljs-string">&quot;rb&quot;</span>) <span class="hljs-keyword">as</span> f:
+    binaryData = f.read()
+  data = {<span class="hljs-string">&quot;id&quot;</span>: id, <span class="hljs-string">&quot;filename&quot;</span>: fileName, <span class="hljs-string">&quot;content&quot;</span>: binaryData} <span class="hljs-comment">#&#x6784;&#x9020;&#x6570;&#x636E;</span>
+  putResult = nsc.put(table, data, <span class="hljs-keyword">None</span>) <span class="hljs-comment">#put &#x6570;&#x636E;, &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x8868;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;data&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x662F;readoption,&#x5F53;&#x524D;&#x672A;&#x5F00;&#x53D1;&#x4F20;None&#x5373;&#x53EF;, put &#x51FD;&#x6570;&#x8C03;&#x7528;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; put result</span>
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> putResult.success(): <span class="hljs-comment"># &#x901A;&#x8FC7;&#x8C03;&#x7528;success() &#x5224;&#x65AD;&#x662F;&#x5426;put &#x6210;&#x529F;</span>
+    print(<span class="hljs-string">&quot;put %s error&quot;</span> % fileName);
+    exit(<span class="hljs-number">1</span>)
+  id += <span class="hljs-number">1</span>
+  <span class="hljs-comment">#&#x5982;&#x679C;&#x7D22;&#x5F15;&#x662F;auto gen &#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; putResult.get_auto_gen_pk() &#x83B7;&#x53D6; &#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;key</span>
+
+<span class="hljs-comment"># query</span>
+ro = rtidb.ReadOption() <span class="hljs-comment">#&#x521B;&#x5EFA;read option</span>
+ro.index.update({<span class="hljs-string">&quot;id&quot;</span>:<span class="hljs-number">1</span>}) <span class="hljs-comment">#&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x7D22;&#x5F15; key</span>
+<span class="hljs-keyword">try</span>:
+  resp = nsc.query(table, ro) <span class="hljs-comment">#&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;read option&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;query &#x8FED;&#x4EE3;&#x5668;</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">&quot;query error &quot;</span>, e)
+  exit(<span class="hljs-number">1</span>)
+print(<span class="hljs-string">&quot;query size &quot;</span>, resp.count()) <span class="hljs-comment">#&#x5982;&#x679C;&#x6709;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x5230;&#xFF0C;count&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;1</span>
+<span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> resp: <span class="hljs-comment"># &#x5FAA;&#x73AF;query &#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x8FED;&#x4EE3;&#x5668;&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;map, map&#x7684;key &#x8BF4;schema names</span>
+  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> m:
+    <span class="hljs-keyword">if</span> k == <span class="hljs-string">&quot;content&quot;</span>:
+      blobData = m[k]
+      print(blobData.getUrl()) <span class="hljs-comment">#&#x83B7;&#x53D6;http proxy &#x8BBF;&#x95EE;&#x540E;&#x7F00;</span>
+      print(len(blobData.getData())) <span class="hljs-comment">#&#x83B7;&#x53D6;blob &#x6570;&#x636E;</span>
+      print(blobData.getKey()) <span class="hljs-comment">#&#x83B7;&#x53D6;blob key</span>
+    <span class="hljs-keyword">else</span>:
+      print(<span class="hljs-string">&quot;key: &quot;</span>, k, <span class="hljs-string">&quot;,value: &quot;</span>, m[k])
+
+<span class="hljs-comment"># batch_query batch_query &#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x591A;&#x4E2A;key</span>
+ros = []
+<span class="hljs-keyword">for</span> idx <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>): <span class="hljs-comment"># &#x6784;&#x9020;9&#x4E2A; read option</span>
+  ro = rtidb.ReadOption()
+  ro.index.update({<span class="hljs-string">&quot;id&quot;</span>:<span class="hljs-number">1</span>})
+  ros.append(ro)
+
+<span class="hljs-keyword">try</span>:
+  resp = nsc.batch_query(table, ros) <span class="hljs-comment">#&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;read options&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;batch query &#x8FED;&#x4EE3;&#x5668;</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">&quot;batch query error &quot;</span>, e)
+  exit(<span class="hljs-number">1</span>)
+print(<span class="hljs-string">&quot;batch query size &quot;</span>, resp.count())
+<span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> resp: <span class="hljs-comment"># &#x5FAA;&#x73AF;batch query &#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x8FED;&#x4EE3;&#x5668;&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;map, map&#x7684;key &#x8BF4;schema names</span>
+  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> m:
+    <span class="hljs-keyword">if</span> k == <span class="hljs-string">&quot;content&quot;</span>:
+      blobData = m[k]
+      print(blobData.getUrl()) <span class="hljs-comment">#&#x83B7;&#x53D6;http proxy &#x8BBF;&#x95EE;&#x540E;&#x7F00;</span>
+      print(len(blobData.getData())) <span class="hljs-comment">#&#x83B7;&#x53D6;blob &#x6570;&#x636E;</span>
+      print(blobData.getKey()) <span class="hljs-comment">#&#x83B7;&#x53D6;blob key</span>
+    <span class="hljs-keyword">else</span>:
+      print(<span class="hljs-string">&quot;key: &quot;</span>, k, <span class="hljs-string">&quot;,value: &quot;</span>, m[k])
+
+<span class="hljs-comment"># traverse &#x5168;&#x8868;&#x67E5;&#x8BE2;</span>
+<span class="hljs-keyword">try</span>:
+  resp = nsc.traverse(table, <span class="hljs-keyword">None</span>)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(e)
+  exit(<span class="hljs-number">1</span>)
+<span class="hljs-comment"># traverse do not support count, beacuse traverse count is not precise</span>
+traverse_id = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> resp:
+  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> m:
+    <span class="hljs-keyword">if</span> k == <span class="hljs-string">&quot;content&quot;</span>:
+      blobData = m[k]
+      print(blobData.getUrl()) <span class="hljs-comment">#&#x83B7;&#x53D6;http proxy &#x8BBF;&#x95EE;&#x540E;&#x7F00;</span>
+      print(len(blobData.getData())) <span class="hljs-comment">#&#x83B7;&#x53D6;blob &#x6570;&#x636E;</span>
+      print(blobData.getKey()) <span class="hljs-comment">#&#x83B7;&#x53D6;blob key</span>
+    <span class="hljs-keyword">else</span>:
+      print(<span class="hljs-string">&quot;key: &quot;</span>, k, <span class="hljs-string">&quot;,value: &quot;</span>, m[k])
+  <span class="hljs-keyword">if</span> m[<span class="hljs-string">&quot;id&quot;</span>] != traverse_id:
+    <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">&quot;data error&quot;</span>)
+  traverse_id+=<span class="hljs-number">1</span>
+  <span class="hljs-keyword">if</span> (traverse_id &gt; <span class="hljs-number">10</span>):
+      <span class="hljs-keyword">break</span>
+
+<span class="hljs-comment"># update</span>
+cond = {<span class="hljs-string">&quot;id&quot;</span>:<span class="hljs-string">&quot;10&quot;</span>}
+value = {<span class="hljs-string">&quot;filename&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>}
+<span class="hljs-keyword">try</span>:
+  update_result = nsc.update(table, cond, value, <span class="hljs-keyword">None</span>) <span class="hljs-comment">#&#x66F4;&#x65B0;id 10 &#x7684;filename</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(e)
+  exit(<span class="hljs-number">1</span>)
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> update_result.success(): <span class="hljs-comment">#&#x901A;&#x8FC7;success &#x5224;&#x65AD;&#x662F;&#x5426;&#x66F4;&#x65B0;&#x6210;&#x529F;</span>
+  print(<span class="hljs-string">&quot;update fail&quot;</span>)
+  exit(<span class="hljs-number">1</span>)
+print(update_result.affected_count()) <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6709;&#x591A;&#x5C11;&#x884C; &#x88AB;&#x66F4;&#x65B0;&#x5DE5;&#x7A0B;</span>
+
+
+<span class="hljs-comment"># query update result #&#x9A8C;&#x8BC1;update &#x7ED3;&#x679C;</span>
+ro = rtidb.ReadOption()
+ro.index = cond
+<span class="hljs-keyword">try</span>:
+  resp = nsc.query(table, ro)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">&quot;query errir&quot;</span>, e)
+  exit(<span class="hljs-number">1</span>)
+
+<span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> resp:
+  <span class="hljs-keyword">if</span> m[<span class="hljs-string">&quot;filename&quot;</span>] != <span class="hljs-string">&quot;123&quot;</span>:
+    print(<span class="hljs-string">&quot;update failed&quot;</span>)
+    exit(<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># delete</span>
+<span class="hljs-keyword">try</span>:
+  resp = nsc.delete(table, cond)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(e)
+  exit(<span class="hljs-number">1</span>)
+
+ro.index = cond <span class="hljs-comment">#&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x5220;&#x9664;&#x6210;&#x529F;</span>
+<span class="hljs-keyword">try</span>:
+  resp = nsc.quey(table, ro)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">&quot;delete ok, because query {} fail&quot;</span>.format(cond[<span class="hljs-string">&quot;id&quot;</span>]))
+
+<span class="hljs-comment"># &#x4E3B;&#x952E;&#x91CD;&#x590D;put, &#x76EE;&#x524D;&#x53EA;&#x6709;&#x7D22;&#x5F15;&#x7C7B;&#x578B;&#x4E3A;primarykey&#xFF0C;&#x5728;&#x8BBE;&#x7F6E;write option &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5141;&#x8BB8;&#x91CD;&#x590D;put</span>
+dup_id = <span class="hljs-number">1</span> 
+<span class="hljs-keyword">for</span> fileName <span class="hljs-keyword">in</span> os.listdir(<span class="hljs-string">&quot;images&quot;</span>):
+  <span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;images/{}&quot;</span>.format(fileName), <span class="hljs-string">&quot;rb&quot;</span>) <span class="hljs-keyword">as</span> f:
+    binaryData = f.read()
+  data = {<span class="hljs-string">&quot;id&quot;</span>: dup_id, <span class="hljs-string">&quot;filename&quot;</span>: <span class="hljs-string">&quot;dup_put&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: binaryData} 
+  wo = rtidb.WriteOption()
+  wo.updateIfExist = <span class="hljs-keyword">True</span> <span class="hljs-comment">#  &#x8BBE;&#x7F6E;write &#x53C2;&#x6570;</span>
+  putResult = nsc.put(table, data, wo)
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> putResult.success():
+    print(<span class="hljs-string">&quot;put %s error&quot;</span> % fileName);
+    exit(<span class="hljs-number">1</span>)
+  <span class="hljs-keyword">break</span>
+ro = rtidb.ReadOption() <span class="hljs-comment">#&#x9A8C;&#x8BC1;&#x7ED3;&#x679C;</span>
+ro.index = {<span class="hljs-string">&quot;id&quot;</span>: dup_id}
+<span class="hljs-keyword">try</span>:
+  resp = nsc.query(table, ro)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">&quot;query errir&quot;</span>, e)
+  exit(<span class="hljs-number">1</span>)
+<span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> resp:
+  <span class="hljs-keyword">if</span> m[<span class="hljs-string">&quot;filename&quot;</span>] != <span class="hljs-string">&quot;dup_put&quot;</span>:
+    print(<span class="hljs-string">&quot;dup_put query error&quot;</span>)
+    exit(<span class="hljs-number">1</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="java.html" class="navigation navigation-prev " aria-label="Previous page: java sdk">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="code.html" class="navigation navigation-next " aria-label="Next page: 返回码">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python sdk","level":"1.6.3","depth":2,"next":{"title":"返回码","level":"1.6.4","depth":2,"path":"usage/code.md","ref":"usage/code.md","articles":[]},"previous":{"title":"java sdk","level":"1.6.2","depth":2,"path":"usage/java.md","ref":"usage/java.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"usage/python.md","mtime":"2021-01-22T12:08:34.542Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-29T06:52:15.019Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1044 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>fedb java sdk · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="usage.html" />
+    
+    
+    <link rel="prev" href="sql_cli.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    FEDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    部署安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="install/env.html">
+            
+                <a href="install/env.html">
+            
+                    
+                    配置机器环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="install/fedb_quick_deploy.html">
+            
+                <a href="install/fedb_quick_deploy.html">
+            
+                    
+                    一键部署RTIDB集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="install/zk.html">
+            
+                <a href="install/zk.html">
+            
+                    
+                    部署zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="install/fedb_deploy.html">
+            
+                <a href="install/fedb_deploy.html">
+            
+                    
+                    部署RTIDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="install/conf.html">
+            
+                <a href="install/conf.html">
+            
+                    
+                    配置文件详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="install/dir.html">
+            
+                <a href="install/dir.html">
+            
+                    
+                    目录介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="install/checklist.html">
+            
+                <a href="install/checklist.html">
+            
+                    
+                    部署后checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="install/sageone.html">
+            
+                <a href="install/sageone.html">
+            
+                    
+                    一体机部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="sql.html">
+            
+                <a href="sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="sql/ddl.html">
+            
+                <a href="sql/ddl.html">
+            
+                    
+                    DDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="sql/dml.html">
+            
+                <a href="sql/dml.html">
+            
+                    
+                    DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="sql/dql.html">
+            
+                <a href="sql/dql.html">
+            
+                    
+                    DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="sql_cli.html">
+            
+                <a href="sql_cli.html">
+            
+                    
+                    fedb cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="sql_java_sdk.html">
+            
+                <a href="sql_java_sdk.html">
+            
+                    
+                    fedb java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="usage.html">
+            
+                <a href="usage.html">
+            
+                    
+                    老的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="usage/cmd.html">
+            
+                <a href="usage/cmd.html">
+            
+                    
+                    命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="usage/java.html">
+            
+                <a href="usage/java.html">
+            
+                    
+                    java sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="usage/python.html">
+            
+                <a href="usage/python.html">
+            
+                    
+                    python sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="usage/code.html">
+            
+                <a href="usage/code.html">
+            
+                    
+                    返回码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="usage/importer.html">
+            
+                <a href="usage/importer.html">
+            
+                    
+                    导入工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    RTIDB运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ops/monitor.html">
+            
+                <a href="ops/monitor.html">
+            
+                    
+                    RTIDB监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="weekly_reports.html">
+            
+                <a href="weekly_reports.html">
+            
+                    
+                    周报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >fedb java sdk</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="fedb-java-sdk&#x4F7F;&#x7528;&#x8BF4;&#x660E;">fedb java sdk&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1>
+<h3 id="java-sdk-&#x652F;&#x6301;&#x7684;javasqltypes&#x5171;&#x6709;9&#x79CD;">java sdk &#x652F;&#x6301;&#x7684;java.sql.Types&#x5171;&#x6709;9&#x79CD;</h3>
+<ul>
+<li>BOOLEAN</li>
+<li>SMALLINT</li>
+<li>INTEGER</li>
+<li>BIGINT</li>
+<li>FLOAT</li>
+<li>DOUBLE</li>
+<li>TIMESTAMP</li>
+<li>DATE</li>
+<li>VARCHAR</li>
+</ul>
+<h2 id="&#x914D;&#x7F6E;maven-pom">&#x914D;&#x7F6E;maven pom</h2>
+<p>&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4F9D;&#x8D56;&#x914D;&#x7F6E;, &#x5176;&#x4E2D;version&#x914D;&#x7F6E;java sdk&#x7248;&#x672C;</p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;com._4paradigm.sql&lt;/groupId&gt;
+    &lt;artifactId&gt;sql-jdbc&lt;/artifactId&gt;
+    &lt;version&gt;fedb-2.0.0.0-RELEASE&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre><h2 id="java&#x4F7F;&#x7528;demo">java&#x4F7F;&#x7528;demo</h2>
+<blockquote>
+<ul>
+<li>&#x5220;database&#x4E4B;&#x524D;&#x5FC5;&#x9009;&#x5148;&#x628A;database&#x4E2D;&#x7684;&#x8868;&#x90FD;&#x5220;&#x9664;&#xFF0C;&#x5220;&#x8868;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x5148;&#x628A;&#x4F9D;&#x8D56;&#x8BE5;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5220;&#x9664;</li>
+<li>&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E4B;&#x524D;&#xFF0C;&#x82E5;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x4E3B;&#x8868;&#x7684;schema&#x6765;&#x786E;&#x5B9A;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;GetInputSchema(selectSql)&#x6765;&#x83B7;&#x53D6;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> com._4paradigm.sql.jdbc.CallablePreparedStatement;
+<span class="hljs-keyword">import</span> com._4paradigm.sql.sdk.*;
+<span class="hljs-keyword">import</span> com._4paradigm.sql.sdk.impl.SqlClusterExecutor;
+<span class="hljs-keyword">import</span> org.testng.Assert;
+
+<span class="hljs-keyword">import</span> java.sql.*;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+<span class="hljs-keyword">import</span> java.util.concurrent.TimeUnit;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+
+    <span class="hljs-keyword">private</span> SqlExecutor sqlExecutor = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> String db = <span class="hljs-string">&quot;mydb16&quot;</span>;
+    <span class="hljs-keyword">private</span> String table = <span class="hljs-string">&quot;trans&quot;</span>;
+    <span class="hljs-keyword">private</span> String sp = <span class="hljs-string">&quot;sp&quot;</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Demo demo = <span class="hljs-keyword">new</span> Demo();
+        <span class="hljs-keyword">try</span> {
+            demo.init();
+            demo.createDataBase();
+            demo.createTable();
+
+            demo.insertWithoutPlaceholder();
+            demo.insertWithPlaceholder();
+            demo.select();
+            demo.requestSelect();
+            demo.batchRequestSelect();
+            demo.createProcedure();
+            demo.callProcedureSync();
+            demo.callProcedureAsync();
+            demo.batchCallProcedureSync();
+            demo.batchCallProcedureAsync();
+
+            demo.dropProcedure();
+            demo.dropTable();
+            demo.dropDataBase();
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> SqlException </span>{
+        SdkOption option = <span class="hljs-keyword">new</span> SdkOption();
+        option.setZkCluster(<span class="hljs-string">&quot;172.27.128.37:7181&quot;</span>);
+        option.setZkPath(<span class="hljs-string">&quot;/rtidb_wb&quot;</span>);
+        option.setSessionTimeout(<span class="hljs-number">10000</span>);
+        option.setRequestTimeout(<span class="hljs-number">60000</span>);
+        sqlExecutor = <span class="hljs-keyword">new</span> SqlClusterExecutor(option);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">createDataBase</span><span class="hljs-params">()</span> </span>{
+        Assert.assertTrue(sqlExecutor.createDB(db));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dropDataBase</span><span class="hljs-params">()</span> </span>{
+        Assert.assertTrue(sqlExecutor.dropDB(db));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">createTable</span><span class="hljs-params">()</span> </span>{
+        String createTableSql = <span class="hljs-string">&quot;create table trans(c1 string,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c3 int,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c4 bigint,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c5 float,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c6 double,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c7 timestamp,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   c8 date,\n&quot;</span> +
+                <span class="hljs-string">&quot;                   index(key=c1, ts=c7));&quot;</span>;
+        Assert.assertTrue(sqlExecutor.executeDDL(db, createTableSql));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dropTable</span><span class="hljs-params">()</span> </span>{
+        String dropTableSql = <span class="hljs-string">&quot;drop table trans;&quot;</span>;
+        Assert.assertTrue(sqlExecutor.executeDDL(db, dropTableSql));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">getInputSchema</span><span class="hljs-params">(String selectSql)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            Schema inputSchema = sqlExecutor.getInputSchema(db, selectSql);
+            Assert.assertEquals(inputSchema.getColumnList().size(), <span class="hljs-number">7</span>);
+            Column column = inputSchema.getColumnList().get(<span class="hljs-number">0</span>);
+            Assert.assertEquals(column.getColumnName(), <span class="hljs-string">&quot;c1&quot;</span>);
+            Assert.assertEquals(column.getSqlType(), Types.VARCHAR);
+            Assert.assertEquals(column.isConstant(), <span class="hljs-keyword">false</span>);
+            Assert.assertEquals(column.isNotNull(), <span class="hljs-keyword">false</span>);
+        } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showProcedure</span><span class="hljs-params">(String spSql)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            ProcedureInfo procedureInfo = sqlExecutor.showProcedure(db, sp);
+            Assert.assertEquals(procedureInfo.getDbName(), db);
+            Assert.assertEquals(procedureInfo.getProName(), sp);
+            Assert.assertEquals(procedureInfo.getSql(), spSql);
+            Assert.assertEquals(procedureInfo.getMainTable(), table);
+            Assert.assertEquals(procedureInfo.getInputTables().size(), <span class="hljs-number">1</span>);
+            Assert.assertEquals(procedureInfo.getInputTables().get(<span class="hljs-number">0</span>), table);
+            Assert.assertEquals(procedureInfo.getInputSchema().getColumnList().size(), <span class="hljs-number">7</span>);
+            Assert.assertEquals(procedureInfo.getOutputSchema().getColumnList().size(), <span class="hljs-number">3</span>);
+            Column column = procedureInfo.getInputSchema().getColumnList().get(<span class="hljs-number">0</span>);
+            Assert.assertEquals(column.getColumnName(), <span class="hljs-string">&quot;c1&quot;</span>);
+            Assert.assertEquals(column.getSqlType(), Types.VARCHAR);
+            Assert.assertEquals(column.isConstant(), <span class="hljs-keyword">true</span>);
+            Assert.assertEquals(column.isNotNull(), <span class="hljs-keyword">false</span>);
+            Column column1 = procedureInfo.getOutputSchema().getColumnList().get(<span class="hljs-number">0</span>);
+            Assert.assertEquals(column1.getColumnName(), <span class="hljs-string">&quot;c1&quot;</span>);
+            Assert.assertEquals(column1.getSqlType(), Types.VARCHAR);
+            Assert.assertEquals(column1.isConstant(), <span class="hljs-keyword">false</span>);
+            Assert.assertEquals(column1.isNotNull(), <span class="hljs-keyword">false</span>);
+        } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">createProcedure</span><span class="hljs-params">()</span> </span>{
+        String selectSql = <span class="hljs-string">&quot;SELECT c1, c3, sum(c4) OVER w1 as w1_c4_sum FROM trans WINDOW w1 AS &quot;</span> +
+                <span class="hljs-string">&quot;(PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW);&quot;</span>;
+        getInputSchema(selectSql);
+        String createProcedureSql = <span class="hljs-string">&quot;create procedure &quot;</span> + sp +
+                <span class="hljs-string">&quot;(const c1 string, const c3 int, c4 bigint, c5 float, c6 double, c7 timestamp, c8 date)&quot;</span> +
+                <span class="hljs-string">&quot; begin &quot;</span> + selectSql + <span class="hljs-string">&quot; end;&quot;</span>;
+        Assert.assertTrue(sqlExecutor.executeDDL(db, createProcedureSql));
+        showProcedure(createProcedureSql);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dropProcedure</span><span class="hljs-params">()</span> </span>{
+        String dropSpSql = <span class="hljs-string">&quot;drop procedure sp;&quot;</span>;
+        Assert.assertTrue(sqlExecutor.executeDDL(db, dropSpSql));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertWithoutPlaceholder</span><span class="hljs-params">()</span> </span>{
+        String insertSql = <span class="hljs-string">&quot;insert into trans values(\&quot;aa\&quot;,23,33,1.4,2.4,1590738993000,\&quot;2020-05-04\&quot;);&quot;</span>;
+        PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getInsertPreparedStmt(db, insertSql);
+            Assert.assertTrue(pstmt.execute());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">try</span> {
+                    pstmt.close();
+                } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertWithPlaceholder</span><span class="hljs-params">()</span> </span>{
+        String insertSql = <span class="hljs-string">&quot;insert into trans values(\&quot;aa\&quot;, ?, 33, ?, 2.4, 1590738993000, \&quot;2020-05-04\&quot;);&quot;</span>;
+        PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getInsertPreparedStmt(db, insertSql);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            Assert.assertTrue(pstmt.execute());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">try</span> {
+                    pstmt.close();
+                } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                    throwables.printStackTrace();
+                }
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">select</span><span class="hljs-params">()</span> </span>{
+        String selectSql = <span class="hljs-string">&quot;select * from trans;&quot;</span>;
+        com._4paradigm.sql.ResultSet result = sqlExecutor.executeSQL(db, selectSql);
+        Assert.assertEquals(result.Size(), <span class="hljs-number">2</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">requestSelect</span><span class="hljs-params">()</span> </span>{
+        String selectSql = <span class="hljs-string">&quot;SELECT c1, c3, sum(c4) OVER w1 as w1_c4_sum FROM trans WINDOW w1 AS &quot;</span> +
+                <span class="hljs-string">&quot;(PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW);&quot;</span>;
+        PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getRequestPreparedStmt(db, selectSql);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            resultSet = pstmt.executeQuery();
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">batchRequestSelect</span><span class="hljs-params">()</span> </span>{
+        String selectSql = <span class="hljs-string">&quot;SELECT c1, c3, sum(c4) OVER w1 as w1_c4_sum FROM trans WINDOW w1 AS &quot;</span> +
+                <span class="hljs-string">&quot;(PARTITION BY trans.c1 ORDER BY trans.c7 ROWS BETWEEN 2 PRECEDING AND CURRENT ROW);&quot;</span>;
+        PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            List&lt;Integer&gt; idx_list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+            idx_list.add(<span class="hljs-number">0</span>);
+            idx_list.add(<span class="hljs-number">1</span>);
+            pstmt = sqlExecutor.getBatchRequestPreparedStmt(db, selectSql, idx_list);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            resultSet = pstmt.executeQuery();
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">callProcedureSync</span><span class="hljs-params">()</span> </span>{
+        CallablePreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getCallablePreparedStmt(db, sp);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            resultSet = pstmt.executeQuery();
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">callProcedureAsync</span><span class="hljs-params">()</span> </span>{
+        CallablePreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getCallablePreparedStmt(db, sp);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            QueryFuture future = pstmt.executeQueryAsync(<span class="hljs-number">1000</span>, TimeUnit.MILLISECONDS);
+            resultSet = future.get();
+            Assert.assertTrue(future.isDone());
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">batchCallProcedureSync</span><span class="hljs-params">()</span> </span>{
+        CallablePreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getCallablePreparedStmtBatch(db, sp);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            resultSet = pstmt.executeQuery();
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">batchCallProcedureAsync</span><span class="hljs-params">()</span> </span>{
+        CallablePreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+        ResultSet resultSet = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">try</span> {
+            pstmt = sqlExecutor.getCallablePreparedStmtBatch(db, sp);
+            ResultSetMetaData metaData = pstmt.getMetaData();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            setData(pstmt, metaData);
+            pstmt.addBatch();
+            QueryFuture future = pstmt.executeQueryAsync(<span class="hljs-number">1000</span>, TimeUnit.MILLISECONDS);
+            resultSet = future.get();
+            Assert.assertTrue(future.isDone());
+
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getMetaData().getColumnCount(), <span class="hljs-number">3</span>);
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertTrue(resultSet.next());
+            Assert.assertEquals(resultSet.getString(<span class="hljs-number">1</span>), <span class="hljs-string">&quot;bb&quot;</span>);
+            Assert.assertEquals(resultSet.getInt(<span class="hljs-number">2</span>), <span class="hljs-number">24</span>);
+            Assert.assertEquals(resultSet.getLong(<span class="hljs-number">3</span>), <span class="hljs-number">34</span>);
+            Assert.assertFalse(resultSet.next());
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
+            Assert.fail();
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">if</span> (resultSet != <span class="hljs-keyword">null</span>) {
+                    resultSet.close();
+                }
+                <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+                    pstmt.close();
+                }
+            } <span class="hljs-keyword">catch</span> (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setData</span><span class="hljs-params">(PreparedStatement pstmt, ResultSetMetaData metaData)</span> <span class="hljs-keyword">throws</span> SQLException </span>{
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; metaData.getColumnCount(); i++) {
+            <span class="hljs-keyword">int</span> columnType = metaData.getColumnType(i + <span class="hljs-number">1</span>);
+            <span class="hljs-keyword">if</span> (columnType == Types.BOOLEAN) {
+                pstmt.setBoolean(i + <span class="hljs-number">1</span>, <span class="hljs-keyword">true</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.SMALLINT) {
+                pstmt.setShort(i + <span class="hljs-number">1</span>, (<span class="hljs-keyword">short</span>) <span class="hljs-number">22</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.INTEGER) {
+                pstmt.setInt(i + <span class="hljs-number">1</span>, <span class="hljs-number">24</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.BIGINT) {
+                pstmt.setLong(i + <span class="hljs-number">1</span>, <span class="hljs-number">34l</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.FLOAT) {
+                pstmt.setFloat(i + <span class="hljs-number">1</span>, <span class="hljs-number">1.5f</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.DOUBLE) {
+                pstmt.setDouble(i + <span class="hljs-number">1</span>, <span class="hljs-number">2.5</span>);
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.TIMESTAMP) {
+                pstmt.setTimestamp(i + <span class="hljs-number">1</span>, <span class="hljs-keyword">new</span> Timestamp(<span class="hljs-number">1590738994000l</span>));
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.DATE) {
+                pstmt.setDate(i + <span class="hljs-number">1</span>, Date.valueOf(<span class="hljs-string">&quot;2020-05-05&quot;</span>));
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (columnType == Types.VARCHAR) {
+                pstmt.setString(i + <span class="hljs-number">1</span>, <span class="hljs-string">&quot;bb&quot;</span>);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SQLException(<span class="hljs-string">&quot;set data failed&quot;</span>);
+            }
+        }
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="sql_cli.html" class="navigation navigation-prev " aria-label="Previous page: fedb cli">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="usage.html" class="navigation navigation-next " aria-label="Next page: 老的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"fedb java sdk","level":"1.5","depth":1,"next":{"title":"老的使用","level":"1.6","depth":1,"path":"usage.md","ref":"usage.md","articles":[{"title":"命令行","level":"1.6.1","depth":2,"path":"usage/cmd.md","ref":"usage/cmd.md","articles":[]},{"title":"java sdk","level":"1.6.2","depth":2,"path":"usage/java.md","ref":"usage/java.md","articles":[]},{"title":"python sdk","level":"1.6.3","depth":2,"path":"usage/python.md","ref":"usage/python.md","articles":[]},{"title":"返回码","level":"1.6.4","depth":2,"path":"usage/code.md","ref":"usage/code.md","articles":[]},{"title":"导入工具","level":"1.6.5","depth":2,"path":"usage/importer.md","ref":"usage/importer.md","articles":[]}]},"previous":{"title":"fedb cli","level":"1.4","depth":1,"path":"sql_cli.md","ref":"sql_cli.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sql_java_sdk.md","mtime":"2021-02-01T09:12:33.080Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-29T06:52:15.019Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
