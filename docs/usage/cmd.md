@@ -1,10 +1,12 @@
+## 命令行
+
 RTIDB命令行有3种client: tablet client，ns client和bs client, 分别连到不同的server. 由启动时的--role来指定
 
 * [ns client](#ns-client)
 * [tablet client](#tablet-client)
 * [bs client](#bs-client)
 
-# NS Client {#ns-client}
+### NS Client
 
 连接到ns client 需要指定zk\_cluster、zk\_root\_path和role。其中zk\_cluster是zk地址，zk\_root\_path是集群在zk的根路径
 
@@ -12,54 +14,7 @@ RTIDB命令行有3种client: tablet client，ns client和bs client, 分别连到
 $ ./bin/rtidb --zk_cluster=172.27.2.52:12200 --zk_root_path=/onebox --role=ns_client
 ```
 
-* [addindex](#addindex) 增加索引
-* [addrepcluster](#addrepcluster)  添加从集群
-* [addreplica](#addreplica) 添加副本
-* [addtablefield](#addtablefield) 动态增加schema列
-* [cancelop](#cancelop) 取消操作
-* [changeleader](#changeleader) 分片主从切换
-* [confset](#confset) 修改配置
-* [confget](#confget) 获取配置
-* [count](#count) 统计pk下的记录条数
-* [create](#create) 创建表
-* [showtable](#showtable) 查看表信息
-* [showschema](#showschema) 查看表schema
-* [delete](#delete) 删除pk
-* [deleteindex](#deleteindex) 删除索引
-* [delreplica](#delreplica) 删除副本
-* [drop](#drop) 删除表
-* [exit](#exit) 退出客户端
-* [get](#get) 查询单条数据
-* [gettablepartition](#gettablepartition) 导出分片数据信息
-* [help](#help) 获取帮助信息
-* [info](#info) 查看表详细信息
-* [makesnapshot](#makesnapshot) 产生snapshot
-* [man](#man) 获取帮组信息
-* [migrate](#migrate) 副本迁移
-* [offlineendpoint](#offlineendpoint) 下线节点
-* [put](#put) 插入数据
-* [preview](#preview) 数据预览
-* [quit](#quit) 退出客户端
-* [scan](#scan) 查询一个区间的数据
-* [settablepartition](#settablepartition) 修改分片数据信息
-* [setttl](#setttl) 修改ttl
-* [showns](#showns) 显示nameserver节点和角色
-* [showopstatus](#showopstatus) 显示操作执行信息
-* [switchmode](#switchmode) 切换集群状态
-* [showrepcluster](#showrepcluster) 查看从集群信息
-* [showtablet](#showtablet) 查看tablet信息
-* [synctable](#synctable) 手动同步主从集群表
-* [recoverendpoint](#recoverendpoint) 恢复节点数据
-* [removerepcluster](#removerepcluster) 删除从集群
-* [recovertable](#recovertable) 恢复分片数据
-* [updatetablealive](#updatetablealive) 修改分片alive状态
-* [update](#update) 更新relation表数据
-* [query](#query) 查询relation表数据 
-* [showblobserver](#showblobserver) 查看blobserver信息 
-* [setsdkendpoint](#setsdkendpoint) 设置server的sdkendpoint 
-* [showsdkendpoint](#showsdkendpoint) 显示server的sdkendpoint 
-
-### create {#create}
+#### create
 
 创建表有命令行方式和表元数据文件两种方式
 
@@ -359,7 +314,7 @@ index {
 }
 ```
 
-### showtable {#showtable}
+#### showtable
 
 showtable可以查看所有表，也可以指定看某一个表
 
@@ -435,7 +390,7 @@ showtable可以查看所有表，也可以指定看某一个表
 ```
 * **注意：** ssd/hdd表中的recored_cnt是不精确统计，仅供参考
 
-### addindex {#addindex}
+#### addindex
 
 添加索引
 
@@ -457,7 +412,7 @@ addindex ok
 addindex ok
 ```
 
-### deleteindex {#deleteindex}
+#### deleteindex
 
 删除索引
 
@@ -468,7 +423,7 @@ addindex ok
 delete index ok
 ```
 
-### showschema {#showschema}
+#### showschema
 
 查看表的schema信息
 
@@ -500,7 +455,7 @@ table flow has not schema
   2  card        card      ts2     100min
 ```
 
-### info {#info}
+#### info
 
 查看表的详细信息
 
@@ -523,7 +478,7 @@ table flow has not schema
 ```
 * **注意：** info展示的memused是所有alive状态的leader节点的memused之和，diskused同理
 
-### drop {#drop}
+#### drop
 
 删除表
 
@@ -536,7 +491,7 @@ yes
 drop ok
 ```
 
-### put {#put}
+#### put
 
 插入数据
 
@@ -621,7 +576,7 @@ Put ok
 put ok
 ```
 
-### scan {#scan}
+#### scan
 
 查询一定范围内的数据
 
@@ -679,7 +634,7 @@ put ok
 ---------------------------------------------
   1  1535373299010  card0  mcc2  5.80000019
 ```
-#### 3 查询指定时间列的表数据
+##### 3 查询指定时间列的表数据
   
 命令格式：scan table_name=xxx key=xxx index_name=xxx st=xxx et=xxx ts_name=xxx [limit=xxx] [atleast=xxx] 
 
@@ -717,7 +672,7 @@ put ok
   3  1535373299000  card0  mcc2  5.70000000
 ```
 
-### delete {#delete}
+#### delete
 
 1、删除pk
 
@@ -745,9 +700,9 @@ Delete ok
 delete ok
 ```
 
-### count {#count}
+#### count
 
-#### 1 统计一个pk下的记录条数
+##### 1 统计一个pk下的记录条数
 
 命令格式: count table\_name key [col\_name] [filter\_expired\_data]
 
@@ -761,7 +716,7 @@ delete ok
 count: 1041
 ```
 
-#### 2 统计指定时间列的记录条数
+##### 2 统计指定时间列的记录条数
 
 命令格式：count table_name=xxx key=xxx index_name=card ts_name=xxx [filter_expired_data=true|false]
 
@@ -776,7 +731,7 @@ count: 1041
 > count table_name=test key=card1077 index_name=card ts_name=ts
 count: 1041
 ```
-### preview {#preview}
+#### preview
 
 数据预览
 
@@ -801,7 +756,7 @@ count: 1041
   10  1551167860020  card1077  mcc637   9.0073365887995038
 ```
 
-### get {#get}
+#### get
 
 查询单条数据
 
@@ -873,7 +828,7 @@ value :value3
 ```
 
 
-### showtablet {#showtablet}
+#### showtablet
 
 查看tablet信息(如果使用的serverName和自动获取本地ip功能，则endpoint为serverName, real_endpoint为“-”)
 
@@ -885,7 +840,7 @@ value :value3
   6534708415948603392  172.17.0.13:9532  kTabletHealthy  1d
   6534708420092481536  172.17.0.14:9533  kTabletHealthy  14h
 ```
-### showblobserver{#showblobserver}
+#### showblobserver
 
 查看blobserver信息(如果使用的serverName和自动获取本地ip功能，endpoint为serverName, 则real_endpoint为“-”)
 
@@ -896,7 +851,7 @@ value :value3
   6536558764777627648  172.17.0.15:9534  kTabletHealthy  1d
 ```
 
-### setsdkendpoint{#setsdkendpoint}
+#### setsdkendpoint
 命令格式： setsdkendpoint server sdkendpoint    
 
 * server 如果配置endpoint, 则是endpoint; 如果配置port和use_name，则是server_name    
@@ -912,7 +867,7 @@ setsdkendpoint ok
 > setsdkendpoint 6534708403616096256 null 
 setsdkendpoint ok
 ```
-### showsdkendpoint{#showsdkendpoint}
+#### showsdkendpoint
 
 查看sdkendpoint信息(会显示历史配置过的所有数据，包括下线的server对应的sdkendpoint，可以手动执行setsdkednpoint server null来删除过期的配置)
 
@@ -925,7 +880,7 @@ setsdkendpoint ok
   6534708411798331392  172.27.128.37:9531
 ```
 
-### addreplica {#addreplica}
+#### addreplica
 
 添加副本
 
@@ -962,7 +917,7 @@ AddReplica ok
 AddReplica ok
 ```
 
-### delreplica {#delreplica}
+#### delreplica
 
 删除副本
 
@@ -1005,7 +960,7 @@ DelReplica ok
 DelReplica ok  
 ```
 
-### makesnapshot {#makesnapshot}
+#### makesnapshot
 
 产生snapshot
 
@@ -1019,7 +974,7 @@ DelReplica ok
 MakeSnapshot ok
 ```
 
-### migrate {#migrate}
+#### migrate 
 
 副本迁移
 
@@ -1043,7 +998,7 @@ partition migrate ok
 ```
 
 
-### confget {#confget}
+#### confget
 
 获取配置信息，目前只支持auto\_failover
 
@@ -1062,7 +1017,7 @@ partition migrate ok
   auto_failover  false
 ```
 
-### confset {#confset}
+#### confset
 
 修改配置信息，目前只支持auto\_failover
 
@@ -1076,7 +1031,7 @@ partition migrate ok
 set auto_failover ok
 ```
 
-### offlineendpoint {#offlineendpoint}
+#### offlineendpoint
 
 下线节点。此命令是异步的返回成功后可通过showopstatus查看运行状态
 
@@ -1104,7 +1059,7 @@ offline endpoint ok
 
 该命令执行成功后所有分片都会有yes状态的leader
 
-### recoverendpoint {#recoverendpoint}
+#### recoverendpoint
 
 恢复节点数据。此命令是异步的返回成功后可通过showopstatus查看运行状态
 
@@ -1127,7 +1082,7 @@ recover endpoint ok
 
 1. **执行此命令前确保节点已经上线\(showtablet命令查看\)**
 
-### changeleader {#changeleader}
+#### changeleader
 
 对某个指定的分片执行主从切换。此命令是异步的返回成功后可通过showopstatus查看运行状态
 
@@ -1146,7 +1101,7 @@ change leader ok
 change leader ok
 ```
 
-### recovertable {#recovertable}
+#### recovertable
 
 恢复某个分片数据。此命令是异步的返回成功后可通过showopstatus查看运行状态
 
@@ -1161,7 +1116,7 @@ change leader ok
 recover table ok
 ```
 
-### cancelop {#cancelop}
+#### cancelop
 
 取消一个正在执行或者待执行的操作. 取消后任务就状态变成kCanceled
 
@@ -1174,7 +1129,7 @@ recover table ok
 Cancel op ok!
 ```
 
-### showopstatus {#showopstatus}
+#### showopstatus
 
 显示操作执行信息
 
@@ -1213,7 +1168,7 @@ Cancel op ok!
   56     kOfflineReplicaOP      flow  1    kDone   20180824200135  1s            20180824200136  -
 ```
 
-### gettablepartition {#gettablepartition}
+#### gettablepartition
 
 导出分片数据信息到当前目录，文件名为table\_name\_pid.txt
 
@@ -1266,7 +1221,7 @@ term_offset {
 }
 ```
 
-### settablepartition {#settablepartition}
+#### settablepartition
 
 修改分片数据信息
 
@@ -1284,7 +1239,7 @@ set table partition ok
 
 **注: 此命令会改编nameserver中分片的拓扑信息，谨慎使用**
 
-### updatetablealive {#updatetablealive}
+#### updatetablealive
 
 修改分片alive状态
 
@@ -1303,7 +1258,7 @@ update ok
 ```
 **注: 此命令不可当做故障恢复使用. 一般用于切流量，操作方式为将某个节点表的alive状态改为no读请求就不会落在该节点上**
 
-### update {#update}
+#### update
 
 更新relation表数据
 
@@ -1318,7 +1273,7 @@ update ok
 update ok
 ```
 
-### query {#query}
+#### query
 
 查询relation表数据
 
@@ -1339,7 +1294,7 @@ update ok
 ```
 
 
-### showns {#showns}
+#### showns
 
 显示nameserver节点及其角色(如果使用的serverName和自动获取本地ip功能，则endpoint为serverName, real_endpoint为“-”)
 
@@ -1354,7 +1309,7 @@ update ok
 ```
 
 
-### setttl {#setttl}
+#### setttl
 
 修改ttl
 
@@ -1376,7 +1331,7 @@ Set ttl ok !
 
 **注: 修改后在下一轮gc执行后才会生效**
 
-### addtablefield {#addtablefield}
+#### addtablefield
 
 **注:  
 1.只能增加非索引列和非时间列的普通列。  
@@ -1422,7 +1377,7 @@ Put ok
   3  111  2     3    4      -
 ```
 
-### switchmode {#switchmode}
+#### switchmode
 
 切换集群状态 
 
@@ -1437,7 +1392,7 @@ tipls: 集群状态分三种 `normal` `leader` `follower`
 
 
 
-### addrepcluster {#addrepcluster}
+#### addrepcluster
 
 添加从集群
 
@@ -1460,7 +1415,7 @@ adrepcluster ok
 
 
 
-### showrepcluster {#showrepcluster}
+#### showrepcluster
 
 查看从集群信息
 
@@ -1474,7 +1429,7 @@ adrepcluster ok
 
 
 
-### removerepcluster {#removerepcluster}
+#### removerepcluster
 
 移除从集群
 
@@ -1488,7 +1443,7 @@ tips: 移除从集群不会删除从集群的表
 >removerepcluster is1
 ```
 
-### synctable {#synctable}  
+#### synctable
 手动同步主从集群表  
 
 **注意：**  
@@ -1508,7 +1463,7 @@ synctable  ok
 synctable  ok
 ```
 
-### exit {#exit}
+#### exit
 
 退出客户端
 
@@ -1517,7 +1472,7 @@ synctable  ok
 bye
 ```
 
-### quit {#quit}
+#### quit 
 
 退出客户端
 
@@ -1526,7 +1481,7 @@ bye
 bye
 ```
 
-### help {#help}
+#### help
 
 获取帮助信息
 
@@ -1580,7 +1535,7 @@ ex: create table2 latest:10 8 3
 ex: create table3 latest:10 8 3 card:string:index mcc:string:index value:float
 ```
 
-### man {#man}
+#### man
 
 获取帮组信息
 
@@ -1630,7 +1585,7 @@ usage: drop table_name
 ex: drop table1
 ```
 
-# Tablet Client {#tablet-client}
+### Tablet Client
 
 连接到tablet client需要指定endpoint和role
 
@@ -1638,38 +1593,7 @@ ex: drop table1
 $ ./rtidb --endpoint=172.27.2.52:9520 --role=client
 ```
 
-* [create](#xcreate) 创建表
-* [screate](#xscreate) 创建多维表
-* [drop](#xdrop) 删除表
-* [put ](#xput)插入数据
-* [sput](#xsput) 给有schema的表插入数据
-* [scan](#xscan) 查询一定范围内的数据
-* [sscan](#xsscan) 查询有schema表一定范围内的数据
-* [get](#xget) 查询单条数据
-* [sget](#xsget) 查询有schema表的单条数据
-* [delete](#xdelete) 删除pk
-* [count](#xcount) 统计某个pk下的记录条数
-* [preview](#xpreview) 预览数据
-* [addreplica](#xaddreplica) 添加副本
-* [delreplica](#xdelreplica) 删除副本
-* [makesnapshot](#xmakesnapshot)  产生snapshot
-* [pausesnapshot](#xpausesnapshot)  暂停snapshot
-* [recoversnapshot ](#xrecoversnapshot)恢复snapshot
-* [sendsnapshot](#xsendsnapshot) 发送snapshot
-* [loadtable ](#xloadtable)创建表并加载数据
-* [changerole](#xchangerole) 改变表的leader角色
-* [setexpire](#xsetexpire) 设置是否过期
-* [showschema](#xshowschema) 查看表的schema
-* [gettablestatus ](#xgettablestatus)获取表信息
-* [getfollower](#xgetfollower) 查看从节点信息
-* [setttl](#xsetttl) 设置ttl
-* [setlimit](#xsetlimit) 设置并发限制
-* [exit](#exit) 退出客户端
-* [quit ](#xquit)退出客户端
-* [help](#xhelp) 获取帮助信息
-* [man ](#xman)获取帮组信息
-
-### create {#xcreate}
+#### create
 
 创建表
 
@@ -1706,7 +1630,7 @@ Create table ok
 
 **注: tid和pid唯一确定一张表，创建时不能和已有表重复**
 
-### screate {#xscreate}
+#### screate
 
 创建多维表
 
@@ -1736,7 +1660,7 @@ Create table ok
 Create table ok
 ```
 
-### drop {#xdrop}
+#### drop
 
 删除表
 
@@ -1750,7 +1674,7 @@ Create table ok
 Drop table ok
 ```
 
-### put {#xput}
+#### put
 
 插入数据
 
@@ -1767,7 +1691,7 @@ Drop table ok
 Put ok
 ```
 
-### sput {#xsput}
+#### sput
 
 给有schema的表插入数据
 
@@ -1783,7 +1707,7 @@ Put ok
 Put ok
 ```
 
-### scan {#xscan}
+#### scan
 
 查询一定范围内的数据
 
@@ -1811,9 +1735,9 @@ Put ok
 1	1535446708000	value3
 ```
 
-### sscan {#xsscan}
+#### sscan
 
-#### 1 查询有schema表一定范围内的数据
+##### 1 查询有schema表一定范围内的数据
 
 命令格式: sscan tid pid key col\_name start\_time end\_time [limit]
 
@@ -1843,7 +1767,7 @@ Put ok
   1  1535446708000  card0  mcc0  1.29999995
 ```
 
-#### 2 查询有schema表一定范围内的数据
+##### 2 查询有schema表一定范围内的数据
 
 命令格式: sscan tid=xxx pid=xxx key=xxx index\_name=xxx st=xxx et=xxx ts_name=xxx [limit=xxx]
 
@@ -1874,7 +1798,7 @@ Put ok
   1  1535446708000  card0  mcc0  1.29999995
 ```
 
-### get {#xget}
+#### get
 
 查询单条数据
 
@@ -1892,9 +1816,9 @@ value :value2
 value :value3
 ```
 
-### sget {#xsget}
+#### sget
 
-#### 1 查询有schema表的单条数据
+##### 1 查询有schema表的单条数据
 
 命令格式: sget tid pid key col\_name ts
 
@@ -1915,7 +1839,7 @@ value :value3
   1  1535446708000  card0  mcc0  1.29999995
 ```
 
-#### 2 查询指定时间列的单条数据
+##### 2 查询指定时间列的单条数据
 
 命令格式: sget tid=xxx pid=xxx key=xxx index\_name=xxx ts=xxx ts_name=xxx
 
@@ -1937,7 +1861,7 @@ value :value3
   1  1535446708000  card0  mcc0  1.29999995
 ```
 
-### delete {#xdelete}
+#### delete
 
 删除pk
 
@@ -1953,7 +1877,7 @@ value :value3
 Delete ok
 ```
 
-### preview {#xpreview}
+#### preview
 
 预览数据
 
@@ -1979,9 +1903,9 @@ Delete ok
   10  1551168688216  card1077  mcc112  9.7253728651383557
 ```
 
-### count {#xcount}
+#### count
 
-#### 1 统计某一pk下的记录条数
+##### 1 统计某一pk下的记录条数
 
 命令格式: count tid pid key [col\_name] [filter\_expired\_data]
 
@@ -1996,7 +1920,7 @@ Delete ok
 count: 7612
 ```
 
-#### 2 统计指定时间列的记录条数
+##### 2 统计指定时间列的记录条数
 
 命令格式: count tid=xxx pid=xxx key=xxx index\_name=xxx ts_name=xxx [filter\_expired\_data=xxx]
 
@@ -2013,7 +1937,7 @@ count: 7612
 ```
 
 
-### addreplica {#xaddreplica}
+#### addreplica
 
 添加副本
 
@@ -2028,7 +1952,7 @@ count: 7612
 AddReplica ok
 ```
 
-### delreplica {#xdelreplica}
+#### delreplica
 
 删除副本
 
@@ -2045,7 +1969,7 @@ DelReplica ok
 
 **注: 删除副本操作并不会实际删除副本节点上的表, 只是断开了主从关系**
 
-### makesnapshot {#xmakesnapshot}
+#### makesnapshot
 
 产生snapshot, 会在db/tid\_pid/snapshot目录下产生snapshot文件
 
@@ -2059,7 +1983,7 @@ DelReplica ok
 MakeSnapshot ok
 ```
 
-### pausesnapshot {#xpausesnapshot}
+#### pausesnapshot
 
 暂停snapshot, 执行完之后运行gettablestatus状态变为kSnapshotPaused
 
@@ -2077,7 +2001,7 @@ PauseSnapshot ok
   1    0    4       kTableLeader  kSnapshotPaused  true           144000min  0s          1.313 K  kNoCompress
 ```
 
-### recoversnapshot {#xrecoversnapshot}
+#### recoversnapshot
 
 恢复snapshot
 
@@ -2091,7 +2015,7 @@ PauseSnapshot ok
 RecoverSnapshot ok
 ```
 
-### sendsnapshot {#xsendsnapshot}
+#### sendsnapshot
 
 发送snapshot
 
@@ -2108,7 +2032,7 @@ SendSnapshot ok
 
 **注: 运行sendsnapshot前必须执行下pausesnapshot, 发送完再执行recoversnapshot**
 
-### loadtable {#xloadtable}
+#### loadtable
 
 1、创建表并加载数据
 
@@ -2140,7 +2064,7 @@ SendSnapshot ok
 
 **注: loadtable创建的表是follower表**
 
-### changerole {#xchangerole}
+#### changerole
 
 改变表的leader角色
 
@@ -2160,7 +2084,7 @@ ChangeRole ok
 ChangeRole ok
 ```
 
-### setexpire {#xsetexpire}
+#### setexpire
 
 设置是否过期
 
@@ -2177,7 +2101,7 @@ setexpire ok
 setexpire ok
 ```
 
-### showschema {#xshowschema}
+#### showschema
 
 查看表的schema
 
@@ -2197,7 +2121,7 @@ setexpire ok
 No schema for table
 ```
 
-### gettablestatus {#xgettablestatus}
+#### gettablestatus
 
 获取表信息
 
@@ -2218,7 +2142,7 @@ No schema for table
   2    0    4       kTableLeader  kTableNormal  false          0min  0s          689.000  kNoCompress
 ```
 
-### getfollower {#xgetfollower}
+#### getfollower
 
 查看从节点信息
 
@@ -2235,7 +2159,7 @@ No schema for table
   1  4    1    5923724        172.27.128.32:8541  5921707
 ```
 
-### setttl {#xsetttl}
+#### setttl
 
 命令格式: setttl tid pid ttl\_type ttl
 
@@ -2253,7 +2177,7 @@ Set ttl ok !
 
 **注: 修改后在下一轮gc执行后才会生效**
 
-### setlimit {#xsetlimit}
+#### setlimit
 
 命令格式: setlimit method limit
 
@@ -2269,7 +2193,7 @@ Set Limit ok
 Set Limit ok
 ```
 
-### exit {#xexit}
+#### exit
 
 退出客户端
 
@@ -2278,7 +2202,7 @@ Set Limit ok
 bye
 ```
 
-### quit {#xquit}
+#### quit
 
 退出客户端
 
@@ -2287,7 +2211,7 @@ bye
 bye
 ```
 
-### help {#xhelp}
+#### help
 
 获取帮助信息
 
@@ -2330,7 +2254,7 @@ ex: create table1 1 0 144000 8 true snappy
 ex: create table1 1 0 144000 8 false
 ```
 
-### man {#xman}
+#### man 
 
 获取帮组信息
 
@@ -2373,7 +2297,8 @@ ex: create table1 1 0 144000 8 true snappy
 ex: create table1 1 0 144000 8 false
 ```
 
-# Bs Client {#bs-client}
+
+### Bs Client
 
 连接到bs client需要指定endpoint和role
 
@@ -2381,9 +2306,7 @@ ex: create table1 1 0 144000 8 false
 $ ./rtidb --endpoint=172.27.2.52:9531 --role=bs_client
 ```
 
-* [loadtable](#bloadtable) 在blobserver中创建表并加载数据
-
-### loadtable {#bloadtable}
+#### loadtable
 
 创建表并加载数据
 

@@ -1,8 +1,39 @@
 site_name: FEDB
+site_description: ai-native database
 nav:
-- Home: SUMMARY.md
-theme: readthedocs
-
-# Optionally build your docs in additional formats such as PDF
-formats:
-   - pdf
+- Documents:
+  - Home: index.md
+  - 部署安装:
+    - 配置机器环境: install/env.md
+    - 一键部署FEDB集群: install/fedb_quick_deploy.md
+    - 部署zookeeper: install/zk.md
+    - 部署FEDB: install/fedb_deploy.md
+    - 配置文件详解: install/conf.md
+    - 目录介绍: install/dir.md
+    - 部署后checklist: install/checklist.md
+    - 一体机部署: install/sageone.md
+  - sql功能边界: sql/functional_boundary.md
+  - sql语法:
+    - DDL: sql/ddl.md
+    - DML: sql/dml.md
+    - DQL: sql/dql.md
+  - cli: sql/sql_cli.md
+  - java sdk: sql/sql_java_sdk.md
+  - 老的使用:
+    - 快速入门: usage.md
+    - 命令行: usage/cmd.md
+    - java sdk: usage/java.md
+    - python sdk: usage/python.md
+    - 返回码: usage/code.md
+    - 导入工具: usage/importer.md
+  - RTIDB运维: 
+    - 恢复与升级: ops.md
+    - RTIDB监控: ops/monitor.md
+  - 常见问题: faq.md
+ 
+theme:
+  name: readthedocs 
+  nav_style: light
+ 
+plugins:
+  - search

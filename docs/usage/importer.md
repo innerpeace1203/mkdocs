@@ -1,12 +1,8 @@
 # 导入工具
 
-* [使用说明](#使用说明)
-* [配置文件](#配置文件)
-* [性能](#性能)
+### 使用说明
 
-### 使用说明 {#使用说明}
-
-#### 功能
+###### 功能
    实现将文件中数据导入rtidb的功能，支持parquet、csv和orc三种存储格式文件的导入，可以导入单一指定文件，也可以导入指定目录下的多个文件，如把多个parquet文件放在同一目录下进行操作。  
 
   程序运行时会根据文件后缀名自动进入相应解析程序。对于parquet文件和orc文件，程序可以读取文件得到schema，继而将数据插入rtidb;对于csv文件，用户需要在csv_schema.conf配置文件中定义schema.  
@@ -14,7 +10,7 @@
   **注意：**  
   1. 因为兼容问题，如果用户rtidb服务端的版本低于1.4.1，则暂不支持自动建表功能，须手动创建好表格之后再进行数据的导入.  
   2. rtidb服务端版本为1.4.1以上，才支持columnkey功能.
-#### 执行步骤
+##### 执行步骤
 1、在http://pkg.4paradigm.com/rtidb/tools/dataimporter-util.jar 下载dataimporter.jar；  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config.properties,columnKey.conf和csv_schema.conf自己创建，可以复制本文档中模版进行修改。   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**注意：**  配置文件和jar包需要放在同一目录下  
@@ -23,7 +19,7 @@
 4、运行本地jar包，执行命令：java -cp jar包名 com._4paradigm.dataimporter.Main  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如 java -cp dataimporter.jar com._4paradigm.dataimporter.Main
  
-####支持数据类型
+##### 支持数据类型
 1、parquet  
 支持8种基本类型：int32,int64,int96,float,double,boolean,binary,fixed_len_byte_array  
 
@@ -38,11 +34,14 @@
 |binary|string|
 |fixed_len_byte_array|string|
 
+
 **注意:**指定的ts类型必须为int64或者int96类型。
+
 2、csv  
 支持9种基本类型：string,int16,int32,int64,double,float,timestamp,date,bool     
 csv文件中timestamp的格式为yyyy-mm-dd hh:mm:ss.[fff...],date的格式为yyyy-[m]m-[d]d
 csv类型和rtidb类型一一对应  
+
 **注意:**指定的ts类型必须为int64或者timestamp类型。
 
 3、orc  
@@ -66,8 +65,10 @@ csv类型和rtidb类型一一对应
 |decimal|double|
 
 **注意:**指定的ts类型必须为long或者timestamp类型。
-### 配置文件{#配置文件}
-#### config.properties
+
+### 配置文件
+
+##### config.properties
 
 
 ```
@@ -126,7 +127,7 @@ log.interval=1000
 
 ```
 
-#### csv_schema.conf
+##### csv_schema.conf
 方式一
 
 ```
@@ -157,7 +158,7 @@ columnName=col_6;columnType=boolean
 ```
 注意：如果想导入全部列，且存在columnIndex配置，则columnIndex必须从0开始
 
-#### columKey.conf
+##### columKey.conf
 ```
 column_key {
   index_name : "card_mcc"
@@ -171,16 +172,17 @@ column_key {
   ts_name : "ts2"
 }
 ```
-### 性能{#性能}
+### 性能
 
-#### 测试环境
+##### 测试环境
 
 | OS| Linux m7-pce-dev01 3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux |
 | ------------- | ------------- |
-| CPU | processor : 40   &nbsp;&nbsp;&nbsp;&nbsp;  Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz 
-| MEM | 503G |
+| CPU | processor : 40   &nbsp;&nbsp;&nbsp;&nbsp;  Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz| 
+| MEM | 503G                                                                                |  
 
-#### 测试过程
+           
+##### 测试过程
 
 ```
   数据量：1000w   
@@ -188,9 +190,11 @@ column_key {
   rtidb副本数：1  
   rtidb分片数：1  
   rtidb表类型：absolute表  
-  ```
+```
+
 rtidb表schema如下：
-  ```
+
+```
   #   name       type    index
 --------------------------------
   0   mdcardno   string  yes
@@ -204,7 +208,8 @@ rtidb表schema如下：
   8   ACTCHANEL  string  no
   9   ACTDATE    string  no
   10  SALECOD    string  no
-  ```
+```
+
   其中mdcardno长度为8，其它字段长度均为2。
 
 

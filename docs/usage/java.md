@@ -1,10 +1,6 @@
-java sdk文档
+# java sdk文档
 
-* [配置maven](#maven)
-* [集群模式使用说明](#cluster)
-* [单机模式使用说明](#single)
-
-# 配置maven pom {#maven}
+## 配置maven pom
 
 添加如下依赖配置, 其中version配置java sdk版本. 最新版本可以从[这里](http://nexus.4paradigm.com/nexus/content/repositories/releases/com/_4paradigm/rtidb-client/)获取
 
@@ -16,7 +12,7 @@ java sdk文档
 </dependency>
 ```
 
-# 集群模式 {#cluster}
+## 集群模式
 
 ```java
 package example;
@@ -814,7 +810,7 @@ public class ClusterExample {
 
 ```
 
-# 单机模式 {#single}
+## 单机模式
 
 ```java
 package example;

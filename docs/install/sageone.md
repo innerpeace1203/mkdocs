@@ -60,8 +60,10 @@ $ cd rtidb-tablet-1.6.3.0
 * 修改zk\_cluster为已经启动的zk集群地址
 * 如果和其他RTIDB共用zk需要修改zk\_root\_path
 * 修改ssd\_root\_path
-   - df -h 查看ssd的挂载目录(关键字nvme), 如挂载目录为 /mnt/ssd0和/mnt/ssd1
-     ```
+     * df -h 查看ssd的挂载目录(关键字nvme), 如挂载目录为 /mnt/ssd0和/mnt/ssd1
+     * 在对应ssd目录创建rtidb/db目录 
+     * 配置ssd\_root\_path, 多个目录用逗号分割
+```
      文件系统                 容量  已用  可用 已用% 挂载点
      /dev/mapper/zstack-root  887G  6.3G  881G    1% /
      devtmpfs                 496G     0  496G    0% /dev
@@ -73,9 +75,8 @@ $ cd rtidb-tablet-1.6.3.0
      tmpfs                    100G     0  100G    0% /run/user/0
      /dev/nvme1n1p1           1.8T   77M  1.7T    1% /mnt/ssd1
      /dev/nvme0n1             1.8T  542G  1.2T   32% /mnt/ssd0
-     ```
-   - 在对应ssd目录创建rtidb/db目录 
-   - 配置ssd\_root\_path, 多个目录用逗号分割
+```
+
 * 修改recycle\_ssd\_bin\_root\_path
     - 在对应ssd目录创建rtidb/recycle目录
     - 配置recycle\_ssd\_bin\_root\_path, 多个目录用逗号分割

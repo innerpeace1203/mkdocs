@@ -1,16 +1,13 @@
-python sdk 文档
+# python sdk 文档
 
-- [pip安装](#pip)
-- [使用demo](#demo)
-
-# pip 安装 {#pip}
+## pip 安装
 
 ```
 pip3 install -U -i http://pypi.4paradigm.com/4paradigm/dev --trusted-host=pypi.4paradigm.com rtidb==1.6.3.0
 
 ```
 
-# 使用demo {#demo}
+## 使用demo
 
 python client 目前只支持集群模式
 

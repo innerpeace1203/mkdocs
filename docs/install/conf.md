@@ -1,9 +1,6 @@
-* [nameserver配置文件](#nameserver)
-* [tablet配置文件](#tablet)
-* [monitor配置文件](#monitor)
-* [配置优化](#opt)
+# 配置文件详解
 
-## nameserver配置文件 {#nameserver}
+## nameserver配置文件
 
 用\#注释的配置一般不需要改动
 
@@ -86,7 +83,7 @@
 #--partition_num=16
 ```
 
-## tablet配置文件 {#tablet}
+## tablet配置文件
 
 * **endpoint ** // 指定节点的ip和port, 示例172.27.128.31:9991\(注:endpoint不能用0.0.0.0和127.0.0.1\)
 * **port**  // 如果使用自动获取本地ip功能，则注释endpoint, 配置此选项 
@@ -234,33 +231,35 @@
 
 ```
 
-## monitor配置文件 {#monitor}
-\# port不用改  
+## monitor配置文件
+```
+# port不用改  
 port=8000  
-\# 数据采样频率, 默认为1秒  
+# 数据采样频率, 默认为1秒  
 interval=1  
-\# monitor log目录  
+# monitor log目录  
 log_dir=./logs  
 
 tablet_endpoint=172.27.128.37:9827  
-\# 要监控tablet的log目录  
+# 要监控tablet的log目录  
 tablet_log_dir=./logs  
 
-\# 要监控nameserver的log目录  
+# 要监控nameserver的log目录  
 ns_log_dir=/home/denglong/env/rtidb_test/ns/logs  
+```
 
-## 配置优化 {#opt}
+## 配置优化
 
-* 针对高并发的场景, tablet将以下配置加大些
-  * thread\_pool\_size
-  * scan\_concurrency\_limit
-  * put\_concurrency\_limit
-  * get\_concurrency\_limit 
-* 如果部署目录空间较小, 可以将数据放到其他目录上
-  * db\_root\_path
-  * recycle\_bin\_root\_path
+- 针对高并发的场景, tablet将以下配置加大些
+    - thread\_pool\_size
+    - scan\_concurrency\_limit
+    - put\_concurrency\_limit
+    - get\_concurrency\_limit 
+- 如果部署目录空间较小, 可以将数据放到其他目录上
+    - db\_root\_path
+    - recycle\_bin\_root\_path
 
 
-## blob_proxy mime db 配置文件 {#blob_proxy}
+## blob_proxy mime db 配置文件
 
 * config/mime.conf 描述了content-type 对应的后缀名列表, content-type 和后缀名列表使用分号分隔, 后缀名列表使用空格分隔, mime db 预先放置了一些配置, 如果有,没有记录到的 content-type , 用户可以自行添加, 添加完成后重启 blob_proxy 即可
