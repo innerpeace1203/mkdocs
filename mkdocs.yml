@@ -31,9 +31,7 @@ nav:
     - RTIDB监控: ops/monitor.md
   - 常见问题: faq.md
  
-theme:
-  name: readthedocs 
-  nav_style: light
- 
+theme: readthedocs
+
 plugins:
   - search
