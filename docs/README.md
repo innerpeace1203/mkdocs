@@ -6,4 +6,4 @@ FEDB\(Feature Enginerring Database\),in-memory 特征工程数据库，为ai智�
 * 支持in-memory 存储引擎
 * 支持java、c++, python等多种client
 
-![](./assets/fedb_arch.png)
+![img-1](./assets/fedb_arch.png)
