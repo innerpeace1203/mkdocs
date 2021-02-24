@@ -33,7 +33,6 @@ nav:
  
 theme:
   name: readthedocs 
-  nav_style: light
  
 plugins:
   - search
